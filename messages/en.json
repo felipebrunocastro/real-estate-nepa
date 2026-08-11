@@ -1004,5 +1004,90 @@
         ]
       }
     }
+  },
+  "cityPage": {
+    "metaTitle": "Real Estate in {city}, PA",
+    "metaDescription": "Explore homes, neighborhoods, market insights and real estate resources for {city}, {county}, Pennsylvania.",
+    "tagline": "Explore homes, neighborhoods, market insights and real estate resources for {city}, Pennsylvania.",
+    "searchCta": "Search homes in {city}",
+    "heroLabel": "{city}, PA",
+    "about": {
+      "title": "About {city}"
+    },
+    "housing": {
+      "title": "Housing in {city}",
+      "body": "{city} offers a range of housing within {county}, from established residential streets to homes that come to market at different price points. As live MLS data is integrated, this overview will reflect current conditions specific to {city}."
+    },
+    "market": {
+      "title": "{city} market snapshot"
+    },
+    "options": {
+      "title": "Your real estate options in {city}",
+      "buying": {
+        "title": "Buying in {city}",
+        "body": "Learn how the home-buying process works and start a search focused on {city}.",
+        "cta": "How buying works"
+      },
+      "selling": {
+        "title": "Selling in {city}",
+        "body": "Understand pricing, preparation and marketing for a home sale in {city}.",
+        "cta": "How selling works"
+      },
+      "investing": {
+        "title": "Investing in {city}",
+        "body": "Research rental, multifamily and buy-and-hold considerations in {city}.",
+        "cta": "Explore investing"
+      },
+      "relocation": {
+        "title": "Moving to {city}",
+        "body": "Plan a move to {city} with neutral, practical relocation resources.",
+        "cta": "Relocation guide"
+      }
+    },
+    "highlights": {
+      "title": "Local highlights",
+      "intro": "A few notable places and features in and around {city}."
+    },
+    "nearby": {
+      "title": "Nearby communities",
+      "intro": "Explore other communities near {city}."
+    },
+    "articles": {
+      "title": "Market reports & local news for {city}",
+      "body": "Regularly-updated market reports and NEPA real estate news covering {city} are on the way. In the meantime, explore the regional resources below."
+    },
+    "map": {
+      "label": "Map of {city}, PA",
+      "soon": "Interactive map coming soon"
+    },
+    "schools": {
+      "title": "Schools & community resources",
+      "body": "For information about schools serving {city}, consult official sources such as the Pennsylvania Department of Education and the local school district. We provide neutral resources and do not rank or rate schools, neighborhoods, or communities."
+    },
+    "faq": {
+      "title": "Frequently asked questions about {city}",
+      "items": {
+        "listings": {
+          "q": "Are the {city} listings on this site real?",
+          "a": "Not yet. Any listings shown are clearly-labeled samples. Live MLS/IDX listings for {city} will be added in a later phase."
+        },
+        "market": {
+          "q": "Is the {city} market data accurate?",
+          "a": "The figures shown are sample data for demonstration only. Verified market data for {city} will be connected as the reporting system comes online."
+        },
+        "buying": {
+          "q": "How do I start buying a home in {city}?",
+          "a": "Begin with financing and a pre-approval, then search homes focused on {city}. Our buying guide walks through each step."
+        },
+        "schools": {
+          "q": "Where can I find school information for {city}?",
+          "a": "Consult official Pennsylvania Department of Education and local school district resources. We link to authoritative sources and do not publish subjective rankings."
+        }
+      }
+    },
+    "cta": {
+      "title": "Find your place in {city}",
+      "body": "Search homes in {city} or reach out with questions about the area."
+    }
   }
 }

@@ -3,6 +3,14 @@ import type { Locale } from "@/i18n/routing";
 /** A localised string keyed by locale code. */
 export type Localized = Record<Locale, string>;
 
+/** Per-city SAMPLE market statistics (demo data — never live figures). */
+export interface CityStats {
+  medianPrice: string;
+  homesForSale: string;
+  daysOnMarket: string;
+  saleToList: string;
+}
+
 /** Northeastern Pennsylvania city / community. */
 export interface City {
   /** SEO slug, e.g. "scranton-pa" (used at /cities/scranton-pa). */
@@ -15,6 +23,15 @@ export interface City {
   featured: boolean;
   /** Placeholder image accent used until real photography is added. */
   accent: string;
+  /**
+   * Neutral, factual local landmarks / features (proper nouns). Kept
+   * language-neutral. MUST avoid subjective or Fair-Housing-sensitive claims.
+   */
+  highlights: string[];
+  /** Slugs of nearby communities for internal linking. */
+  nearby: string[];
+  /** SAMPLE market snapshot shown with a clear "Sample Data" label. */
+  stats: CityStats;
 }
 
 /** Sample property listing. NEVER represents a real MLS listing. */

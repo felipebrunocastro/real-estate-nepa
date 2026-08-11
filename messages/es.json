@@ -1004,5 +1004,90 @@
         ]
       }
     }
+  },
+  "cityPage": {
+    "metaTitle": "Bienes Raíces en {city}, PA",
+    "metaDescription": "Explora casas, vecindarios, análisis del mercado y recursos inmobiliarios para {city}, {county}, Pensilvania.",
+    "tagline": "Explora casas, vecindarios, análisis del mercado y recursos inmobiliarios para {city}, Pensilvania.",
+    "searchCta": "Buscar casas en {city}",
+    "heroLabel": "{city}, PA",
+    "about": {
+      "title": "Sobre {city}"
+    },
+    "housing": {
+      "title": "Vivienda en {city}",
+      "body": "{city} ofrece una variedad de vivienda dentro de {county}, desde calles residenciales consolidadas hasta casas que salen al mercado en distintos rangos de precio. A medida que se integren los datos reales del MLS, este panorama reflejará las condiciones actuales específicas de {city}."
+    },
+    "market": {
+      "title": "Panorama del mercado de {city}"
+    },
+    "options": {
+      "title": "Tus opciones inmobiliarias en {city}",
+      "buying": {
+        "title": "Comprar en {city}",
+        "body": "Aprende cómo funciona el proceso de compra y empieza una búsqueda enfocada en {city}.",
+        "cta": "Cómo funciona la compra"
+      },
+      "selling": {
+        "title": "Vender en {city}",
+        "body": "Entiende el precio, la preparación y el marketing para vender una casa en {city}.",
+        "cta": "Cómo funciona la venta"
+      },
+      "investing": {
+        "title": "Invertir en {city}",
+        "body": "Investiga consideraciones de renta, multifamiliares y de largo plazo en {city}.",
+        "cta": "Explorar la inversión"
+      },
+      "relocation": {
+        "title": "Mudarse a {city}",
+        "body": "Planea una mudanza a {city} con recursos de relocalización neutrales y prácticos.",
+        "cta": "Guía de mudanza"
+      }
+    },
+    "highlights": {
+      "title": "Puntos de interés local",
+      "intro": "Algunos lugares y elementos destacados en {city} y sus alrededores."
+    },
+    "nearby": {
+      "title": "Comunidades cercanas",
+      "intro": "Explora otras comunidades cerca de {city}."
+    },
+    "articles": {
+      "title": "Informes del mercado y noticias locales de {city}",
+      "body": "Los informes del mercado actualizados con regularidad y las noticias inmobiliarias de NEPA sobre {city} están en camino. Mientras tanto, explora los recursos regionales de abajo."
+    },
+    "map": {
+      "label": "Mapa de {city}, PA",
+      "soon": "Mapa interactivo próximamente"
+    },
+    "schools": {
+      "title": "Escuelas y recursos comunitarios",
+      "body": "Para obtener información sobre las escuelas que atienden a {city}, consulta fuentes oficiales como el Departamento de Educación de Pensilvania y el distrito escolar local. Ofrecemos recursos neutrales y no clasificamos ni calificamos escuelas, vecindarios ni comunidades."
+    },
+    "faq": {
+      "title": "Preguntas frecuentes sobre {city}",
+      "items": {
+        "listings": {
+          "q": "¿Las propiedades de {city} en este sitio son reales?",
+          "a": "Todavía no. Las propiedades que se muestran son ejemplos claramente identificados. Las propiedades reales del MLS/IDX para {city} se agregarán en una fase posterior."
+        },
+        "market": {
+          "q": "¿Los datos del mercado de {city} son exactos?",
+          "a": "Las cifras que se muestran son datos de muestra solo para demostración. Los datos verificados del mercado de {city} se conectarán cuando el sistema de informes esté disponible."
+        },
+        "buying": {
+          "q": "¿Cómo empiezo a comprar una casa en {city}?",
+          "a": "Empieza con el financiamiento y una preaprobación, luego busca casas enfocándote en {city}. Nuestra guía de compra recorre cada paso."
+        },
+        "schools": {
+          "q": "¿Dónde encuentro información sobre escuelas de {city}?",
+          "a": "Consulta los recursos oficiales del Departamento de Educación de Pensilvania y del distrito escolar local. Enlazamos a fuentes autorizadas y no publicamos clasificaciones subjetivas."
+        }
+      }
+    },
+    "cta": {
+      "title": "Encuentra tu lugar en {city}",
+      "body": "Busca casas en {city} o escríbenos con tus preguntas sobre la zona."
+    }
   }
 }

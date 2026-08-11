@@ -1004,5 +1004,90 @@
         ]
       }
     }
+  },
+  "cityPage": {
+    "metaTitle": "Imóveis em {city}, PA",
+    "metaDescription": "Explore casas, bairros, análises de mercado e recursos imobiliários para {city}, {county}, Pensilvânia.",
+    "tagline": "Explore casas, bairros, análises de mercado e recursos imobiliários para {city}, Pensilvânia.",
+    "searchCta": "Buscar casas em {city}",
+    "heroLabel": "{city}, PA",
+    "about": {
+      "title": "Sobre {city}"
+    },
+    "housing": {
+      "title": "Moradia em {city}",
+      "body": "{city} oferece uma variedade de moradia dentro de {county}, de ruas residenciais consolidadas a casas que chegam ao mercado em diferentes faixas de preço. À medida que os dados reais do MLS forem integrados, este panorama refletirá as condições atuais específicas de {city}."
+    },
+    "market": {
+      "title": "Panorama do mercado de {city}"
+    },
+    "options": {
+      "title": "Suas opções imobiliárias em {city}",
+      "buying": {
+        "title": "Comprar em {city}",
+        "body": "Aprenda como funciona o processo de compra e comece uma busca focada em {city}.",
+        "cta": "Como funciona a compra"
+      },
+      "selling": {
+        "title": "Vender em {city}",
+        "body": "Entenda o preço, a preparação e o marketing para vender uma casa em {city}.",
+        "cta": "Como funciona a venda"
+      },
+      "investing": {
+        "title": "Investir em {city}",
+        "body": "Pesquise considerações de aluguel, multifamiliares e de longo prazo em {city}.",
+        "cta": "Explorar investimentos"
+      },
+      "relocation": {
+        "title": "Mudar para {city}",
+        "body": "Planeje uma mudança para {city} com recursos de mudança neutros e práticos.",
+        "cta": "Guia de mudança"
+      }
+    },
+    "highlights": {
+      "title": "Pontos de interesse local",
+      "intro": "Alguns lugares e elementos notáveis em {city} e nos arredores."
+    },
+    "nearby": {
+      "title": "Comunidades próximas",
+      "intro": "Explore outras comunidades perto de {city}."
+    },
+    "articles": {
+      "title": "Relatórios de mercado e notícias locais de {city}",
+      "body": "Relatórios de mercado atualizados regularmente e notícias imobiliárias de NEPA sobre {city} estão a caminho. Enquanto isso, explore os recursos regionais abaixo."
+    },
+    "map": {
+      "label": "Mapa de {city}, PA",
+      "soon": "Mapa interativo em breve"
+    },
+    "schools": {
+      "title": "Escolas e recursos comunitários",
+      "body": "Para informações sobre as escolas que atendem {city}, consulte fontes oficiais como o Departamento de Educação da Pensilvânia e o distrito escolar local. Oferecemos recursos neutros e não classificamos nem avaliamos escolas, bairros ou comunidades."
+    },
+    "faq": {
+      "title": "Perguntas frequentes sobre {city}",
+      "items": {
+        "listings": {
+          "q": "Os imóveis de {city} neste site são reais?",
+          "a": "Ainda não. Os imóveis exibidos são exemplos claramente identificados. Os imóveis reais do MLS/IDX para {city} serão adicionados em uma fase posterior."
+        },
+        "market": {
+          "q": "Os dados de mercado de {city} são precisos?",
+          "a": "Os números exibidos são dados de amostra apenas para demonstração. Os dados verificados do mercado de {city} serão conectados quando o sistema de relatórios entrar no ar."
+        },
+        "buying": {
+          "q": "Como começo a comprar uma casa em {city}?",
+          "a": "Comece pelo financiamento e por uma pré-aprovação, depois busque casas com foco em {city}. Nosso guia de compra percorre cada etapa."
+        },
+        "schools": {
+          "q": "Onde encontro informações sobre escolas de {city}?",
+          "a": "Consulte os recursos oficiais do Departamento de Educação da Pensilvânia e do distrito escolar local. Fazemos links para fontes oficiais e não publicamos classificações subjetivas."
+        }
+      }
+    },
+    "cta": {
+      "title": "Encontre o seu lugar em {city}",
+      "body": "Busque casas em {city} ou entre em contato com dúvidas sobre a região."
+    }
   }
 }
