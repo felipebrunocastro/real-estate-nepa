@@ -297,7 +297,9 @@
       "languageLabel": "Idioma preferido",
       "cta": "Inscrever-se",
       "success": "Obrigado! Verifique a sua caixa de entrada para confirmar a inscrição.",
-      "privacyNote": "Respeitamos a sua privacidade. Cancele quando quiser. Sem spam."
+      "privacyNote": "Respeitamos a sua privacidade. Cancele quando quiser. Sem spam.",
+      "sending": "Inscrevendo…",
+      "error": "Algo deu errado. Tente novamente."
     }
   },
   "propertySearchUi": {
@@ -1119,7 +1121,9 @@
         "submit": "Enviar mensagem",
         "privacy": "Respeitamos sua privacidade e usaremos seus dados apenas para responder à sua solicitação.",
         "successTitle": "Obrigado — sua mensagem está a caminho",
-        "successBody": "Este é um formulário de demonstração; o encaminhamento das mensagens para um CRM será conectado em uma fase posterior. Agradecemos a sua paciência."
+        "successBody": "Este é um formulário de demonstração; o encaminhamento das mensagens para um CRM será conectado em uma fase posterior. Agradecemos a sua paciência.",
+        "sending": "Enviando…",
+        "error": "Algo deu errado. Tente novamente."
       },
       "help": {
         "title": "O que esperar",

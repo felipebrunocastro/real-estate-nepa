@@ -297,7 +297,9 @@
       "languageLabel": "Idioma preferido",
       "cta": "Suscribirse",
       "success": "¡Gracias! Revisa tu correo para confirmar tu suscripción.",
-      "privacyNote": "Respetamos tu privacidad. Cancela cuando quieras. Sin spam."
+      "privacyNote": "Respetamos tu privacidad. Cancela cuando quieras. Sin spam.",
+      "sending": "Suscribiendo…",
+      "error": "Algo salió mal. Inténtalo de nuevo."
     }
   },
   "propertySearchUi": {
@@ -1119,7 +1121,9 @@
         "submit": "Enviar mensaje",
         "privacy": "Respetamos tu privacidad y solo usaremos tus datos para responder a tu consulta.",
         "successTitle": "Gracias, tu mensaje va en camino",
-        "successBody": "Este es un formulario de demostración; el enrutamiento de mensajes a un CRM se conectará en una fase posterior. Agradecemos tu paciencia."
+        "successBody": "Este es un formulario de demostración; el enrutamiento de mensajes a un CRM se conectará en una fase posterior. Agradecemos tu paciencia.",
+        "sending": "Enviando…",
+        "error": "Algo salió mal. Inténtalo de nuevo."
       },
       "help": {
         "title": "Qué esperar",

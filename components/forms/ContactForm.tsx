@@ -6,11 +6,11 @@ import { cities } from "@/data/cities";
 import { Icon } from "@/components/ui/Icon";
 
 /**
- * Lead capture shape — the single, stable interface a future CRM integration
- * (Supabase / HubSpot / GoHighLevel / email routing) will consume. Deliberately
- * avoids sensitive fields.
+ * Client-side form values. The canonical lead model + validation live in
+ * lib/leads.ts; this component only collects input and POSTs it to /api/leads.
+ * No credentials are ever handled in the client.
  */
-export interface LeadPayload {
+interface FormValues {
   category: string;
   name: string;
   email: string;
@@ -21,20 +21,17 @@ export interface LeadPayload {
   contactPreference: "email" | "phone";
 }
 
-/** Frontend-only submit seam. No credentials live in the client. */
-async function submitLead(payload: LeadPayload): Promise<void> {
-  // TODO(Phase 8): POST to /api/leads -> CRM / email routing.
-  void payload;
-  return Promise.resolve();
-}
+type Status = "idle" | "sending" | "success" | "error";
 
 const CATEGORIES = ["buy", "sell", "invest", "relocate", "realtor", "general"] as const;
 
 export function ContactForm() {
   const t = useTranslations("pages.contact.form");
   const locale = useLocale();
-  const [submitted, setSubmitted] = useState(false);
-  const [values, setValues] = useState<LeadPayload>({
+  const [status, setStatus] = useState<Status>("idle");
+  // Anti-spam honeypot — kept empty by real users; bots tend to fill it.
+  const [company, setCompany] = useState("");
+  const [values, setValues] = useState<FormValues>({
     category: "buy",
     name: "",
     email: "",
@@ -45,15 +42,27 @@ export function ContactForm() {
     contactPreference: "email",
   });
 
-  function set<K extends keyof LeadPayload>(key: K, value: LeadPayload[K]) {
+  function set<K extends keyof FormValues>(key: K, value: FormValues[K]) {
     setValues((v) => ({ ...v, [key]: value }));
   }
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
-    await submitLead(values);
-    setSubmitted(true);
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/leads", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ ...values, company, locale, source: "contact-page" }),
+      });
+      if (!res.ok) throw new Error("request_failed");
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
   }
+
+  const submitted = status === "success";
 
   const fieldClass =
     "w-full rounded-md border border-border bg-surface px-3 py-2.5 text-sm text-navy-900 focus:border-accent-500 focus:outline-none";
@@ -212,12 +221,32 @@ export function ContactForm() {
         />
       </div>
 
+      {/* Honeypot — visually hidden and off the tab order; must stay empty. */}
+      <div aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-0 w-0 overflow-hidden">
+        <label htmlFor="c-company">Company</label>
+        <input
+          id="c-company"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={company}
+          onChange={(e) => setCompany(e.target.value)}
+        />
+      </div>
+
+      {status === "error" && (
+        <p role="alert" className="mt-4 rounded-md border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-800">
+          {t("error")}
+        </p>
+      )}
+
       <button
         type="submit"
-        className="mt-6 inline-flex items-center justify-center gap-2 rounded-md bg-navy-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-navy-800"
+        disabled={status === "sending"}
+        className="mt-6 inline-flex items-center justify-center gap-2 rounded-md bg-navy-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-navy-800 disabled:opacity-60"
       >
-        {t("submit")}
-        <Icon name="arrow-right" className="h-5 w-5" />
+        {status === "sending" ? t("sending") : t("submit")}
+        {status !== "sending" && <Icon name="arrow-right" className="h-5 w-5" />}
       </button>
       <p className="mt-4 text-xs text-muted">{t("privacy")}</p>
     </form>

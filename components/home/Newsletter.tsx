@@ -5,35 +5,36 @@ import { useLocale, useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { Icon } from "@/components/ui/Icon";
 
-type Status = "idle" | "success";
+type Status = "idle" | "sending" | "success" | "error";
 
 /**
- * Newsletter sign-up. Frontend-only for now: it validates input and shows a
- * confirmation. `submitSubscription` is the single, clearly-defined seam where
- * a future provider (Resend, Mailchimp, etc.) will be wired in — no provider
- * credentials live in the client.
+ * Newsletter sign-up. Posts to /api/newsletter, which validates and routes to
+ * the configured destination (see lib/newsletter.ts). No provider credentials
+ * are ever handled in the client.
  */
-async function submitSubscription(payload: {
-  email: string;
-  language: string;
-}): Promise<void> {
-  // TODO(Phase 8): POST to /api/newsletter -> email provider (Resend, etc.).
-  void payload;
-  return Promise.resolve();
-}
-
 export function Newsletter() {
   const t = useTranslations("home.newsletter");
   const locale = useLocale();
   const [email, setEmail] = useState("");
   const [language, setLanguage] = useState(locale);
+  const [company, setCompany] = useState(""); // honeypot
   const [status, setStatus] = useState<Status>("idle");
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
-    await submitSubscription({ email, language });
-    setStatus("success");
-    setEmail("");
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ email, language, company, source: "homepage" }),
+      });
+      if (!res.ok) throw new Error("request_failed");
+      setStatus("success");
+      setEmail("");
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
@@ -89,13 +90,31 @@ export function Newsletter() {
                   <option value="pt">Português</option>
                 </select>
               </div>
+              {/* Honeypot — hidden from users; must stay empty. */}
+              <input
+                type="text"
+                name="company"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                value={company}
+                onChange={(e) => setCompany(e.target.value)}
+                className="absolute left-[-9999px] h-0 w-0 overflow-hidden"
+              />
               <button
                 type="submit"
-                className="rounded-md bg-navy-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-navy-800"
+                disabled={status === "sending"}
+                className="rounded-md bg-navy-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-navy-800 disabled:opacity-60"
               >
-                {t("cta")}
+                {status === "sending" ? t("sending") : t("cta")}
               </button>
             </form>
+          )}
+
+          {status === "error" && (
+            <p role="alert" className="mx-auto mt-4 max-w-xl rounded-md bg-rose-500/20 px-4 py-2 text-sm text-white">
+              {t("error")}
+            </p>
           )}
 
           <p className="mt-4 text-xs text-accent-200">{t("privacyNote")}</p>

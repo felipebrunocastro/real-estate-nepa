@@ -297,7 +297,9 @@
       "languageLabel": "Preferred language",
       "cta": "Subscribe",
       "success": "Thanks! Please check your inbox to confirm your subscription.",
-      "privacyNote": "We respect your privacy. Unsubscribe anytime. No spam."
+      "privacyNote": "We respect your privacy. Unsubscribe anytime. No spam.",
+      "sending": "Subscribing…",
+      "error": "Something went wrong. Please try again."
     }
   },
   "propertySearchUi": {
@@ -1119,7 +1121,9 @@
         "submit": "Send message",
         "privacy": "We respect your privacy and will only use your details to respond to your inquiry.",
         "successTitle": "Thank you — your message is on its way",
-        "successBody": "This is a demo form; message routing to a CRM will be connected in a later phase. We appreciate your patience."
+        "successBody": "This is a demo form; message routing to a CRM will be connected in a later phase. We appreciate your patience.",
+        "sending": "Sending…",
+        "error": "Something went wrong. Please try again."
       },
       "help": {
         "title": "What to expect",
