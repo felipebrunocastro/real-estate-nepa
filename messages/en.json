@@ -1,0 +1,303 @@
+{
+  "comingSoon": {
+    "home": "Home",
+    "eyebrow": "In development",
+    "body": "We're building this part of Real Estate in NEPA. It arrives in an upcoming phase. In the meantime, explore the rest of the site.",
+    "cta": "Back to home"
+  },
+  "propertySearch": {
+    "metaTitle": "Property Search",
+    "metaDescription": "Search homes across Northeastern Pennsylvania. Live MLS/IDX property search is coming soon to Real Estate in NEPA.",
+    "home": "Home",
+    "breadcrumb": "Property Search",
+    "placeholderBadge": "Placeholder",
+    "title": "Property search is coming soon",
+    "body": "Live property search will connect to a licensed IDX/MLS data provider in an upcoming phase. This is a placeholder — no listings shown anywhere on the site are real.",
+    "yourSearch": "Your search",
+    "location": "Location",
+    "minPrice": "Min price",
+    "maxPrice": "Max price",
+    "beds": "Beds",
+    "type": "Type",
+    "note": "Property search integration is coming soon. No live MLS listings are available yet — but your search criteria above show how filtering will work.",
+    "exploreCities": "Explore cities instead"
+  },
+  "meta": {
+    "defaultTitle": "Real Estate in NEPA — Your Guide to Northeastern Pennsylvania",
+    "defaultDescription": "Explore homes, communities, market insights and real estate resources across Northeastern Pennsylvania — Scranton, Wilkes-Barre, Pittston and more.",
+    "homeTitle": "Real Estate in NEPA",
+    "homeDescription": "Find your place in Northeastern Pennsylvania. Search homes, explore cities, read market insights and discover real estate opportunities across NEPA."
+  },
+  "common": {
+    "skipToContent": "Skip to content"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for doesn't exist or may have moved.",
+    "cta": "Back to home"
+  },
+  "nav": {
+    "menuLabel": "Main navigation",
+    "cta": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "groups": {
+      "property": "Property",
+      "research": "Invest & Research",
+      "explore": "Explore NEPA",
+      "connect": "Connect",
+      "company": "Company"
+    },
+    "links": {
+      "propertySearch": "Property Search",
+      "buy": "Buy",
+      "sell": "Sell",
+      "firstTimeBuyers": "First-Time Buyers",
+      "invest": "Invest",
+      "marketReports": "Market Reports",
+      "nepaNews": "NEPA News",
+      "mortgageCalculator": "Mortgage Calculator",
+      "relocation": "Relocation",
+      "cities": "Cities",
+      "realtors": "Realtors",
+      "contact": "Contact",
+      "about": "About",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "fairHousing": "Fair Housing",
+      "accessibility": "Accessibility"
+    },
+    "descriptions": {
+      "propertySearch": "Browse homes across Northeastern Pennsylvania.",
+      "buy": "Understand the NEPA home-buying process.",
+      "sell": "Prepare, price and market your home.",
+      "firstTimeBuyers": "A step-by-step guide for new buyers.",
+      "invest": "Rentals, multifamily and buy-and-hold research.",
+      "marketReports": "Data-driven NEPA housing market reports.",
+      "nepaNews": "Local real estate news and development.",
+      "mortgageCalculator": "Estimate your monthly payment.",
+      "relocation": "Everything you need to move to NEPA.",
+      "cities": "Explore NEPA communities city by city.",
+      "realtors": "Find real estate professionals serving NEPA.",
+      "contact": "Get in touch with the right resource."
+    }
+  },
+  "footer": {
+    "fairHousingTitle": "Equal Housing Opportunity",
+    "fairHousing": "Real Estate in NEPA supports the principles of the Fair Housing Act and the Equal Opportunity Act. We do not discriminate based on race, color, religion, sex, disability, familial status, national origin, or any other protected class.",
+    "disclaimer": "Real Estate in NEPA is an independent regional real estate information platform. It is not a licensed brokerage, mortgage lender, law firm, or financial advisor. Sample listings and market figures shown on this site are for demonstration only and do not represent live MLS data. Information is provided for general educational purposes and should be independently verified.",
+    "rights": "All rights reserved."
+  },
+  "search": {
+    "formLabel": "Property search",
+    "location": "Location",
+    "anyLocation": "Any location",
+    "minPrice": "Min Price",
+    "noMin": "No min",
+    "maxPrice": "Max Price",
+    "noMax": "No max",
+    "beds": "Beds",
+    "any": "Any",
+    "propertyType": "Property Type",
+    "anyType": "Any type",
+    "searchHomes": "Search Homes",
+    "types": {
+      "singleFamily": "Single-Family",
+      "multiFamily": "Multi-Family",
+      "condo": "Condo",
+      "townhouse": "Townhouse",
+      "land": "Land"
+    }
+  },
+  "properties": {
+    "sampleLabel": "Sample Listing",
+    "sampleNotice": "Sample listings — for demonstration only, not live MLS data.",
+    "viewDetails": "View details",
+    "beds": "Bedrooms",
+    "bedsShort": "bd",
+    "baths": "Bathrooms",
+    "bathsShort": "ba",
+    "sqft": "Square footage",
+    "sqftShort": "sqft",
+    "type": {
+      "single-family": "Single-Family",
+      "multi-family": "Multi-Family",
+      "condo": "Condo",
+      "townhouse": "Townhouse",
+      "land": "Land"
+    },
+    "status": {
+      "for-sale": "For Sale",
+      "pending": "Pending",
+      "coming-soon": "Coming Soon"
+    }
+  },
+  "cities": {
+    "explore": "Explore {city}"
+  },
+  "home": {
+    "hero": {
+      "badge": "Northeastern Pennsylvania",
+      "headline": "Find Your Place in NEPA",
+      "subhead": "Explore homes, communities, market insights and real estate opportunities across Northeastern Pennsylvania.",
+      "ctaPrimary": "Search Properties",
+      "ctaSecondary": "Explore Cities",
+      "ctaTertiary": "Market Insights"
+    },
+    "journeys": {
+      "eyebrow": "Start here",
+      "title": "Wherever you are in your real estate journey",
+      "intro": "Whether you're buying your first home, selling, investing or relocating, NEPA has a path for you.",
+      "items": {
+        "buy": {
+          "title": "Buy in NEPA",
+          "description": "Search homes and learn how the buying process works in Northeastern Pennsylvania.",
+          "cta": "Start buying"
+        },
+        "sell": {
+          "title": "Sell in NEPA",
+          "description": "Prepare, price and market your property with confidence.",
+          "cta": "Start selling"
+        },
+        "invest": {
+          "title": "Invest in NEPA",
+          "description": "Research rentals, multifamily and buy-and-hold opportunities.",
+          "cta": "Start investing"
+        },
+        "move": {
+          "title": "Move to NEPA",
+          "description": "Discover communities, housing and everything you need to relocate.",
+          "cta": "Start relocating"
+        },
+        "firstTime": {
+          "title": "First-Time Buyers",
+          "description": "A clear, step-by-step guide to buying your first home.",
+          "cta": "Get the guide"
+        }
+      }
+    },
+    "cities": {
+      "eyebrow": "Explore NEPA",
+      "title": "Featured cities & communities",
+      "intro": "Get to know the cities that make up Northeastern Pennsylvania, from the Wyoming Valley to the Abingtons.",
+      "viewAll": "View all cities"
+    },
+    "market": {
+      "eyebrow": "Market intelligence",
+      "title": "NEPA market snapshot",
+      "intro": "A quick look at the Northeastern Pennsylvania housing market. Live market data integration is coming soon.",
+      "sampleLabel": "Sample Data",
+      "vsPrior": "vs. prior period",
+      "stats": {
+        "medianPrice": "Median Home Price",
+        "homesForSale": "Homes for Sale",
+        "daysOnMarket": "Median Days on Market",
+        "saleToList": "Sale-to-List Ratio"
+      },
+      "disclaimer": "Figures shown are sample data for demonstration only and do not represent live market statistics. Real market data integration is coming soon."
+    },
+    "properties": {
+      "eyebrow": "Featured properties",
+      "title": "A look at NEPA homes",
+      "intro": "Example listings that show how homes will appear once live MLS data is connected.",
+      "browse": "Browse properties",
+      "sampleNotice": "Sample listings — for demonstration only, not live MLS data."
+    },
+    "invest": {
+      "eyebrow": "Investors",
+      "title": "Invest in Northeastern Pennsylvania",
+      "intro": "NEPA draws investors for its relative affordability and steady rental demand. Research the strategies that fit your goals.",
+      "cta": "Explore NEPA investing",
+      "disclaimer": "Educational purposes only. Not financial or investment advice. Real estate involves risk; no returns are guaranteed.",
+      "strategies": {
+        "rental": {
+          "title": "Rental Properties",
+          "description": "Long-term rentals and steady cash-flow strategies."
+        },
+        "multifamily": {
+          "title": "Multifamily",
+          "description": "Duplexes and small multi-unit buildings."
+        },
+        "buyHold": {
+          "title": "Buy & Hold",
+          "description": "Longer-horizon ownership strategies."
+        },
+        "fixFlip": {
+          "title": "Fix & Flip",
+          "description": "Renovation and resale considerations."
+        },
+        "outOfState": {
+          "title": "Out-of-State Investors",
+          "description": "Researching NEPA from anywhere in the country."
+        }
+      }
+    },
+    "insights": {
+      "eyebrow": "Market insights",
+      "title": "Reports, guides & NEPA news",
+      "intro": "Understand the market with reports, buyer and seller guides, and local real estate news.",
+      "viewAll": "View market insights",
+      "readMore": "Read more",
+      "editorialNotice": "Sample editorial content shown for demonstration. Full articles arrive with the publication system.",
+      "categories": {
+        "market-report": "Market Report",
+        "housing-news": "Housing News",
+        "mortgage": "Mortgage",
+        "buyer-guide": "Buyer Guide",
+        "seller-guide": "Seller Guide",
+        "investor": "Investor"
+      },
+      "items": {
+        "marketReport": {
+          "title": "NEPA Market Reports",
+          "excerpt": "Track median prices, inventory and days on market across the region."
+        },
+        "housingNews": {
+          "title": "Pennsylvania Housing News",
+          "excerpt": "Developments, policy and local projects shaping NEPA housing."
+        },
+        "mortgage": {
+          "title": "Mortgage Rate Updates",
+          "excerpt": "How changing rates affect buyers and sellers in NEPA."
+        },
+        "buyerGuide": {
+          "title": "Buyer Guides",
+          "excerpt": "Step-by-step guidance for navigating a home purchase."
+        },
+        "sellerGuide": {
+          "title": "Seller Guides",
+          "excerpt": "Pricing, preparing and marketing your NEPA home."
+        },
+        "investor": {
+          "title": "Investor Insights",
+          "excerpt": "Research and considerations for real estate investors."
+        }
+      }
+    },
+    "relocation": {
+      "eyebrow": "Relocation",
+      "title": "Thinking about moving to NEPA?",
+      "intro": "From housing and cost of living to commuting and local resources, get the information you need to plan your move to Northeastern Pennsylvania.",
+      "imageLabel": "Moving to NEPA",
+      "topics": {
+        "communities": "Communities",
+        "housing": "Housing",
+        "costOfLiving": "Cost of living",
+        "commuting": "Commuting",
+        "lifestyle": "Lifestyle",
+        "resources": "Local resources"
+      },
+      "cta": "Explore relocation guide"
+    },
+    "newsletter": {
+      "title": "Stay ahead of the NEPA market",
+      "description": "Get real estate updates, market insights, community guides and important NEPA housing news.",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "languageLabel": "Preferred language",
+      "cta": "Subscribe",
+      "success": "Thanks! Please check your inbox to confirm your subscription.",
+      "privacyNote": "We respect your privacy. Unsubscribe anytime. No spam."
+    }
+  }
+}

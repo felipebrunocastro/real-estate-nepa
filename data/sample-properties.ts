@@ -1,0 +1,88 @@
+import type { SampleProperty } from "@/types";
+
+/**
+ * SAMPLE / DEMO listings only. These are illustrative placeholders and do NOT
+ * represent real MLS listings or homes actually for sale. Every UI surface that
+ * renders these MUST show a visible "Sample Listing" label. Real data will
+ * arrive via a future IDX/MLS integration through the same shape.
+ */
+export const sampleProperties: SampleProperty[] = [
+  {
+    id: "sample-1",
+    price: 245000,
+    address: "128 Example Ave",
+    citySlug: "scranton-pa",
+    cityName: "Scranton",
+    beds: 3,
+    baths: 2,
+    sqft: 1680,
+    type: "single-family",
+    status: "for-sale",
+    accent: "#1f4d7b",
+  },
+  {
+    id: "sample-2",
+    price: 179900,
+    address: "45 Sample St",
+    citySlug: "wilkes-barre-pa",
+    cityName: "Wilkes-Barre",
+    beds: 4,
+    baths: 2,
+    sqft: 2010,
+    type: "multi-family",
+    status: "for-sale",
+    accent: "#274266",
+  },
+  {
+    id: "sample-3",
+    price: 315000,
+    address: "9 Placeholder Ln",
+    citySlug: "dallas-pa",
+    cityName: "Dallas",
+    beds: 4,
+    baths: 3,
+    sqft: 2450,
+    type: "single-family",
+    status: "coming-soon",
+    accent: "#1d3350",
+  },
+  {
+    id: "sample-4",
+    price: 139000,
+    address: "302 Demo Rd",
+    citySlug: "pittston-pa",
+    cityName: "Pittston",
+    beds: 2,
+    baths: 1,
+    sqft: 1120,
+    type: "townhouse",
+    status: "pending",
+    accent: "#245e97",
+  },
+  {
+    id: "sample-5",
+    price: 289000,
+    address: "77 Illustration Dr",
+    citySlug: "kingston-pa",
+    cityName: "Kingston",
+    beds: 3,
+    baths: 2,
+    sqft: 1740,
+    type: "single-family",
+    status: "for-sale",
+    accent: "#345680",
+  },
+  {
+    id: "sample-6",
+    price: 199500,
+    address: "14 Mockup Ct",
+    citySlug: "hazleton-pa",
+    cityName: "Hazleton",
+    beds: 3,
+    baths: 2,
+    sqft: 1560,
+    type: "single-family",
+    status: "for-sale",
+    accent: "#1f4d7b",
+  },
+];
