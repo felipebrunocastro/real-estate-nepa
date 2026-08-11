@@ -299,5 +299,710 @@
       "success": "Obrigado! Verifique a sua caixa de entrada para confirmar a inscrição.",
       "privacyNote": "Respeitamos a sua privacidade. Cancele quando quiser. Sem spam."
     }
+  },
+  "propertySearchUi": {
+    "filters": "Filtros",
+    "baths": "Banheiros",
+    "status": "Situação",
+    "anyStatus": "Qualquer situação",
+    "minSqft": "Pés² mín.",
+    "lotSize": "Tamanho do lote",
+    "acres": "acres",
+    "reset": "Limpar filtros",
+    "saveSearch": "Salvar busca",
+    "savedSearchSoon": "As buscas salvas chegarão com as contas de usuário em uma fase posterior.",
+    "integrationNotice": "Os resultados abaixo são imóveis de amostra. A busca ao vivo com IDX/MLS chegará em breve.",
+    "resultCount": "{count, plural, =0 {Nenhum imóvel de amostra} one {# imóvel de amostra} other {# imóveis de amostra}}",
+    "sortLabel": "Ordenar por",
+    "sort": {
+      "relevance": "Relevância",
+      "priceAsc": "Preço: menor para maior",
+      "priceDesc": "Preço: maior para menor",
+      "bedsDesc": "Mais quartos"
+    },
+    "gridView": "Visualização em grade",
+    "listView": "Visualização em lista",
+    "mapLabel": "Visualização em mapa",
+    "mapSoon": "Mapa interativo em breve",
+    "noResults": "Nenhum imóvel de amostra corresponde a esses filtros."
+  },
+  "pages": {
+    "propertySearch": {
+      "metaTitle": "Buscar Imóveis",
+      "metaDescription": "Busque casas à venda no nordeste da Pensilvânia por localização, preço, quartos, banheiros e tipo. A busca ao vivo com MLS/IDX chegará em breve.",
+      "eyebrow": "Encontre uma casa",
+      "title": "Busque casas em todo NEPA",
+      "intro": "Filtre por localização, preço, quartos, tipo de imóvel e mais. A interface abaixo está pronta para imóveis reais do MLS/IDX; por enquanto, mostra casas de exemplo claramente identificadas."
+    },
+    "buy": {
+      "metaTitle": "Comprar uma Casa em NEPA",
+      "metaDescription": "Um guia claro para comprar uma casa no nordeste da Pensilvânia: financiamento, busca, ofertas, inspeções, avaliação e fechamento.",
+      "eyebrow": "Para compradores",
+      "title": "Comprar uma Casa em NEPA",
+      "intro": "Da pré-aprovação ao dia do fechamento, veja como funciona a compra de uma casa no nordeste da Pensilvânia e como começar.",
+      "ctaSearch": "Comece sua busca",
+      "ctaFirstTime": "Guia da primeira compra",
+      "process": {
+        "eyebrow": "O processo",
+        "title": "Como funciona o processo de compra",
+        "intro": "Cada compra é um pouco diferente, mas quase todas seguem os mesmos passos básicos.",
+        "steps": [
+          {
+            "title": "Obtenha a pré-aprovação",
+            "description": "Converse com um credor para entender seu orçamento e conseguir uma carta de pré-aprovação antes de procurar."
+          },
+          {
+            "title": "Busque casas",
+            "description": "Defina seus critérios e visite casas que atendam às suas necessidades e ao seu orçamento em NEPA."
+          },
+          {
+            "title": "Faça uma oferta",
+            "description": "Com o seu corretor, apresente uma oferta competitiva e bem estruturada e negocie os termos."
+          },
+          {
+            "title": "Inspeções",
+            "description": "Solicite uma inspeção para conhecer o estado do imóvel e os reparos necessários."
+          },
+          {
+            "title": "Avaliação e análise do financiamento",
+            "description": "Seu credor verifica o valor e finaliza a aprovação do seu financiamento."
+          },
+          {
+            "title": "Fechamento",
+            "description": "Assine os documentos, financie a compra e receba as chaves da sua nova casa."
+          }
+        ]
+      },
+      "financing": {
+        "title": "Financiar sua compra",
+        "intro": "Entender o seu financiamento desde o início torna todo o processo mais tranquilo.",
+        "calculatorCta": "Estimar um pagamento mensal",
+        "items": [
+          {
+            "icon": "calculator",
+            "title": "Orçamento e pré-aprovação",
+            "description": "Saiba o que você pode pagar com tranquilidade antes de começar a visitar casas."
+          },
+          {
+            "icon": "document",
+            "title": "Opções de financiamento",
+            "description": "Compare programas convencionais, FHA, VA e outros com um credor licenciado."
+          },
+          {
+            "icon": "check",
+            "title": "Custos de fechamento",
+            "description": "Planeje os custos além da entrada, como taxas, impostos e seguro."
+          }
+        ]
+      },
+      "faqTitle": "Perguntas frequentes de compradores",
+      "faqs": [
+        {
+          "q": "Quanto preciso para a entrada?",
+          "a": "Depende do programa de financiamento; alguns permitem entradas baixas. Um credor pode explicar as opções para as quais você se qualifica. Isto é informação geral, não um compromisso de financiamento."
+        },
+        {
+          "q": "Preciso de um corretor para comprar?",
+          "a": "Não é obrigatório, mas um corretor do comprador pode orientar você nas ofertas, negociações e no fechamento. Você encontra profissionais na nossa página de Corretores."
+        },
+        {
+          "q": "Quanto tempo leva para comprar uma casa?",
+          "a": "Da oferta aceita ao fechamento costuma levar de 30 a 45 dias, embora os prazos variem conforme o financiamento e as inspeções."
+        },
+        {
+          "q": "Os imóveis deste site são reais?",
+          "a": "Ainda não. Os imóveis exibidos são exemplos claramente identificados. Os imóveis reais do MLS/IDX serão adicionados em uma fase posterior."
+        }
+      ],
+      "cta": {
+        "title": "Pronto para começar sua busca?",
+        "body": "Explore casas em todo NEPA ou escreva com suas dúvidas sobre a compra."
+      }
+    },
+    "sell": {
+      "metaTitle": "Vender uma Casa em NEPA",
+      "metaDescription": "Um guia para vender uma casa no nordeste da Pensilvânia: valor do imóvel, preparação, precificação, marketing, ofertas, inspeção e fechamento.",
+      "eyebrow": "Para vendedores",
+      "title": "Vender uma Casa em NEPA",
+      "intro": "Pensando em vender no nordeste da Pensilvânia? Veja como funciona o processo e como se preparar para uma venda bem-sucedida.",
+      "ctaValuation": "Solicitar uma avaliação",
+      "valuationTool": {
+        "badge": "Em breve",
+        "title": "Quanto vale a minha casa?",
+        "body": "Uma ferramenta de avaliação online está no planejamento. Enquanto isso, solicite uma avaliação personalizada e um profissional local pode ajudar você a entender a faixa de mercado provável da sua casa.",
+        "cta": "Solicitar uma avaliação",
+        "disclaimer": "Uma avaliação é uma estimativa apenas para fins informativos: não é uma perícia, nem uma oferta, nem uma garantia de preço de venda. Não afirmamos exatidão de avaliações automatizadas."
+      },
+      "process": {
+        "eyebrow": "O processo",
+        "title": "Como funciona a venda",
+        "intro": "Preparar-se bem e precificar corretamente são a base de uma venda sólida.",
+        "steps": [
+          {
+            "title": "Entenda o valor da sua casa",
+            "description": "Analise vendas comparáveis recentes e as condições atuais para ter expectativas realistas."
+          },
+          {
+            "title": "Prepare o seu imóvel",
+            "description": "Cuide de reparos, organização e pequenas melhorias que causam boa impressão."
+          },
+          {
+            "title": "Estratégia de preço",
+            "description": "Defina um preço competitivo com base no mercado local, não em suposições."
+          },
+          {
+            "title": "Marketing",
+            "description": "Fotografia, exposição do anúncio e divulgação para atrair compradores qualificados."
+          },
+          {
+            "title": "Ofertas e negociação",
+            "description": "Analise as ofertas e negocie termos que se ajustem ao seu prazo e objetivos."
+          },
+          {
+            "title": "Inspeção e avaliação",
+            "description": "Os compradores costumam inspecionar e financiar, o que pode envolver negociação."
+          },
+          {
+            "title": "Fechamento",
+            "description": "Finalize a papelada, transfira a propriedade e conclua a venda."
+          }
+        ]
+      },
+      "prep": {
+        "title": "Preparar o seu imóvel",
+        "intro": "Melhorias pequenas e bem direcionadas costumam fazer a maior diferença.",
+        "items": [
+          {
+            "icon": "check",
+            "title": "Organize e limpe",
+            "description": "Ambientes limpos e neutros ajudam os compradores a se imaginarem na casa."
+          },
+          {
+            "icon": "check",
+            "title": "Faça pequenos reparos",
+            "description": "Resolva detalhes que possam distrair os compradores ou aparecer na inspeção."
+          },
+          {
+            "icon": "check",
+            "title": "Valorize a fachada",
+            "description": "Cuide da parte externa e da entrada: a primeira impressão começa lá fora."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Pensando em vender?",
+        "body": "Solicite uma avaliação personalizada e receba orientação para o mercado de NEPA."
+      }
+    },
+    "invest": {
+      "metaTitle": "Investir em Imóveis em NEPA",
+      "metaDescription": "Pesquise o investimento imobiliário no nordeste da Pensilvânia: aluguéis, multifamiliares, reformar e revender, comprar e manter e investidores de fora do estado. Apenas educativo.",
+      "eyebrow": "Para investidores",
+      "title": "Invista no Nordeste da Pensilvânia",
+      "intro": "NEPA atrai investidores pela acessibilidade relativa dos preços e pela demanda constante por aluguel. Pesquise as estratégias, ferramentas e dados locais que orientam decisões inteligentes.",
+      "ctaExplore": "Explorar imóveis",
+      "why": {
+        "eyebrow": "Por que NEPA",
+        "title": "Por que os investidores pesquisam NEPA",
+        "intro": "Algumas das razões pelas quais os investidores olham de perto para a região.",
+        "items": [
+          {
+            "icon": "trend-up",
+            "title": "Acessibilidade relativa",
+            "description": "Os preços de entrada costumam ser mais baixos do que em regiões metropolitanas vizinhas, o que pode favorecer estratégias de fluxo de caixa."
+          },
+          {
+            "icon": "map-pin",
+            "title": "Demanda regional",
+            "description": "Universidades, saúde e empresas de logística contribuem para a demanda contínua por aluguel."
+          },
+          {
+            "icon": "invest",
+            "title": "Variedade de imóveis",
+            "description": "De casas unifamiliares a pequenos multifamiliares, o estoque atende a diferentes estratégias."
+          }
+        ]
+      },
+      "strategies": {
+        "title": "Estratégias comuns",
+        "intro": "Diferentes abordagens combinam com diferentes objetivos e tolerâncias ao risco.",
+        "items": [
+          {
+            "icon": "buy",
+            "title": "Imóveis para aluguel",
+            "description": "Aluguéis de longo prazo focados em fluxo de caixa estável e previsível."
+          },
+          {
+            "icon": "invest",
+            "title": "Multifamiliares",
+            "description": "Duplex e pequenos prédios de várias unidades que distribuem o risco."
+          },
+          {
+            "icon": "sell",
+            "title": "Reformar e revender",
+            "description": "Renovar casas subvalorizadas para revenda, com controle cuidadoso de custos."
+          },
+          {
+            "icon": "check",
+            "title": "Comprar e manter",
+            "description": "Propriedade de longo prazo voltada à valorização e ao patrimônio ao longo do tempo."
+          },
+          {
+            "icon": "move",
+            "title": "Investidores de fora do estado",
+            "description": "Pesquisar NEPA à distância com parceiros locais e dados de mercado."
+          }
+        ]
+      },
+      "tools": {
+        "title": "Ferramentas de análise de investimento",
+        "intro": "Há calculadoras interativas no planejamento para ajudar você a fazer as contas.",
+        "badge": "Em breve",
+        "items": [
+          {
+            "title": "Taxa de capitalização",
+            "description": "Receita operacional líquida em relação ao preço de compra."
+          },
+          {
+            "title": "Retorno sobre o caixa",
+            "description": "Fluxo de caixa anual antes dos impostos em relação ao caixa investido."
+          },
+          {
+            "title": "NOI",
+            "description": "Receita operacional líquida após as despesas operacionais."
+          },
+          {
+            "title": "Fluxo de caixa estimado",
+            "description": "Receita mensal projetada após despesas e pagamento da dívida."
+          }
+        ],
+        "disclaimer": "Apenas para fins educativos. Isto não é consultoria financeira, de investimento, tributária ou jurídica. Imóveis envolvem risco e nenhum retorno é garantido. Consulte profissionais qualificados antes de investir."
+      },
+      "research": {
+        "title": "Pesquisa do mercado local",
+        "intro": "Baseie a sua análise em dados locais e no conhecimento dos bairros."
+      },
+      "cta": {
+        "title": "Pesquise oportunidades de investimento em NEPA",
+        "body": "Explore imóveis e dados de mercado, ou escreva para conversar sobre os seus objetivos."
+      }
+    },
+    "marketReports": {
+      "metaTitle": "Relatórios de Mercado de NEPA",
+      "metaDescription": "Relatórios do mercado imobiliário do nordeste da Pensilvânia: preços médios, estoque, dias no mercado e mais. A integração de dados chegará em breve.",
+      "eyebrow": "Inteligência de mercado",
+      "title": "Relatórios de Mercado de NEPA",
+      "intro": "Acompanhe como o mercado imobiliário do nordeste da Pensilvânia se movimenta, cidade por cidade e mês a mês.",
+      "comingSoon": {
+        "badge": "Em breve",
+        "title": "Os relatórios de mercado estão a caminho",
+        "body": "Estamos construindo o sistema que publica dados de mercado atualizados regularmente e com atribuição de fontes. Inscreva-se ou entre em contato para ser avisado quando os primeiros relatórios saírem."
+      },
+      "metrics": {
+        "title": "O que os relatórios vão cobrir",
+        "intro": "Cada relatório é projetado para acompanhar as métricas mais importantes.",
+        "items": [
+          {
+            "icon": "trend-up",
+            "title": "Preço médio de venda",
+            "description": "O ponto médio dos preços de venda, acompanhado ao longo do tempo."
+          },
+          {
+            "icon": "document",
+            "title": "Anúncios ativos e novos",
+            "description": "Quanto estoque está disponível e chegando ao mercado."
+          },
+          {
+            "icon": "check",
+            "title": "Vendas pendentes e fechadas",
+            "description": "O ritmo das transações na região."
+          },
+          {
+            "icon": "calculator",
+            "title": "Dias no mercado",
+            "description": "A rapidez com que as casas estão sendo vendidas."
+          },
+          {
+            "icon": "area",
+            "title": "Preço por pé quadrado",
+            "description": "Uma visão normalizada dos preços conforme o tamanho."
+          },
+          {
+            "icon": "trend-up",
+            "title": "Venda/preço anunciado e tendências",
+            "description": "Variação mês a mês e ano a ano."
+          }
+        ]
+      },
+      "disclaimer": "As métricas de mercado exibidas no site são dados de amostra para demonstração até que o sistema de relatórios seja conectado a fontes verificadas.",
+      "cta": {
+        "title": "Explore NEPA em números",
+        "body": "Aprofunde-se nas cidades e nos recursos de investimento enquanto os relatórios entram no ar."
+      }
+    },
+    "nepaNews": {
+      "metaTitle": "Notícias Imobiliárias de NEPA",
+      "metaDescription": "Notícias imobiliárias locais do nordeste da Pensilvânia: empreendimentos, projetos de moradia, zoneamento, infraestrutura, impostos e taxas de financiamento.",
+      "eyebrow": "Notícias locais",
+      "title": "Notícias Imobiliárias de NEPA",
+      "intro": "Notícias e desenvolvimento relevantes para imóveis no nordeste da Pensilvânia, de projetos de moradia a políticas e impostos sobre a propriedade.",
+      "comingSoon": {
+        "badge": "Em breve",
+        "title": "Estamos construindo a redação",
+        "body": "Nosso sistema de publicação de notícias imobiliárias locais com atribuição de fontes está no planejamento. Entre em contato para ser avisado quando for lançado."
+      },
+      "topics": {
+        "title": "O que vamos cobrir",
+        "intro": "Notícias focadas em como a região está mudando e no que isso significa para a moradia.",
+        "items": [
+          {
+            "icon": "buy",
+            "title": "Novos empreendimentos",
+            "description": "Projetos residenciais e de uso misto na região."
+          },
+          {
+            "icon": "map-pin",
+            "title": "Comercial e infraestrutura",
+            "description": "Investimentos que moldam os bairros e os deslocamentos."
+          },
+          {
+            "icon": "document",
+            "title": "Zoneamento e políticas",
+            "description": "Decisões locais e legislação de moradia da Pensilvânia."
+          },
+          {
+            "icon": "trend-up",
+            "title": "Grandes empregadores",
+            "description": "Mudanças no emprego que influenciam a demanda por moradia."
+          },
+          {
+            "icon": "calculator",
+            "title": "Impostos sobre a propriedade",
+            "description": "Atualizações que afetam o custo de ser proprietário."
+          },
+          {
+            "icon": "check",
+            "title": "Tendências de financiamento e aluguel",
+            "description": "Movimento das taxas e mudanças no mercado de aluguel."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Fique por dentro de NEPA",
+        "body": "Enquanto isso, explore os relatórios de mercado e os guias de cidades."
+      }
+    },
+    "mortgageCalculator": {
+      "metaTitle": "Calculadora de Financiamento",
+      "metaDescription": "Estime o pagamento mensal de um financiamento para uma casa em NEPA: principal, juros, impostos, seguro e HOA. A calculadora interativa chegará em breve.",
+      "eyebrow": "Ferramentas",
+      "title": "Calculadora de Financiamento",
+      "intro": "Estime como poderia ser um pagamento mensal para uma casa no nordeste da Pensilvânia.",
+      "comingSoon": {
+        "badge": "Em breve",
+        "title": "A calculadora interativa está a caminho",
+        "body": "Estamos construindo a calculadora de financiamento completa. Ela permitirá inserir o preço da casa, a entrada, o prazo e a taxa para estimar um pagamento mensal."
+      },
+      "outputs": {
+        "title": "O que ela vai estimar",
+        "intro": "Um detalhamento dos elementos que compõem um pagamento mensal típico.",
+        "items": [
+          {
+            "icon": "calculator",
+            "title": "Principal e juros",
+            "description": "O pagamento base do financiamento conforme o valor, a taxa e o prazo."
+          },
+          {
+            "icon": "document",
+            "title": "Impostos sobre a propriedade",
+            "description": "Uma estimativa dos custos mensais de impostos."
+          },
+          {
+            "icon": "check",
+            "title": "Seguro residencial",
+            "description": "Uma estimativa dos custos mensais de seguro."
+          },
+          {
+            "icon": "buy",
+            "title": "HOA (se houver)",
+            "description": "Taxas opcionais de associação de moradores."
+          },
+          {
+            "icon": "trend-up",
+            "title": "Pagamento mensal estimado",
+            "description": "O total combinado dos elementos acima."
+          }
+        ]
+      },
+      "disclaimer": "As estimativas são apenas para fins informativos e não são uma cotação de financiamento, uma pré-aprovação ou um compromisso de crédito. Fale com um credor licenciado para valores específicos para você.",
+      "cta": {
+        "title": "Planejando sua compra?",
+        "body": "Aprenda como funciona a compra ou comece a explorar casas em NEPA."
+      }
+    },
+    "firstTimeBuyers": {
+      "metaTitle": "Compradores de Primeira Casa em NEPA",
+      "metaDescription": "Guia passo a passo para comprar sua primeira casa no nordeste da Pensilvânia: crédito, pré-aprovação, entrada, programas de financiamento, ofertas e fechamento.",
+      "eyebrow": "Primeira compra",
+      "title": "Compradores de Primeira Casa",
+      "intro": "Comprar sua primeira casa pode parecer assustador. Este guia percorre cada etapa para você saber o que esperar no nordeste da Pensilvânia.",
+      "journey": {
+        "eyebrow": "Passo a passo",
+        "title": "O caminho da sua primeira casa",
+        "intro": "Um caminho claro de \"será que posso comprar?\" até estar com as chaves na mão.",
+        "steps": [
+          {
+            "title": "Posso comprar uma casa?",
+            "description": "Analise sua renda, poupança e orçamento mensal para avaliar se você está pronto."
+          },
+          {
+            "title": "Entender o crédito",
+            "description": "Aprenda como o crédito afeta as opções de financiamento e melhore-o se necessário."
+          },
+          {
+            "title": "Pré-aprovação",
+            "description": "Obtenha a pré-aprovação de um credor para conhecer sua faixa de preço."
+          },
+          {
+            "title": "Entrada",
+            "description": "Entenda quanto você precisará e explore opções de auxílio."
+          },
+          {
+            "title": "Programas de financiamento",
+            "description": "Compare programas que possam servir a compradores de primeira viagem com um credor licenciado."
+          },
+          {
+            "title": "Buscar uma casa",
+            "description": "Defina o que é indispensável e comece a visitar casas que se encaixem."
+          },
+          {
+            "title": "Fazer uma oferta",
+            "description": "Apresente uma oferta e negocie os termos com a orientação do seu corretor."
+          },
+          {
+            "title": "Inspeção",
+            "description": "Conheça o estado da casa antes de se comprometer."
+          },
+          {
+            "title": "Avaliação",
+            "description": "Seu credor confirma o valor da casa para o financiamento."
+          },
+          {
+            "title": "Custos de fechamento",
+            "description": "Reserve orçamento para as taxas e custos devidos no fechamento."
+          },
+          {
+            "title": "Dia do fechamento",
+            "description": "Assine, financie e receba as chaves da sua primeira casa."
+          },
+          {
+            "title": "Depois de comprar",
+            "description": "Planeje a manutenção, os impostos e a construção de patrimônio ao longo do tempo."
+          }
+        ]
+      },
+      "disclaimer": "Este guia é informação educativa geral, não consultoria financeira ou jurídica. Referências a programas de financiamento ou auxílio não representam elegibilidade; um credor licenciado deve verificar para o que você se qualifica.",
+      "cta": {
+        "title": "Pronto para dar o primeiro passo?",
+        "body": "Comece a explorar casas ou escreva com suas perguntas."
+      }
+    },
+    "relocation": {
+      "metaTitle": "Mudar para NEPA — Guia de Mudança",
+      "metaDescription": "Mudando para o nordeste da Pensilvânia? Explore comunidades, moradia, transporte, saúde, impostos, serviços e uma lista de mudança.",
+      "eyebrow": "Mudança",
+      "title": "Mudar para o Nordeste da Pensilvânia",
+      "intro": "Tudo o que você precisa para planejar uma mudança para NEPA: de comunidades e moradia a deslocamento, serviços e uma lista de verificação.",
+      "topics": {
+        "eyebrow": "Planeje sua mudança",
+        "title": "Temas da mudança",
+        "intro": "Informação neutra e prática para você planejar com confiança.",
+        "items": [
+          {
+            "icon": "map-pin",
+            "title": "Explore NEPA",
+            "description": "Situe-se na geografia e na organização da região."
+          },
+          {
+            "icon": "buy",
+            "title": "Cidades e comunidades",
+            "description": "Compare comunidades com informação neutra e objetiva."
+          },
+          {
+            "icon": "search",
+            "title": "Moradia",
+            "description": "Entenda as opções de moradia locais e as faixas de preço."
+          },
+          {
+            "icon": "move",
+            "title": "Transporte e deslocamento",
+            "description": "Rodovias, transporte e considerações típicas de deslocamento."
+          },
+          {
+            "icon": "trend-up",
+            "title": "Áreas de emprego",
+            "description": "Os principais setores e centros de emprego da região."
+          },
+          {
+            "icon": "check",
+            "title": "Saúde",
+            "description": "Um panorama dos recursos de saúde regionais."
+          },
+          {
+            "icon": "document",
+            "title": "Recursos educacionais",
+            "description": "Onde encontrar informações oficiais sobre as escolas locais."
+          },
+          {
+            "icon": "area",
+            "title": "Clima e estações",
+            "description": "O que esperar do clima de quatro estações."
+          },
+          {
+            "icon": "invest",
+            "title": "Lazer",
+            "description": "Parques, trilhas e lazer ao ar livre em NEPA."
+          },
+          {
+            "icon": "calculator",
+            "title": "Impostos",
+            "description": "Um panorama das considerações tributárias da Pensilvânia e locais."
+          },
+          {
+            "icon": "first-time",
+            "title": "Serviços",
+            "description": "Como ativar os serviços essenciais ao chegar."
+          },
+          {
+            "icon": "check",
+            "title": "Lista de mudança",
+            "description": "Uma lista prática para manter sua mudança em ordem."
+          }
+        ]
+      },
+      "disclaimer": "As informações sobre as comunidades são fornecidas como recursos neutros e objetivos. Não classificamos bairros ou escolas, nem fazemos afirmações subjetivas sobre para quem uma comunidade é \"melhor\". Para dados de escolas, consulte fontes oficiais do estado e do distrito.",
+      "cta": {
+        "title": "Conhecendo NEPA?",
+        "body": "Explore as cidades e comece sua busca por uma casa."
+      }
+    },
+    "realtors": {
+      "metaTitle": "Corretores que Atendem NEPA",
+      "metaDescription": "Descubra profissionais imobiliários que atendem o nordeste da Pensilvânia. Em breve, um diretório de corretores com busca.",
+      "eyebrow": "Encontre um profissional",
+      "title": "Corretores que Atendem NEPA",
+      "intro": "Descubra profissionais imobiliários que atendem o nordeste da Pensilvânia. A Real Estate in NEPA é uma plataforma de informação, não uma corretora.",
+      "comingSoon": {
+        "badge": "Em breve",
+        "title": "Estamos construindo o diretório de corretores",
+        "body": "Um diretório com busca de profissionais, com áreas de atuação, idiomas e especialidades, está no planejamento. Entre em contato e teremos prazer em orientar você."
+      },
+      "features": {
+        "title": "O que o diretório vai oferecer",
+        "intro": "Ferramentas para ajudar você a encontrar um profissional que atenda às suas necessidades.",
+        "items": [
+          {
+            "icon": "map-pin",
+            "title": "Áreas de atuação",
+            "description": "Encontre profissionais que trabalham nas cidades que interessam a você."
+          },
+          {
+            "icon": "search",
+            "title": "Idiomas",
+            "description": "Filtre por profissionais que falam inglês, espanhol ou português."
+          },
+          {
+            "icon": "buy",
+            "title": "Especialidades",
+            "description": "Corretores de compradores, de anúncios, investimento, comercial e mudança."
+          },
+          {
+            "icon": "document",
+            "title": "Perfis",
+            "description": "Corretora, experiência, especialidades e dados de contato."
+          },
+          {
+            "icon": "check",
+            "title": "Status verificado",
+            "description": "Indicadores claros de informações profissionais verificadas."
+          },
+          {
+            "icon": "first-time",
+            "title": "Conectamos você",
+            "description": "Conte o que você precisa e ajudamos a conectar."
+          }
+        ]
+      },
+      "disclosure": "Os anúncios e perfis de profissionais não constituem recomendação ou endosso, salvo indicação expressa. A Real Estate in NEPA é uma plataforma de informação independente e não é uma corretora licenciada.",
+      "cta": {
+        "title": "Procurando um profissional?",
+        "body": "Conte o que você precisa e ajudamos a encontrar o recurso certo."
+      }
+    },
+    "cities": {
+      "metaTitle": "Cidades e Comunidades de NEPA",
+      "metaDescription": "Explore os imóveis do nordeste da Pensilvânia cidade por cidade: Wilkes-Barre, Scranton, Pittston, Kingston, Dallas, Hazleton e mais.",
+      "eyebrow": "Explorar NEPA",
+      "title": "Cidades e Comunidades de NEPA",
+      "intro": "Explore o nordeste da Pensilvânia comunidade por comunidade. Cada página de cidade vai crescer até se tornar um polo local de casas, dados de mercado e recursos.",
+      "cta": {
+        "title": "Encontre o seu lugar em NEPA",
+        "body": "Busque casas nessas comunidades ou planeje sua mudança."
+      }
+    },
+    "contact": {
+      "metaTitle": "Contato",
+      "metaDescription": "Entre em contato com a Real Estate in NEPA. Diga se você quer comprar, vender, investir, se mudar ou precisa de um corretor no nordeste da Pensilvânia.",
+      "eyebrow": "Fale conosco",
+      "title": "Fale com a Real Estate in NEPA",
+      "intro": "Diga como podemos ajudar e vamos indicar o recurso certo. Pedimos apenas o necessário para dar retorno.",
+      "form": {
+        "categoryLabel": "Como podemos ajudar?",
+        "categories": {
+          "buy": "Quero comprar",
+          "sell": "Quero vender",
+          "invest": "Quero investir",
+          "relocate": "Estou me mudando",
+          "realtor": "Preciso de um corretor",
+          "general": "Pergunta geral"
+        },
+        "name": "Nome",
+        "email": "E-mail",
+        "phone": "Telefone",
+        "optional": "(opcional)",
+        "area": "Cidade / área",
+        "areaAny": "Qualquer / não tenho certeza",
+        "areaOther": "Outra",
+        "language": "Idioma preferido",
+        "preference": "Preferência de contato",
+        "prefEmail": "E-mail",
+        "prefPhone": "Telefone",
+        "message": "Mensagem",
+        "submit": "Enviar mensagem",
+        "privacy": "Respeitamos sua privacidade e usaremos seus dados apenas para responder à sua solicitação.",
+        "successTitle": "Obrigado — sua mensagem está a caminho",
+        "successBody": "Este é um formulário de demonstração; o encaminhamento das mensagens para um CRM será conectado em uma fase posterior. Agradecemos a sua paciência."
+      },
+      "help": {
+        "title": "O que esperar",
+        "items": [
+          {
+            "icon": "check",
+            "title": "O recurso certo",
+            "description": "Vamos direcionar sua pergunta para o lugar mais útil."
+          },
+          {
+            "icon": "map-pin",
+            "title": "Foco local",
+            "description": "Tudo é centrado no nordeste da Pensilvânia."
+          },
+          {
+            "icon": "document",
+            "title": "Sem pressão",
+            "description": "Escreva com suas dúvidas em qualquer etapa, sem compromisso."
+          }
+        ]
+      }
+    }
   }
 }

@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
+import { hasLocale } from "next-intl";
 import { routing, type Locale } from "@/i18n/routing";
 import { site } from "./site";
+
+/** Narrow a raw route param to a supported Locale, falling back to the default. */
+export function resolveLocale(locale: string): Locale {
+  return (hasLocale(routing.locales, locale)
+    ? locale
+    : routing.defaultLocale) as Locale;
+}
 
 /**
  * Build the canonical URL for a given locale + path.

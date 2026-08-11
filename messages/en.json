@@ -299,5 +299,710 @@
       "success": "Thanks! Please check your inbox to confirm your subscription.",
       "privacyNote": "We respect your privacy. Unsubscribe anytime. No spam."
     }
+  },
+  "propertySearchUi": {
+    "filters": "Filters",
+    "baths": "Baths",
+    "status": "Status",
+    "anyStatus": "Any status",
+    "minSqft": "Min sqft",
+    "lotSize": "Lot size",
+    "acres": "acres",
+    "reset": "Reset filters",
+    "saveSearch": "Save search",
+    "savedSearchSoon": "Saved searches arrive with user accounts in a later phase.",
+    "integrationNotice": "Results below are sample listings. Live IDX/MLS search is coming soon.",
+    "resultCount": "{count, plural, =0 {No sample listings} one {# sample listing} other {# sample listings}}",
+    "sortLabel": "Sort by",
+    "sort": {
+      "relevance": "Relevance",
+      "priceAsc": "Price: low to high",
+      "priceDesc": "Price: high to low",
+      "bedsDesc": "Most bedrooms"
+    },
+    "gridView": "Grid view",
+    "listView": "List view",
+    "mapLabel": "Map view",
+    "mapSoon": "Interactive map coming soon",
+    "noResults": "No sample listings match those filters."
+  },
+  "pages": {
+    "propertySearch": {
+      "metaTitle": "Property Search",
+      "metaDescription": "Search homes for sale across Northeastern Pennsylvania by location, price, beds, baths and type. Live MLS/IDX search is coming soon.",
+      "eyebrow": "Find a home",
+      "title": "Search homes across NEPA",
+      "intro": "Filter by location, price, bedrooms, property type and more. The interface below is ready for live MLS/IDX listings — for now it shows clearly-labeled sample homes."
+    },
+    "buy": {
+      "metaTitle": "Buying a Home in NEPA",
+      "metaDescription": "A clear guide to buying a home in Northeastern Pennsylvania: financing, the search, offers, inspections, appraisal and closing.",
+      "eyebrow": "For buyers",
+      "title": "Buying a Home in NEPA",
+      "intro": "From pre-approval to closing day, here's how buying a home works in Northeastern Pennsylvania — and how to get started.",
+      "ctaSearch": "Start your home search",
+      "ctaFirstTime": "First-time buyer guide",
+      "process": {
+        "eyebrow": "The process",
+        "title": "How the buying process works",
+        "intro": "Every purchase is a little different, but most follow the same core steps.",
+        "steps": [
+          {
+            "title": "Get pre-approved",
+            "description": "Talk with a lender to understand your budget and get a pre-approval letter before you shop."
+          },
+          {
+            "title": "Search for homes",
+            "description": "Define your criteria and tour homes that fit your needs and budget across NEPA."
+          },
+          {
+            "title": "Make an offer",
+            "description": "Work with your agent to submit a competitive, well-structured offer and negotiate terms."
+          },
+          {
+            "title": "Inspections",
+            "description": "Order a home inspection to understand the property's condition and any needed repairs."
+          },
+          {
+            "title": "Appraisal & underwriting",
+            "description": "Your lender verifies value and finalizes your loan approval."
+          },
+          {
+            "title": "Closing",
+            "description": "Sign your documents, fund the purchase and receive the keys to your new home."
+          }
+        ]
+      },
+      "financing": {
+        "title": "Financing your purchase",
+        "intro": "Understanding your financing early makes the whole process smoother.",
+        "calculatorCta": "Estimate a monthly payment",
+        "items": [
+          {
+            "icon": "calculator",
+            "title": "Budget & pre-approval",
+            "description": "Know what you can comfortably afford before you start touring homes."
+          },
+          {
+            "icon": "document",
+            "title": "Loan options",
+            "description": "Compare conventional, FHA, VA and other programs with a licensed lender."
+          },
+          {
+            "icon": "check",
+            "title": "Closing costs",
+            "description": "Plan for costs beyond the down payment, such as fees, taxes and insurance."
+          }
+        ]
+      },
+      "faqTitle": "Buyer FAQs",
+      "faqs": [
+        {
+          "q": "How much do I need for a down payment?",
+          "a": "It varies by loan program — some allow low down payments. A lender can explain the options you qualify for. This is general information, not a loan commitment."
+        },
+        {
+          "q": "Do I need a real estate agent to buy?",
+          "a": "You're not required to, but a buyer's agent can guide you through offers, negotiations and closing. You can find professionals on our Realtors page."
+        },
+        {
+          "q": "How long does buying a home take?",
+          "a": "From accepted offer to closing is commonly around 30–45 days, though timelines vary with financing and inspections."
+        },
+        {
+          "q": "Are the listings on this site real?",
+          "a": "Not yet. Listings shown are clearly-labeled samples. Live MLS/IDX listings will be added in a later phase."
+        }
+      ],
+      "cta": {
+        "title": "Ready to start your home search?",
+        "body": "Explore homes across NEPA or reach out with questions about buying."
+      }
+    },
+    "sell": {
+      "metaTitle": "Selling a Home in NEPA",
+      "metaDescription": "A guide to selling a home in Northeastern Pennsylvania: home value, preparation, pricing, marketing, offers, inspection and closing.",
+      "eyebrow": "For sellers",
+      "title": "Selling a Home in NEPA",
+      "intro": "Thinking about selling in Northeastern Pennsylvania? Here's how the process works and how to prepare for a successful sale.",
+      "ctaValuation": "Request a home valuation",
+      "valuationTool": {
+        "badge": "Coming soon",
+        "title": "What's my home worth?",
+        "body": "An online home-value tool is on the roadmap. In the meantime, request a personalized valuation and a local professional can help you understand your home's likely market range.",
+        "cta": "Request a valuation",
+        "disclaimer": "A home valuation is an estimate for informational purposes only — it is not an appraisal, an offer, or a guarantee of sale price. We do not claim automated valuation accuracy."
+      },
+      "process": {
+        "eyebrow": "The process",
+        "title": "How selling works",
+        "intro": "Preparing well and pricing right are the foundation of a strong sale.",
+        "steps": [
+          {
+            "title": "Understand your home value",
+            "description": "Review recent comparable sales and current conditions to set realistic expectations."
+          },
+          {
+            "title": "Prepare your property",
+            "description": "Handle repairs, decluttering and light updates that improve first impressions."
+          },
+          {
+            "title": "Pricing strategy",
+            "description": "Set a competitive price based on the local market, not guesswork."
+          },
+          {
+            "title": "Marketing",
+            "description": "Photography, listing exposure and outreach to bring qualified buyers."
+          },
+          {
+            "title": "Offers & negotiation",
+            "description": "Review offers and negotiate terms that work for your timeline and goals."
+          },
+          {
+            "title": "Inspection & appraisal",
+            "description": "Buyers typically inspect and finance, which may involve negotiation."
+          },
+          {
+            "title": "Closing",
+            "description": "Finalize paperwork, transfer ownership and complete the sale."
+          }
+        ]
+      },
+      "prep": {
+        "title": "Preparing your property",
+        "intro": "Small, focused improvements often make the biggest difference.",
+        "items": [
+          {
+            "icon": "check",
+            "title": "Declutter & clean",
+            "description": "Clean, neutral spaces help buyers picture themselves in the home."
+          },
+          {
+            "icon": "check",
+            "title": "Handle small repairs",
+            "description": "Address minor issues that can distract buyers or show up in inspections."
+          },
+          {
+            "icon": "check",
+            "title": "Boost curb appeal",
+            "description": "Tidy the exterior and entry — the first impression starts outside."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Thinking about selling?",
+        "body": "Request a personalized home valuation and get guidance for the NEPA market."
+      }
+    },
+    "invest": {
+      "metaTitle": "Invest in NEPA Real Estate",
+      "metaDescription": "Research real estate investment in Northeastern Pennsylvania: rentals, multifamily, fix & flip, buy & hold and out-of-state strategies. Educational only.",
+      "eyebrow": "For investors",
+      "title": "Invest in Northeastern Pennsylvania",
+      "intro": "NEPA draws investors for its relative affordability and steady rental demand. Research the strategies, tools and local data that inform smart decisions.",
+      "ctaExplore": "Explore properties",
+      "why": {
+        "eyebrow": "Why NEPA",
+        "title": "Why investors research NEPA",
+        "intro": "A few of the reasons investors look closely at the region.",
+        "items": [
+          {
+            "icon": "trend-up",
+            "title": "Relative affordability",
+            "description": "Entry prices are often lower than in nearby metros, which can support cash-flow strategies."
+          },
+          {
+            "icon": "map-pin",
+            "title": "Regional demand",
+            "description": "Colleges, healthcare and logistics employers contribute to ongoing rental demand."
+          },
+          {
+            "icon": "invest",
+            "title": "Variety of stock",
+            "description": "From single-family to small multifamily, the housing stock supports different strategies."
+          }
+        ]
+      },
+      "strategies": {
+        "title": "Common strategies",
+        "intro": "Different approaches suit different goals and risk tolerances.",
+        "items": [
+          {
+            "icon": "buy",
+            "title": "Rental properties",
+            "description": "Long-term rentals focused on steady, predictable cash flow."
+          },
+          {
+            "icon": "invest",
+            "title": "Multifamily",
+            "description": "Duplexes and small multi-unit buildings that spread risk across units."
+          },
+          {
+            "icon": "sell",
+            "title": "Fix & flip",
+            "description": "Renovating undervalued homes for resale, with careful cost control."
+          },
+          {
+            "icon": "check",
+            "title": "Buy & hold",
+            "description": "Longer-horizon ownership aimed at appreciation and equity over time."
+          },
+          {
+            "icon": "move",
+            "title": "Out-of-state investors",
+            "description": "Researching NEPA remotely with local partners and market data."
+          }
+        ]
+      },
+      "tools": {
+        "title": "Investment analysis tools",
+        "intro": "Interactive calculators are on the roadmap to help you run the numbers.",
+        "badge": "Coming soon",
+        "items": [
+          {
+            "title": "Cap Rate",
+            "description": "Net operating income relative to purchase price."
+          },
+          {
+            "title": "Cash-on-Cash Return",
+            "description": "Annual pre-tax cash flow relative to cash invested."
+          },
+          {
+            "title": "NOI",
+            "description": "Net operating income after operating expenses."
+          },
+          {
+            "title": "Estimated Cash Flow",
+            "description": "Projected monthly income after expenses and debt service."
+          }
+        ],
+        "disclaimer": "For educational purposes only. This is not financial, investment, tax or legal advice. Real estate involves risk and no returns are guaranteed. Consult qualified professionals before investing."
+      },
+      "research": {
+        "title": "Local market research",
+        "intro": "Ground your analysis in local data and neighborhood knowledge."
+      },
+      "cta": {
+        "title": "Research NEPA investment opportunities",
+        "body": "Explore properties and market data, or reach out to discuss your goals."
+      }
+    },
+    "marketReports": {
+      "metaTitle": "NEPA Market Reports",
+      "metaDescription": "Housing market reports for Northeastern Pennsylvania — median prices, inventory, days on market and more. Data integration coming soon.",
+      "eyebrow": "Market intelligence",
+      "title": "NEPA Market Reports",
+      "intro": "Track how the Northeastern Pennsylvania housing market is moving, city by city and month over month.",
+      "comingSoon": {
+        "badge": "Coming soon",
+        "title": "Market reports are on the way",
+        "body": "The reporting system that publishes regularly-updated, source-attributed market data is being built. Sign up or reach out to be notified when the first reports go live."
+      },
+      "metrics": {
+        "title": "What reports will cover",
+        "intro": "Each report is designed to track the metrics that matter most.",
+        "items": [
+          {
+            "icon": "trend-up",
+            "title": "Median sale price",
+            "description": "The midpoint of sale prices, tracked over time."
+          },
+          {
+            "icon": "document",
+            "title": "Active & new listings",
+            "description": "How much inventory is available and coming to market."
+          },
+          {
+            "icon": "check",
+            "title": "Pending & closed sales",
+            "description": "The pace of transactions across the region."
+          },
+          {
+            "icon": "calculator",
+            "title": "Days on market",
+            "description": "How quickly homes are selling."
+          },
+          {
+            "icon": "area",
+            "title": "Price per square foot",
+            "description": "A normalized view of pricing across home sizes."
+          },
+          {
+            "icon": "trend-up",
+            "title": "Sale-to-list & trends",
+            "description": "Month-over-month and year-over-year movement."
+          }
+        ]
+      },
+      "disclaimer": "Market metrics shown across the site are sample data for demonstration until the reporting system is connected to verified sources.",
+      "cta": {
+        "title": "Explore NEPA by the numbers",
+        "body": "Dig into the cities and investment resources while reports come online."
+      }
+    },
+    "nepaNews": {
+      "metaTitle": "NEPA Real Estate News",
+      "metaDescription": "Local real estate news for Northeastern Pennsylvania — developments, housing projects, zoning, infrastructure, taxes and mortgage updates.",
+      "eyebrow": "Local news",
+      "title": "NEPA Real Estate News",
+      "intro": "Real estate-relevant news and development across Northeastern Pennsylvania, from housing projects to policy and property taxes.",
+      "comingSoon": {
+        "badge": "Coming soon",
+        "title": "The newsroom is being built",
+        "body": "Our publication system for local, source-attributed real estate news is on the roadmap. Reach out to be notified when it launches."
+      },
+      "topics": {
+        "title": "What we'll cover",
+        "intro": "News focused on how the region is changing and what it means for housing.",
+        "items": [
+          {
+            "icon": "buy",
+            "title": "New developments",
+            "description": "Residential and mixed-use projects across the region."
+          },
+          {
+            "icon": "map-pin",
+            "title": "Commercial & infrastructure",
+            "description": "Investments that shape neighborhoods and commutes."
+          },
+          {
+            "icon": "document",
+            "title": "Zoning & policy",
+            "description": "Local decisions and Pennsylvania housing legislation."
+          },
+          {
+            "icon": "trend-up",
+            "title": "Major employers",
+            "description": "Employment shifts that influence housing demand."
+          },
+          {
+            "icon": "calculator",
+            "title": "Property taxes",
+            "description": "Updates that affect the cost of ownership."
+          },
+          {
+            "icon": "check",
+            "title": "Mortgage & rental trends",
+            "description": "Rate movement and rental-market changes."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Stay informed about NEPA",
+        "body": "Explore market reports and city guides in the meantime."
+      }
+    },
+    "mortgageCalculator": {
+      "metaTitle": "Mortgage Calculator",
+      "metaDescription": "Estimate a monthly mortgage payment for a NEPA home — principal, interest, taxes, insurance and HOA. Interactive calculator coming soon.",
+      "eyebrow": "Tools",
+      "title": "Mortgage Calculator",
+      "intro": "Estimate what a monthly payment might look like for a home in Northeastern Pennsylvania.",
+      "comingSoon": {
+        "badge": "Coming soon",
+        "title": "Interactive calculator on the way",
+        "body": "The full mortgage calculator is being built. It will let you enter a home price, down payment, term and rate to estimate a monthly payment."
+      },
+      "outputs": {
+        "title": "What it will estimate",
+        "intro": "A breakdown of the pieces that make up a typical monthly payment.",
+        "items": [
+          {
+            "icon": "calculator",
+            "title": "Principal & interest",
+            "description": "The core loan payment based on amount, rate and term."
+          },
+          {
+            "icon": "document",
+            "title": "Property taxes",
+            "description": "An estimate of monthly property tax costs."
+          },
+          {
+            "icon": "check",
+            "title": "Homeowners insurance",
+            "description": "An estimate of monthly insurance costs."
+          },
+          {
+            "icon": "buy",
+            "title": "HOA (if any)",
+            "description": "Optional homeowners-association dues."
+          },
+          {
+            "icon": "trend-up",
+            "title": "Estimated monthly payment",
+            "description": "The combined total of the pieces above."
+          }
+        ]
+      },
+      "disclaimer": "Estimates are for informational purposes only and are not a loan quote, pre-approval, or commitment to lend. Speak with a licensed lender for figures specific to you.",
+      "cta": {
+        "title": "Planning your purchase?",
+        "body": "Learn how buying works, or start browsing homes across NEPA."
+      }
+    },
+    "firstTimeBuyers": {
+      "metaTitle": "First-Time Home Buyers in NEPA",
+      "metaDescription": "A step-by-step first-time home buyer guide for Northeastern Pennsylvania — credit, pre-approval, down payment, loan programs, offers and closing.",
+      "eyebrow": "First-time buyers",
+      "title": "First-Time Home Buyers",
+      "intro": "Buying your first home can feel overwhelming. This guide walks through each step so you know what to expect in Northeastern Pennsylvania.",
+      "journey": {
+        "eyebrow": "Step by step",
+        "title": "Your first-home journey",
+        "intro": "A clear path from wondering \"can I buy?\" to holding the keys.",
+        "steps": [
+          {
+            "title": "Can I buy a home?",
+            "description": "Look at your income, savings and monthly budget to gauge readiness."
+          },
+          {
+            "title": "Understanding credit",
+            "description": "Learn how credit affects loan options and work on improving it if needed."
+          },
+          {
+            "title": "Pre-approval",
+            "description": "Get a lender's pre-approval to understand your price range."
+          },
+          {
+            "title": "Down payment",
+            "description": "Understand how much you'll need and explore assistance options."
+          },
+          {
+            "title": "Loan programs",
+            "description": "Compare programs that may fit first-time buyers with a licensed lender."
+          },
+          {
+            "title": "Searching for a home",
+            "description": "Define your must-haves and start touring homes that fit."
+          },
+          {
+            "title": "Making an offer",
+            "description": "Submit an offer and negotiate terms with your agent's guidance."
+          },
+          {
+            "title": "Inspection",
+            "description": "Learn the home's condition before you commit."
+          },
+          {
+            "title": "Appraisal",
+            "description": "Your lender confirms the home's value for the loan."
+          },
+          {
+            "title": "Closing costs",
+            "description": "Budget for the fees and costs due at closing."
+          },
+          {
+            "title": "Closing day",
+            "description": "Sign, fund and receive the keys to your first home."
+          },
+          {
+            "title": "After you buy",
+            "description": "Plan for maintenance, taxes and building equity over time."
+          }
+        ]
+      },
+      "disclaimer": "This guide is general educational information, not financial or legal advice. References to loan or assistance programs do not represent eligibility; a licensed lender must verify what you qualify for.",
+      "cta": {
+        "title": "Ready to take the first step?",
+        "body": "Start browsing homes or reach out with your questions."
+      }
+    },
+    "relocation": {
+      "metaTitle": "Moving to NEPA — Relocation Guide",
+      "metaDescription": "Relocating to Northeastern Pennsylvania? Explore communities, housing, transportation, healthcare, taxes, utilities and a moving checklist.",
+      "eyebrow": "Relocation",
+      "title": "Moving to Northeastern Pennsylvania",
+      "intro": "Everything you need to plan a move to NEPA — from communities and housing to commuting, utilities and a moving checklist.",
+      "topics": {
+        "eyebrow": "Plan your move",
+        "title": "Relocation topics",
+        "intro": "Neutral, practical information to help you plan with confidence.",
+        "items": [
+          {
+            "icon": "map-pin",
+            "title": "Explore NEPA",
+            "description": "Get oriented to the region's geography and layout."
+          },
+          {
+            "icon": "buy",
+            "title": "Cities & communities",
+            "description": "Compare communities using neutral, factual information."
+          },
+          {
+            "icon": "search",
+            "title": "Housing",
+            "description": "Understand the local housing options and price ranges."
+          },
+          {
+            "icon": "move",
+            "title": "Transportation & commuting",
+            "description": "Roads, transit and typical commute considerations."
+          },
+          {
+            "icon": "trend-up",
+            "title": "Employment areas",
+            "description": "Major employment sectors and centers in the region."
+          },
+          {
+            "icon": "check",
+            "title": "Healthcare",
+            "description": "An overview of regional healthcare resources."
+          },
+          {
+            "icon": "document",
+            "title": "Education resources",
+            "description": "Where to find official information about local schools."
+          },
+          {
+            "icon": "area",
+            "title": "Weather & seasons",
+            "description": "What to expect from the four-season climate."
+          },
+          {
+            "icon": "invest",
+            "title": "Recreation",
+            "description": "Parks, trails and outdoor recreation across NEPA."
+          },
+          {
+            "icon": "calculator",
+            "title": "Taxes",
+            "description": "An overview of Pennsylvania and local tax considerations."
+          },
+          {
+            "icon": "first-time",
+            "title": "Utilities",
+            "description": "Setting up essential services when you arrive."
+          },
+          {
+            "icon": "check",
+            "title": "Moving checklist",
+            "description": "A practical checklist to keep your move on track."
+          }
+        ]
+      },
+      "disclaimer": "Community information is provided as neutral, factual resources. We do not rank neighborhoods or schools or make subjective claims about who a community is \"best\" for. For school data, consult official state and district sources.",
+      "cta": {
+        "title": "Getting to know NEPA?",
+        "body": "Explore the cities and start your home search."
+      }
+    },
+    "realtors": {
+      "metaTitle": "Realtors Serving NEPA",
+      "metaDescription": "Discover real estate professionals serving Northeastern Pennsylvania. A searchable Realtor directory is coming soon.",
+      "eyebrow": "Find a professional",
+      "title": "Realtors Serving NEPA",
+      "intro": "Discover real estate professionals who serve Northeastern Pennsylvania. Real Estate in NEPA is an information platform, not a brokerage.",
+      "comingSoon": {
+        "badge": "Coming soon",
+        "title": "The Realtor directory is being built",
+        "body": "A searchable directory of professionals — with service areas, languages and specialties — is on the roadmap. Reach out and we can help point you in the right direction."
+      },
+      "features": {
+        "title": "What the directory will offer",
+        "intro": "Tools to help you find a professional who fits your needs.",
+        "items": [
+          {
+            "icon": "map-pin",
+            "title": "Service areas",
+            "description": "Find professionals who work in the cities you care about."
+          },
+          {
+            "icon": "search",
+            "title": "Languages",
+            "description": "Filter by professionals who speak English, Spanish or Portuguese."
+          },
+          {
+            "icon": "buy",
+            "title": "Specialties",
+            "description": "Buyer's agents, listing agents, investment, commercial and relocation."
+          },
+          {
+            "icon": "document",
+            "title": "Profiles",
+            "description": "Brokerage, experience, specialties and contact details."
+          },
+          {
+            "icon": "check",
+            "title": "Verified status",
+            "description": "Clear indicators of verified professional information."
+          },
+          {
+            "icon": "first-time",
+            "title": "Get matched",
+            "description": "Tell us what you need and we'll help connect you."
+          }
+        ]
+      },
+      "disclosure": "Professional listings and profiles do not constitute an endorsement or recommendation unless explicitly stated. Real Estate in NEPA is an independent information platform and is not a licensed brokerage.",
+      "cta": {
+        "title": "Looking for a professional?",
+        "body": "Tell us what you need and we'll help you find the right resource."
+      }
+    },
+    "cities": {
+      "metaTitle": "NEPA Cities & Communities",
+      "metaDescription": "Explore real estate in Northeastern Pennsylvania city by city — Wilkes-Barre, Scranton, Pittston, Kingston, Dallas, Hazleton and more.",
+      "eyebrow": "Explore NEPA",
+      "title": "NEPA Cities & Communities",
+      "intro": "Explore Northeastern Pennsylvania community by community. Each city page will grow into a local hub for homes, market data and resources.",
+      "cta": {
+        "title": "Find your place in NEPA",
+        "body": "Search homes across these communities or plan your move."
+      }
+    },
+    "contact": {
+      "metaTitle": "Contact",
+      "metaDescription": "Get in touch with Real Estate in NEPA. Tell us whether you're buying, selling, investing, relocating or need a Realtor in Northeastern Pennsylvania.",
+      "eyebrow": "Get in touch",
+      "title": "Contact Real Estate in NEPA",
+      "intro": "Tell us how we can help and we'll point you to the right resource. We only ask for what we need to follow up.",
+      "form": {
+        "categoryLabel": "How can we help?",
+        "categories": {
+          "buy": "I want to buy",
+          "sell": "I want to sell",
+          "invest": "I want to invest",
+          "relocate": "I'm relocating",
+          "realtor": "I need a Realtor",
+          "general": "General question"
+        },
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "optional": "(optional)",
+        "area": "City / area",
+        "areaAny": "Any / not sure",
+        "areaOther": "Other",
+        "language": "Preferred language",
+        "preference": "Contact preference",
+        "prefEmail": "Email",
+        "prefPhone": "Phone",
+        "message": "Message",
+        "submit": "Send message",
+        "privacy": "We respect your privacy and will only use your details to respond to your inquiry.",
+        "successTitle": "Thank you — your message is on its way",
+        "successBody": "This is a demo form; message routing to a CRM will be connected in a later phase. We appreciate your patience."
+      },
+      "help": {
+        "title": "What to expect",
+        "items": [
+          {
+            "icon": "check",
+            "title": "The right resource",
+            "description": "We'll direct your question to the most helpful place."
+          },
+          {
+            "icon": "map-pin",
+            "title": "Local focus",
+            "description": "Everything is centered on Northeastern Pennsylvania."
+          },
+          {
+            "icon": "document",
+            "title": "No pressure",
+            "description": "Reach out with questions at any stage — no obligation."
+          }
+        ]
+      }
+    }
   }
 }
