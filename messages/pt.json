@@ -805,7 +805,95 @@
       "cta": {
         "title": "Pronto para dar o primeiro passo?",
         "body": "Comece a explorar casas ou escreva com suas perguntas."
-      }
+      },
+      "readiness": {
+        "eyebrow": "Para começar",
+        "title": "Posso comprar uma casa?",
+        "intro": "Antes de começar a visitar casas, vale a pena revisar alguns pontos básicos. São orientações gerais, não requisitos.",
+        "items": [
+          {
+            "icon": "trend-up",
+            "title": "Renda estável",
+            "description": "Os credores avaliam a renda e a estabilidade no emprego para estimar quanto você pode financiar."
+          },
+          {
+            "icon": "check",
+            "title": "Poupança",
+            "description": "Você precisará de recursos para a entrada e os custos de fechamento, além de uma reserva."
+          },
+          {
+            "icon": "calculator",
+            "title": "Um orçamento mensal",
+            "description": "Saiba um pagamento mensal confortável antes de procurar — experimente a calculadora de financiamento."
+          },
+          {
+            "icon": "document",
+            "title": "Atenção ao crédito",
+            "description": "Entender o seu crédito ajuda a ver quais opções de financiamento podem servir."
+          }
+        ]
+      },
+      "credit": {
+        "title": "Entender o crédito",
+        "intro": "O seu crédito afeta as opções de financiamento e as taxas disponíveis. Alguns hábitos ajudam com o tempo.",
+        "items": [
+          "Verifique o seu relatório de crédito em busca de erros e conteste o que estiver incorreto.",
+          "Pague as contas em dia — o histórico de pagamentos é um fator importante.",
+          "Mantenha os saldos do cartão de crédito baixos em relação aos limites.",
+          "Evite abrir crédito novo ou fazer compras grandes logo antes de solicitar."
+        ]
+      },
+      "programs": {
+        "title": "Programas de financiamento para conhecer",
+        "intro": "Compradores de primeira viagem costumam explorar esses tipos de programas com um credor licenciado. A disponibilidade e os termos variam.",
+        "note": "Estas são referências gerais apenas e não representam uma oferta nem uma determinação de elegibilidade. Um credor licenciado ou o órgão competente deve verificar para o que você se qualifica.",
+        "items": [
+          {
+            "icon": "document",
+            "title": "Financiamentos convencionais",
+            "description": "Financiamentos comuns não garantidos por um órgão do governo; os termos variam conforme o credor."
+          },
+          {
+            "icon": "check",
+            "title": "Financiamentos FHA",
+            "description": "Financiamentos garantidos pelo governo que podem permitir entradas menores para compradores elegíveis."
+          },
+          {
+            "icon": "first-time",
+            "title": "Financiamentos VA",
+            "description": "Para veteranos e militares elegíveis, muitas vezes com termos favoráveis."
+          },
+          {
+            "icon": "map-pin",
+            "title": "Financiamentos USDA",
+            "description": "Para compradores elegíveis em áreas rurais qualificadas."
+          },
+          {
+            "icon": "buy",
+            "title": "Programas da PA para primeira compra",
+            "description": "A Pensilvânia oferece programas para compradores de primeira viagem elegíveis — pergunte a um credor ou à PHFA."
+          }
+        ]
+      },
+      "faqTitle": "Perguntas frequentes da primeira compra",
+      "faqs": [
+        {
+          "q": "Quanto preciso para a entrada?",
+          "a": "Depende do programa de financiamento; alguns permitem entradas menores. Um credor pode explicar para o que você se qualifica. Isto é informação geral, não um compromisso de financiamento."
+        },
+        {
+          "q": "De que pontuação de crédito eu preciso?",
+          "a": "Os requisitos variam conforme o programa e o credor. Entender e melhorar o seu crédito amplia as suas opções; um credor pode analisar a sua situação específica."
+        },
+        {
+          "q": "Quanto são os custos de fechamento?",
+          "a": "Os custos de fechamento variam, mas costumam ser uma pequena porcentagem do preço de compra. O seu credor fornecerá estimativas específicas para o seu financiamento."
+        },
+        {
+          "q": "Os programas de primeira compra garantem que eu vou me qualificar?",
+          "a": "Não. As referências a programas aqui são apenas educativas. A elegibilidade é sempre determinada pelo credor ou órgão, não por este site."
+        }
+      ]
     },
     "relocation": {
       "metaTitle": "Mudar para NEPA — Guia de Mudança",
@@ -813,15 +901,20 @@
       "eyebrow": "Mudança",
       "title": "Mudar para o Nordeste da Pensilvânia",
       "intro": "Tudo o que você precisa para planejar uma mudança para NEPA: de comunidades e moradia a deslocamento, serviços e uma lista de verificação.",
-      "topics": {
-        "eyebrow": "Planeje sua mudança",
-        "title": "Temas da mudança",
-        "intro": "Informação neutra e prática para você planejar com confiança.",
+      "disclaimer": "As informações sobre as comunidades são fornecidas como recursos neutros e objetivos. Não classificamos bairros ou escolas, nem fazemos afirmações subjetivas sobre para quem uma comunidade é \"melhor\". Para dados de escolas, consulte fontes oficiais do estado e do distrito.",
+      "cta": {
+        "title": "Conhecendo NEPA?",
+        "body": "Explore as cidades e comece sua busca por uma casa."
+      },
+      "explore": {
+        "eyebrow": "Conhecer NEPA",
+        "title": "Explore o nordeste da Pensilvânia",
+        "intro": "Comece pela visão geral — as comunidades, a moradia e a vida cotidiana da região.",
         "items": [
           {
             "icon": "map-pin",
             "title": "Explore NEPA",
-            "description": "Situe-se na geografia e na organização da região."
+            "description": "Situe-se na geografia, nos vales e na organização da região."
           },
           {
             "icon": "buy",
@@ -831,59 +924,104 @@
           {
             "icon": "search",
             "title": "Moradia",
-            "description": "Entenda as opções de moradia locais e as faixas de preço."
-          },
-          {
-            "icon": "move",
-            "title": "Transporte e deslocamento",
-            "description": "Rodovias, transporte e considerações típicas de deslocamento."
-          },
-          {
-            "icon": "trend-up",
-            "title": "Áreas de emprego",
-            "description": "Os principais setores e centros de emprego da região."
-          },
-          {
-            "icon": "check",
-            "title": "Saúde",
-            "description": "Um panorama dos recursos de saúde regionais."
-          },
-          {
-            "icon": "document",
-            "title": "Recursos educacionais",
-            "description": "Onde encontrar informações oficiais sobre as escolas locais."
-          },
-          {
-            "icon": "area",
-            "title": "Clima e estações",
-            "description": "O que esperar do clima de quatro estações."
+            "description": "Entenda as opções de moradia locais e as faixas de preço típicas."
           },
           {
             "icon": "invest",
             "title": "Lazer",
-            "description": "Parques, trilhas e lazer ao ar livre em NEPA."
+            "description": "Parques, trilhas, rios e atividades ao ar livre o ano todo."
+          },
+          {
+            "icon": "area",
+            "title": "Clima e estações",
+            "description": "Um clima de quatro estações, com verões quentes e invernos com neve."
+          },
+          {
+            "icon": "document",
+            "title": "Compras e essenciais",
+            "description": "Comércio regional, supermercados e serviços do dia a dia."
+          }
+        ]
+      },
+      "practical": {
+        "title": "Vida diária e logística",
+        "intro": "Os detalhes práticos que moldam o dia a dia depois da mudança.",
+        "items": [
+          {
+            "icon": "move",
+            "title": "Transporte",
+            "description": "Rodovias principais como a I-81 e a I-476 conectam a região."
+          },
+          {
+            "icon": "trend-up",
+            "title": "Deslocamento",
+            "description": "Trajetos típicos entre as comunidades de NEPA e os polos de emprego."
+          },
+          {
+            "icon": "map-pin",
+            "title": "Aeroportos regionais",
+            "description": "O Wilkes-Barre/Scranton International atende a região."
+          },
+          {
+            "icon": "invest",
+            "title": "Áreas de emprego",
+            "description": "Saúde, educação, logística e manufatura estão entre os setores da região."
+          },
+          {
+            "icon": "check",
+            "title": "Saúde",
+            "description": "Um panorama dos hospitais e sistemas de saúde regionais."
+          },
+          {
+            "icon": "document",
+            "title": "Recursos educacionais",
+            "description": "Onde encontrar informações oficiais sobre escolas e faculdades locais."
           },
           {
             "icon": "calculator",
-            "title": "Impostos",
-            "description": "Um panorama das considerações tributárias da Pensilvânia e locais."
+            "title": "Impostos da Pensilvânia",
+            "description": "Um panorama das considerações tributárias estaduais e locais."
           },
           {
             "icon": "first-time",
             "title": "Serviços",
-            "description": "Como ativar os serviços essenciais ao chegar."
-          },
-          {
-            "icon": "check",
-            "title": "Lista de mudança",
-            "description": "Uma lista prática para manter sua mudança em ordem."
+            "description": "Ativar energia, gás, água, internet e coleta de lixo."
           }
         ]
       },
-      "disclaimer": "As informações sobre as comunidades são fornecidas como recursos neutros e objetivos. Não classificamos bairros ou escolas, nem fazemos afirmações subjetivas sobre para quem uma comunidade é \"melhor\". Para dados de escolas, consulte fontes oficiais do estado e do distrito.",
-      "cta": {
-        "title": "Conhecendo NEPA?",
-        "body": "Explore as cidades e comece sua busca por uma casa."
+      "cities": {
+        "title": "Explore os guias de cidades de NEPA",
+        "intro": "Mergulhe em cada comunidade — cada guia cobre moradia, panorama do mercado e recursos locais."
+      },
+      "checklist": {
+        "title": "Lista da mudança",
+        "intro": "Uma sequência prática para manter a sua mudança em ordem.",
+        "items": [
+          {
+            "title": "Pesquise comunidades",
+            "description": "Compare cidades e bairros de NEPA com recursos neutros e guias de cidades."
+          },
+          {
+            "title": "Defina um orçamento de moradia",
+            "description": "Estime um pagamento mensal ou aluguel confortável antes de se comprometer."
+          },
+          {
+            "title": "Garanta a moradia",
+            "description": "Comece uma busca por casa ou organize um aluguel na sua área-alvo."
+          },
+          {
+            "title": "Planeje a logística",
+            "description": "Contrate a mudança, transfira registros e agende folgas conforme necessário."
+          },
+          {
+            "title": "Ative serviços",
+            "description": "Organize energia, gás, água, internet e lixo antes de se mudar."
+          },
+          {
+            "title": "Atualize seus dados",
+            "description": "Mude o seu endereço, registre veículos e atualize suas contas principais."
+          }
+        ]
       }
     },
     "realtors": {

@@ -805,7 +805,95 @@
       "cta": {
         "title": "Ready to take the first step?",
         "body": "Start browsing homes or reach out with your questions."
-      }
+      },
+      "readiness": {
+        "eyebrow": "Getting started",
+        "title": "Can I buy a home?",
+        "intro": "Before you start touring homes, it helps to take stock of a few basics. These are general guideposts, not requirements.",
+        "items": [
+          {
+            "icon": "trend-up",
+            "title": "Steady income",
+            "description": "Lenders look at income and employment stability to gauge what you can borrow."
+          },
+          {
+            "icon": "check",
+            "title": "Savings",
+            "description": "You'll need funds for a down payment and closing costs, plus a cushion."
+          },
+          {
+            "icon": "calculator",
+            "title": "A monthly budget",
+            "description": "Know a comfortable monthly payment before you shop — try the mortgage calculator."
+          },
+          {
+            "icon": "document",
+            "title": "Credit awareness",
+            "description": "Understanding your credit helps you see which loan options may fit."
+          }
+        ]
+      },
+      "credit": {
+        "title": "Understanding credit",
+        "intro": "Your credit affects the loan options and rates available to you. A few habits can help over time.",
+        "items": [
+          "Check your credit report for errors and dispute anything inaccurate.",
+          "Pay bills on time — payment history is a major factor.",
+          "Keep credit-card balances low relative to your limits.",
+          "Avoid opening new credit or making large purchases right before applying."
+        ]
+      },
+      "programs": {
+        "title": "Loan programs to learn about",
+        "intro": "First-time buyers often explore these program types with a licensed lender. Availability and terms vary.",
+        "note": "These are general references only and do not represent an offer or a determination of eligibility. A licensed lender or the relevant agency must verify what you qualify for.",
+        "items": [
+          {
+            "icon": "document",
+            "title": "Conventional loans",
+            "description": "Common loans not backed by a government agency; terms vary by lender."
+          },
+          {
+            "icon": "check",
+            "title": "FHA loans",
+            "description": "Government-insured loans that can allow lower down payments for eligible buyers."
+          },
+          {
+            "icon": "first-time",
+            "title": "VA loans",
+            "description": "For eligible veterans and service members, often with favorable terms."
+          },
+          {
+            "icon": "map-pin",
+            "title": "USDA loans",
+            "description": "For eligible buyers in qualifying rural areas."
+          },
+          {
+            "icon": "buy",
+            "title": "PA first-time programs",
+            "description": "Pennsylvania offers programs for eligible first-time buyers — ask a lender or PHFA."
+          }
+        ]
+      },
+      "faqTitle": "First-time buyer FAQs",
+      "faqs": [
+        {
+          "q": "How much do I need for a down payment?",
+          "a": "It depends on the loan program — some allow lower down payments. A lender can explain what you qualify for. This is general information, not a loan commitment."
+        },
+        {
+          "q": "What credit score do I need?",
+          "a": "Requirements vary by loan program and lender. Understanding and improving your credit widens your options; a lender can review your specific situation."
+        },
+        {
+          "q": "How much are closing costs?",
+          "a": "Closing costs vary but are commonly a few percent of the purchase price. Your lender will provide estimates specific to your loan."
+        },
+        {
+          "q": "Do first-time buyer programs guarantee I'll qualify?",
+          "a": "No. Program references here are educational only. Eligibility is always determined by the lender or agency, not by this site."
+        }
+      ]
     },
     "relocation": {
       "metaTitle": "Moving to NEPA — Relocation Guide",
@@ -813,15 +901,20 @@
       "eyebrow": "Relocation",
       "title": "Moving to Northeastern Pennsylvania",
       "intro": "Everything you need to plan a move to NEPA — from communities and housing to commuting, utilities and a moving checklist.",
-      "topics": {
-        "eyebrow": "Plan your move",
-        "title": "Relocation topics",
-        "intro": "Neutral, practical information to help you plan with confidence.",
+      "disclaimer": "Community information is provided as neutral, factual resources. We do not rank neighborhoods or schools or make subjective claims about who a community is \"best\" for. For school data, consult official state and district sources.",
+      "cta": {
+        "title": "Getting to know NEPA?",
+        "body": "Explore the cities and start your home search."
+      },
+      "explore": {
+        "eyebrow": "Getting to know NEPA",
+        "title": "Explore Northeastern Pennsylvania",
+        "intro": "Start with the big picture — the region's communities, housing and everyday life.",
         "items": [
           {
             "icon": "map-pin",
             "title": "Explore NEPA",
-            "description": "Get oriented to the region's geography and layout."
+            "description": "Get oriented to the region's geography, valleys and layout."
           },
           {
             "icon": "buy",
@@ -831,59 +924,104 @@
           {
             "icon": "search",
             "title": "Housing",
-            "description": "Understand the local housing options and price ranges."
-          },
-          {
-            "icon": "move",
-            "title": "Transportation & commuting",
-            "description": "Roads, transit and typical commute considerations."
-          },
-          {
-            "icon": "trend-up",
-            "title": "Employment areas",
-            "description": "Major employment sectors and centers in the region."
-          },
-          {
-            "icon": "check",
-            "title": "Healthcare",
-            "description": "An overview of regional healthcare resources."
-          },
-          {
-            "icon": "document",
-            "title": "Education resources",
-            "description": "Where to find official information about local schools."
-          },
-          {
-            "icon": "area",
-            "title": "Weather & seasons",
-            "description": "What to expect from the four-season climate."
+            "description": "Understand the local housing options and typical price ranges."
           },
           {
             "icon": "invest",
             "title": "Recreation",
-            "description": "Parks, trails and outdoor recreation across NEPA."
+            "description": "Parks, trails, rivers and year-round outdoor activities."
+          },
+          {
+            "icon": "area",
+            "title": "Weather & seasons",
+            "description": "A four-season climate with warm summers and snowy winters."
+          },
+          {
+            "icon": "document",
+            "title": "Shopping & essentials",
+            "description": "Regional retail, groceries and everyday services."
+          }
+        ]
+      },
+      "practical": {
+        "title": "Daily life & logistics",
+        "intro": "The practical details that shape day-to-day life after a move.",
+        "items": [
+          {
+            "icon": "move",
+            "title": "Transportation",
+            "description": "Major highways including I-81 and I-476 connect the region."
+          },
+          {
+            "icon": "trend-up",
+            "title": "Commuting",
+            "description": "Typical commutes between NEPA communities and job centers."
+          },
+          {
+            "icon": "map-pin",
+            "title": "Regional airports",
+            "description": "Wilkes-Barre/Scranton International serves the area."
+          },
+          {
+            "icon": "invest",
+            "title": "Employment areas",
+            "description": "Healthcare, education, logistics and manufacturing are among the region's sectors."
+          },
+          {
+            "icon": "check",
+            "title": "Healthcare",
+            "description": "An overview of regional hospitals and healthcare systems."
+          },
+          {
+            "icon": "document",
+            "title": "Education resources",
+            "description": "Where to find official information about local schools and colleges."
           },
           {
             "icon": "calculator",
-            "title": "Taxes",
-            "description": "An overview of Pennsylvania and local tax considerations."
+            "title": "Pennsylvania taxes",
+            "description": "An overview of state and local tax considerations."
           },
           {
             "icon": "first-time",
             "title": "Utilities",
-            "description": "Setting up essential services when you arrive."
-          },
-          {
-            "icon": "check",
-            "title": "Moving checklist",
-            "description": "A practical checklist to keep your move on track."
+            "description": "Setting up electric, gas, water, internet and trash service."
           }
         ]
       },
-      "disclaimer": "Community information is provided as neutral, factual resources. We do not rank neighborhoods or schools or make subjective claims about who a community is \"best\" for. For school data, consult official state and district sources.",
-      "cta": {
-        "title": "Getting to know NEPA?",
-        "body": "Explore the cities and start your home search."
+      "cities": {
+        "title": "Explore NEPA city guides",
+        "intro": "Dive into individual communities — each guide covers housing, market snapshots and local resources."
+      },
+      "checklist": {
+        "title": "Moving checklist",
+        "intro": "A practical sequence to keep your move on track.",
+        "items": [
+          {
+            "title": "Research communities",
+            "description": "Compare NEPA cities and neighborhoods using neutral resources and city guides."
+          },
+          {
+            "title": "Set a housing budget",
+            "description": "Estimate a comfortable monthly payment or rent before you commit."
+          },
+          {
+            "title": "Line up housing",
+            "description": "Start a home search or arrange a rental in your target area."
+          },
+          {
+            "title": "Plan the logistics",
+            "description": "Book movers, transfer records and schedule time off as needed."
+          },
+          {
+            "title": "Set up utilities & services",
+            "description": "Arrange electric, gas, water, internet and trash ahead of move-in."
+          },
+          {
+            "title": "Update your details",
+            "description": "Change your address, register vehicles and update key accounts."
+          }
+        ]
       }
     },
     "realtors": {
