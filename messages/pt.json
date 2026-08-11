@@ -1123,5 +1123,70 @@
       "title": "Pronto para explorar os imóveis de NEPA?",
       "body": "Busque casas em toda a região ou entre em contato com dúvidas."
     }
+  },
+  "calculators": {
+    "mortgage": {
+      "inputs": {
+        "homePrice": "Preço da casa",
+        "downPayment": "Entrada",
+        "downPaymentHelp": "{pct}% do preço da casa",
+        "loanTerm": "Prazo do financiamento",
+        "years": "{years} anos",
+        "interestRate": "Taxa de juros",
+        "propertyTax": "Imposto sobre a propriedade",
+        "homeInsurance": "Seguro residencial",
+        "hoa": "Taxas de HOA",
+        "perYear": "/ano",
+        "perMonth": "/mês"
+      },
+      "results": {
+        "total": "Pagamento mensal estimado",
+        "breakdownLabel": "Detalhamento do pagamento",
+        "principalInterest": "Principal e juros",
+        "propertyTax": "Imposto sobre a propriedade",
+        "homeInsurance": "Seguro residencial",
+        "hoa": "Taxas de HOA",
+        "loanAmount": "Valor do financiamento",
+        "downPaymentPercent": "Entrada"
+      },
+      "reset": "Restaurar padrões",
+      "disclaimer": "As estimativas são apenas para fins informativos e não são uma cotação de financiamento, uma pré-aprovação ou um compromisso de crédito. Confirme os valores com um credor licenciado."
+    },
+    "tools": {
+      "title": "Mais ferramentas",
+      "intro": "Mais calculadoras estão a caminho para ajudar você a planejar cada etapa.",
+      "comingSoon": "Em breve",
+      "open": "Abrir calculadora",
+      "items": {
+        "mortgage": {
+          "name": "Calculadora de Financiamento",
+          "description": "Estime o seu pagamento mensal do financiamento."
+        },
+        "affordability": {
+          "name": "Calculadora de Capacidade de Compra",
+          "description": "Estime quanto de casa você pode pagar."
+        },
+        "closingCost": {
+          "name": "Calculadora de Custos de Fechamento",
+          "description": "Estime os custos devidos no fechamento."
+        },
+        "investment": {
+          "name": "Calculadora de Investimento",
+          "description": "Analise um imóvel de aluguel ou investimento."
+        },
+        "capRate": {
+          "name": "Calculadora de Taxa de Capitalização",
+          "description": "Estime a taxa de capitalização a partir da receita e do preço."
+        },
+        "rentalCashFlow": {
+          "name": "Calculadora de Fluxo de Caixa de Aluguel",
+          "description": "Estime o fluxo de caixa mensal de um aluguel."
+        },
+        "netProceeds": {
+          "name": "Ganho Líquido da Venda",
+          "description": "Estime quanto você fica após vender."
+        }
+      }
+    }
   }
 }

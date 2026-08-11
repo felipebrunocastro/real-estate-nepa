@@ -1123,5 +1123,70 @@
       "title": "¿Listo para explorar los bienes raíces de NEPA?",
       "body": "Busca casas en toda la región o escríbenos con tus preguntas."
     }
+  },
+  "calculators": {
+    "mortgage": {
+      "inputs": {
+        "homePrice": "Precio de la casa",
+        "downPayment": "Enganche",
+        "downPaymentHelp": "{pct}% del precio de la casa",
+        "loanTerm": "Plazo del préstamo",
+        "years": "{years} años",
+        "interestRate": "Tasa de interés",
+        "propertyTax": "Impuesto a la propiedad",
+        "homeInsurance": "Seguro de vivienda",
+        "hoa": "Cuotas de HOA",
+        "perYear": "/año",
+        "perMonth": "/mes"
+      },
+      "results": {
+        "total": "Pago mensual estimado",
+        "breakdownLabel": "Desglose del pago",
+        "principalInterest": "Capital e interés",
+        "propertyTax": "Impuesto a la propiedad",
+        "homeInsurance": "Seguro de vivienda",
+        "hoa": "Cuotas de HOA",
+        "loanAmount": "Monto del préstamo",
+        "downPaymentPercent": "Enganche"
+      },
+      "reset": "Restablecer valores",
+      "disclaimer": "Las estimaciones son solo con fines informativos y no son una cotización de préstamo, una preaprobación ni un compromiso de préstamo. Confirma las cifras con un prestamista con licencia."
+    },
+    "tools": {
+      "title": "Más herramientas",
+      "intro": "Más calculadoras están en camino para ayudarte a planear cada paso.",
+      "comingSoon": "Próximamente",
+      "open": "Abrir calculadora",
+      "items": {
+        "mortgage": {
+          "name": "Calculadora Hipotecaria",
+          "description": "Estima tu pago hipotecario mensual."
+        },
+        "affordability": {
+          "name": "Calculadora de Capacidad de Compra",
+          "description": "Estima cuánta casa podrías pagar."
+        },
+        "closingCost": {
+          "name": "Calculadora de Costos de Cierre",
+          "description": "Estima los costos que se pagan en el cierre."
+        },
+        "investment": {
+          "name": "Calculadora de Inversión",
+          "description": "Analiza una propiedad de renta o inversión."
+        },
+        "capRate": {
+          "name": "Calculadora de Tasa de Capitalización",
+          "description": "Estima la tasa de capitalización según ingresos y precio."
+        },
+        "rentalCashFlow": {
+          "name": "Calculadora de Flujo de Renta",
+          "description": "Estima el flujo de efectivo mensual de una renta."
+        },
+        "netProceeds": {
+          "name": "Ganancia Neta de Venta",
+          "description": "Estima cuánto te queda después de vender."
+        }
+      }
+    }
   }
 }

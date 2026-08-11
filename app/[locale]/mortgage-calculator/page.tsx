@@ -3,10 +3,9 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildMetadata, resolveLocale } from "@/lib/seo";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { ContentSection } from "@/components/content/ContentSection";
-import { FeatureGrid, type Feature } from "@/components/content/FeatureGrid";
-import { Callout } from "@/components/content/Callout";
-import { Disclaimer } from "@/components/content/Disclaimer";
 import { CtaBanner } from "@/components/content/CtaBanner";
+import { MortgageCalculator } from "@/components/calculators/MortgageCalculator";
+import { ToolsGrid } from "@/components/calculators/ToolsGrid";
 
 export async function generateMetadata({
   params,
@@ -32,9 +31,8 @@ export default async function MortgageCalculatorPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "pages.mortgageCalculator" });
+  const tc = await getTranslations({ locale, namespace: "calculators" });
   const tn = await getTranslations({ locale, namespace: "nav" });
-
-  const outputs = t.raw("outputs.items") as Feature[];
 
   return (
     <>
@@ -46,21 +44,11 @@ export default async function MortgageCalculatorPage({
       />
 
       <ContentSection>
-        <Callout
-          icon="calculator"
-          badge={t("comingSoon.badge")}
-          title={t("comingSoon.title")}
-          body={t("comingSoon.body")}
-          ctaLabel={tn("links.firstTimeBuyers")}
-          ctaHref="/first-time-buyers"
-        />
+        <MortgageCalculator />
       </ContentSection>
 
-      <ContentSection bordered title={t("outputs.title")} intro={t("outputs.intro")}>
-        <FeatureGrid items={outputs} columns={3} />
-        <div className="mt-6">
-          <Disclaimer>{t("disclaimer")}</Disclaimer>
-        </div>
+      <ContentSection bordered title={tc("tools.title")} intro={tc("tools.intro")}>
+        <ToolsGrid exclude="mortgage" />
       </ContentSection>
 
       <CtaBanner

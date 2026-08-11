@@ -1123,5 +1123,70 @@
       "title": "Ready to explore NEPA real estate?",
       "body": "Search homes across the region or get in touch with questions."
     }
+  },
+  "calculators": {
+    "mortgage": {
+      "inputs": {
+        "homePrice": "Home price",
+        "downPayment": "Down payment",
+        "downPaymentHelp": "{pct}% of home price",
+        "loanTerm": "Loan term",
+        "years": "{years} years",
+        "interestRate": "Interest rate",
+        "propertyTax": "Property tax",
+        "homeInsurance": "Homeowners insurance",
+        "hoa": "HOA dues",
+        "perYear": "/yr",
+        "perMonth": "/mo"
+      },
+      "results": {
+        "total": "Estimated monthly payment",
+        "breakdownLabel": "Payment breakdown",
+        "principalInterest": "Principal & interest",
+        "propertyTax": "Property tax",
+        "homeInsurance": "Homeowners insurance",
+        "hoa": "HOA dues",
+        "loanAmount": "Loan amount",
+        "downPaymentPercent": "Down payment"
+      },
+      "reset": "Reset to defaults",
+      "disclaimer": "Estimates are for informational purposes only and are not a loan quote, pre-approval, or commitment to lend. Confirm figures with a licensed lender."
+    },
+    "tools": {
+      "title": "More tools",
+      "intro": "More calculators are on the way to help you plan every step.",
+      "comingSoon": "Coming soon",
+      "open": "Open calculator",
+      "items": {
+        "mortgage": {
+          "name": "Mortgage Calculator",
+          "description": "Estimate your monthly mortgage payment."
+        },
+        "affordability": {
+          "name": "Affordability Calculator",
+          "description": "Estimate how much home you may be able to afford."
+        },
+        "closingCost": {
+          "name": "Closing Cost Calculator",
+          "description": "Estimate the costs due at closing."
+        },
+        "investment": {
+          "name": "Investment Calculator",
+          "description": "Analyze a rental or investment property."
+        },
+        "capRate": {
+          "name": "Cap Rate Calculator",
+          "description": "Estimate capitalization rate from income and price."
+        },
+        "rentalCashFlow": {
+          "name": "Rental Cash Flow Calculator",
+          "description": "Estimate monthly cash flow on a rental."
+        },
+        "netProceeds": {
+          "name": "Home Sale Net Proceeds",
+          "description": "Estimate what you keep after selling."
+        }
+      }
+    }
   }
 }
