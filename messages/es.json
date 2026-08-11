@@ -1089,5 +1089,39 @@
       "title": "Encuentra tu lugar en {city}",
       "body": "Busca casas en {city} o escríbenos con tus preguntas sobre la zona."
     }
+  },
+  "publication": {
+    "sampleData": "Datos de Muestra",
+    "sampleBanner": "Estos son artículos de demostración, no reportajes reales; las cifras mostradas son ilustrativas.",
+    "readMore": "Leer más",
+    "filterCategory": "Categoría",
+    "allCategories": "Todas las categorías",
+    "filterCity": "Ciudad",
+    "allCities": "Todas las ciudades",
+    "resultCount": "{count, plural, =0 {Ningún artículo} one {# artículo} other {# artículos}}",
+    "noResults": "Ningún artículo coincide con esos filtros.",
+    "clearFilters": "Limpiar filtros",
+    "byLabel": "Por {author}",
+    "publishedLabel": "Publicado",
+    "updatedLabel": "Actualizado",
+    "sourcesLabel": "Fuentes",
+    "relatedLabel": "Artículos relacionados",
+    "backTo": "Volver a {section}",
+    "categories": {
+      "market-report": "Informe del Mercado",
+      "housing-news": "Noticias de Vivienda",
+      "mortgage": "Hipotecas",
+      "buying": "Compra",
+      "selling": "Venta",
+      "investing": "Inversión",
+      "relocation": "Mudanza",
+      "cities": "Ciudades",
+      "policy": "Políticas",
+      "development": "Desarrollo"
+    },
+    "cta": {
+      "title": "¿Listo para explorar los bienes raíces de NEPA?",
+      "body": "Busca casas en toda la región o escríbenos con tus preguntas."
+    }
   }
 }

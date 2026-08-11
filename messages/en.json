@@ -1089,5 +1089,39 @@
       "title": "Find your place in {city}",
       "body": "Search homes in {city} or reach out with questions about the area."
     }
+  },
+  "publication": {
+    "sampleData": "Sample Data",
+    "sampleBanner": "These are demonstration articles, not real reporting — any figures shown are illustrative.",
+    "readMore": "Read more",
+    "filterCategory": "Category",
+    "allCategories": "All categories",
+    "filterCity": "City",
+    "allCities": "All cities",
+    "resultCount": "{count, plural, =0 {No articles} one {# article} other {# articles}}",
+    "noResults": "No articles match those filters.",
+    "clearFilters": "Clear filters",
+    "byLabel": "By {author}",
+    "publishedLabel": "Published",
+    "updatedLabel": "Updated",
+    "sourcesLabel": "Sources",
+    "relatedLabel": "Related articles",
+    "backTo": "Back to {section}",
+    "categories": {
+      "market-report": "Market Report",
+      "housing-news": "Housing News",
+      "mortgage": "Mortgage",
+      "buying": "Buying",
+      "selling": "Selling",
+      "investing": "Investing",
+      "relocation": "Relocation",
+      "cities": "Cities",
+      "policy": "Policy",
+      "development": "Development"
+    },
+    "cta": {
+      "title": "Ready to explore NEPA real estate?",
+      "body": "Search homes across the region or get in touch with questions."
+    }
   }
 }

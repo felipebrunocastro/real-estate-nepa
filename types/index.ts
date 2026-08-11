@@ -76,3 +76,91 @@ export interface InsightCard {
     | "investor";
   href: string;
 }
+
+/* ---------------------------------------------------------------------------
+   Publication system (Phase 4)
+   Article content lives in the content layer (data/articles.ts today; a future
+   MDX / database / headless CMS behind lib/content.ts). Bodies are portable,
+   CMS-agnostic structured blocks rather than raw HTML/markdown.
+--------------------------------------------------------------------------- */
+
+/** Publication sections, each mapped to a route segment. */
+export type ArticleSection = "market-reports" | "nepa-news";
+
+/** Editorial category taxonomy shared across the publication. */
+export type ArticleCategory =
+  | "market-report"
+  | "housing-news"
+  | "mortgage"
+  | "buying"
+  | "selling"
+  | "investing"
+  | "relocation"
+  | "cities"
+  | "policy"
+  | "development";
+
+/** A single labeled chart datapoint (axis labels kept language-neutral). */
+export interface ChartPoint {
+  label: string;
+  value: number;
+}
+
+/** A single statistic within a stats block. */
+export interface ArticleStat {
+  label: Localized;
+  value: string;
+  change?: string;
+  trend?: "up" | "down" | "flat";
+}
+
+/** Portable, CMS-agnostic content blocks that make up an article body. */
+export type ContentBlock =
+  | { type: "heading"; text: Localized }
+  | { type: "paragraph"; text: Localized }
+  | { type: "list"; items: Localized[] }
+  | { type: "stats"; items: ArticleStat[] }
+  | { type: "barChart"; title: Localized; unit: string; data: ChartPoint[] }
+  | { type: "lineChart"; title: Localized; unit: string; data: ChartPoint[] }
+  | { type: "note"; text: Localized };
+
+/** A cited source (demo sources for sample content). */
+export interface ArticleSource {
+  label: string;
+  url?: string;
+}
+
+/** Full article record. Demo articles set `isSample: true`. */
+export interface Article {
+  slug: string;
+  section: ArticleSection;
+  category: ArticleCategory;
+  title: Localized;
+  excerpt: Localized;
+  body: ContentBlock[];
+  author: string;
+  /** ISO date (YYYY-MM-DD). */
+  publishedAt: string;
+  updatedAt?: string;
+  /** Optional city slug + county for local filtering. */
+  city?: string;
+  county?: "Luzerne County" | "Lackawanna County";
+  tags: string[];
+  sources: ArticleSource[];
+  accent: string;
+  /** Demonstration content flag — always true until real editorial exists. */
+  isSample: boolean;
+}
+
+/** Flattened, locale-resolved shape passed to client list/filter components. */
+export interface ArticleCardData {
+  slug: string;
+  section: ArticleSection;
+  category: ArticleCategory;
+  title: string;
+  excerpt: string;
+  publishedAt: string;
+  city?: string;
+  cityName?: string;
+  accent: string;
+}

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildMetadata, resolveLocale } from "@/lib/seo";
+import { getArticles, toCardData } from "@/lib/content";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { ContentSection } from "@/components/content/ContentSection";
-import { FeatureGrid, type Feature } from "@/components/content/FeatureGrid";
-import { Callout } from "@/components/content/Callout";
 import { CtaBanner } from "@/components/content/CtaBanner";
+import { ArticleFilterList } from "@/components/articles/ArticleFilterList";
+import { SampleBadge } from "@/components/ui/SampleBadge";
 
 export async function generateMetadata({
   params,
@@ -30,10 +31,12 @@ export default async function NepaNewsPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const active = resolveLocale(locale);
   const t = await getTranslations({ locale, namespace: "pages.nepaNews" });
+  const tp = await getTranslations({ locale, namespace: "publication" });
   const tn = await getTranslations({ locale, namespace: "nav" });
 
-  const topics = t.raw("topics.items") as Feature[];
+  const cards = toCardData(getArticles("nepa-news"), active);
 
   return (
     <>
@@ -45,18 +48,11 @@ export default async function NepaNewsPage({
       />
 
       <ContentSection>
-        <Callout
-          icon="document"
-          badge={t("comingSoon.badge")}
-          title={t("comingSoon.title")}
-          body={t("comingSoon.body")}
-          ctaLabel={tn("links.contact")}
-          ctaHref="/contact"
-        />
-      </ContentSection>
-
-      <ContentSection bordered title={t("topics.title")} intro={t("topics.intro")}>
-        <FeatureGrid items={topics} columns={3} />
+        <div className="mb-6 flex items-center gap-2 rounded-lg border border-amber-300 bg-amber-50 p-4 text-sm text-amber-900">
+          <SampleBadge>{tp("sampleData")}</SampleBadge>
+          {tp("sampleBanner")}
+        </div>
+        <ArticleFilterList articles={cards} />
       </ContentSection>
 
       <CtaBanner

@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { localizedUrl } from "@/lib/seo";
 import { cities } from "@/data/cities";
+import { getAllArticles } from "@/lib/content";
 
 /**
  * Locale-aware sitemap. Each route is emitted for every locale with hreflang
@@ -23,6 +24,7 @@ const paths = [
   "/realtors",
   "/contact",
   ...cities.map((c) => `/cities/${c.slug}`),
+  ...getAllArticles().map((a) => `/${a.section}/${a.slug}`),
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

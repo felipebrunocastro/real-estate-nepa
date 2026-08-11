@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildMetadata, resolveLocale } from "@/lib/seo";
+import { getArticles, toCardData } from "@/lib/content";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { ContentSection } from "@/components/content/ContentSection";
-import { FeatureGrid, type Feature } from "@/components/content/FeatureGrid";
-import { Callout } from "@/components/content/Callout";
-import { Disclaimer } from "@/components/content/Disclaimer";
 import { CtaBanner } from "@/components/content/CtaBanner";
+import { ArticleFilterList } from "@/components/articles/ArticleFilterList";
+import { SampleBadge } from "@/components/ui/SampleBadge";
 
 export async function generateMetadata({
   params,
@@ -31,10 +31,12 @@ export default async function MarketReportsPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const active = resolveLocale(locale);
   const t = await getTranslations({ locale, namespace: "pages.marketReports" });
+  const tp = await getTranslations({ locale, namespace: "publication" });
   const tn = await getTranslations({ locale, namespace: "nav" });
 
-  const metrics = t.raw("metrics.items") as Feature[];
+  const cards = toCardData(getArticles("market-reports"), active);
 
   return (
     <>
@@ -46,21 +48,11 @@ export default async function MarketReportsPage({
       />
 
       <ContentSection>
-        <Callout
-          icon="document"
-          badge={t("comingSoon.badge")}
-          title={t("comingSoon.title")}
-          body={t("comingSoon.body")}
-          ctaLabel={tn("links.contact")}
-          ctaHref="/contact"
-        />
-      </ContentSection>
-
-      <ContentSection bordered title={t("metrics.title")} intro={t("metrics.intro")}>
-        <FeatureGrid items={metrics} columns={3} />
-        <div className="mt-6">
-          <Disclaimer>{t("disclaimer")}</Disclaimer>
+        <div className="mb-6 flex items-center gap-2 rounded-lg border border-amber-300 bg-amber-50 p-4 text-sm text-amber-900">
+          <SampleBadge>{tp("sampleData")}</SampleBadge>
+          {tp("sampleBanner")}
         </div>
+        <ArticleFilterList articles={cards} />
       </ContentSection>
 
       <CtaBanner
