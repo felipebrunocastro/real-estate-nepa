@@ -164,3 +164,64 @@ export interface ArticleCardData {
   cityName?: string;
   accent: string;
 }
+
+/* ---------------------------------------------------------------------------
+   Realtors directory (Phase 7)
+   Demo profiles set `isSample: true`. Contact details on sample profiles use
+   reserved fictional ranges (555-01xx phones, example.com). No real people,
+   licenses, reviews, or credentials are ever fabricated.
+--------------------------------------------------------------------------- */
+
+export type RealtorSpecialty =
+  | "buyer-agent"
+  | "listing-agent"
+  | "investment"
+  | "commercial"
+  | "relocation"
+  | "first-time"
+  | "luxury"
+  | "rental";
+
+/** Monetization tier. `premium` is reserved for a later phase. Never paid here. */
+export type RealtorTier = "standard" | "featured" | "premium";
+
+export interface RealtorContact {
+  phone?: string;
+  email?: string;
+  website?: string;
+  social?: { label: string; url: string }[];
+}
+
+export interface Realtor {
+  slug: string;
+  name: string;
+  brokerage: string;
+  /** A note, NOT a fabricated license number (e.g. "PA-licensed (sample)"). */
+  licenseNote: Localized;
+  /** Locale codes the professional works in, e.g. ["en", "es"]. */
+  languages: string[];
+  /** City slugs served (link to city pages + power the city filter). */
+  serviceAreas: string[];
+  specialties: RealtorSpecialty[];
+  contact: RealtorContact;
+  bio: Localized;
+  verified: boolean;
+  tier: RealtorTier;
+  accent: string;
+  /** Demonstration flag — always true until real professionals join. */
+  isSample: boolean;
+}
+
+/** Locale-resolved, serializable shape for the client directory/filter. */
+export interface RealtorCardData {
+  slug: string;
+  name: string;
+  brokerage: string;
+  languages: string[];
+  serviceAreas: string[];
+  serviceAreaNames: string[];
+  specialties: RealtorSpecialty[];
+  verified: boolean;
+  tier: RealtorTier;
+  accent: string;
+}

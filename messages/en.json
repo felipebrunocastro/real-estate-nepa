@@ -1326,5 +1326,60 @@
         }
       }
     }
+  },
+  "realtors": {
+    "sampleBadge": "Sample Profile",
+    "sampleBanner": "These are demonstration profiles, not real professionals. Contact details shown are placeholders.",
+    "featured": "Featured",
+    "verified": "Verified",
+    "verificationPending": "Verification pending",
+    "viewProfile": "View profile",
+    "backToDirectory": "Back to directory",
+    "languagesLabel": "Languages",
+    "specialtiesLabel": "Specialties",
+    "serviceAreasLabel": "Service areas",
+    "filterCity": "City",
+    "filterLanguage": "Language",
+    "filterSpecialty": "Specialty",
+    "allCities": "All cities",
+    "allLanguages": "All languages",
+    "allSpecialties": "All specialties",
+    "resultCount": "{count, plural, =0 {No professionals} one {# professional} other {# professionals}}",
+    "noResults": "No professionals match those filters.",
+    "clearFilters": "Clear filters",
+    "aboutTitle": "About {name}",
+    "disclosure": "Professional profiles do not constitute an endorsement or recommendation unless explicitly stated. Real Estate in NEPA is an independent information platform and is not a licensed brokerage. These are sample profiles for demonstration.",
+    "languages": {
+      "en": "English",
+      "es": "Spanish",
+      "pt": "Portuguese"
+    },
+    "specialties": {
+      "buyer-agent": "Buyer's agent",
+      "listing-agent": "Listing agent",
+      "investment": "Investment",
+      "commercial": "Commercial",
+      "relocation": "Relocation",
+      "first-time": "First-time buyers",
+      "luxury": "Luxury",
+      "rental": "Rentals"
+    },
+    "contact": {
+      "title": "Contact",
+      "note": "Sample profile — contact details are placeholders. Reach out through Real Estate in NEPA and we'll help connect you.",
+      "phone": "Phone",
+      "email": "Email",
+      "website": "Website",
+      "cta": "Contact via Real Estate in NEPA"
+    },
+    "join": {
+      "title": "Are you a Realtor serving NEPA?",
+      "body": "Get listed in the directory. Featured placement options are planned for the future.",
+      "cta": "Get in touch"
+    },
+    "profileMeta": {
+      "title": "{name} — Realtor serving NEPA (Sample)",
+      "description": "{name} at {brokerage}, serving Northeastern Pennsylvania. Sample profile for demonstration."
+    }
   }
 }

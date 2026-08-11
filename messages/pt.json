@@ -1326,5 +1326,60 @@
         }
       }
     }
+  },
+  "realtors": {
+    "sampleBadge": "Perfil de Amostra",
+    "sampleBanner": "Estes são perfis de demonstração, não profissionais reais. Os dados de contato exibidos são de exemplo.",
+    "featured": "Destaque",
+    "verified": "Verificado",
+    "verificationPending": "Verificação pendente",
+    "viewProfile": "Ver perfil",
+    "backToDirectory": "Voltar ao diretório",
+    "languagesLabel": "Idiomas",
+    "specialtiesLabel": "Especialidades",
+    "serviceAreasLabel": "Áreas de atuação",
+    "filterCity": "Cidade",
+    "filterLanguage": "Idioma",
+    "filterSpecialty": "Especialidade",
+    "allCities": "Todas as cidades",
+    "allLanguages": "Todos os idiomas",
+    "allSpecialties": "Todas as especialidades",
+    "resultCount": "{count, plural, =0 {Nenhum profissional} one {# profissional} other {# profissionais}}",
+    "noResults": "Nenhum profissional corresponde a esses filtros.",
+    "clearFilters": "Limpar filtros",
+    "aboutTitle": "Sobre {name}",
+    "disclosure": "Os perfis profissionais não constituem recomendação ou endosso, salvo indicação expressa. A Real Estate in NEPA é uma plataforma de informação independente e não é uma corretora licenciada. Estes são perfis de amostra para demonstração.",
+    "languages": {
+      "en": "Inglês",
+      "es": "Espanhol",
+      "pt": "Português"
+    },
+    "specialties": {
+      "buyer-agent": "Corretor do comprador",
+      "listing-agent": "Corretor de anúncios",
+      "investment": "Investimento",
+      "commercial": "Comercial",
+      "relocation": "Mudança",
+      "first-time": "Primeira compra",
+      "luxury": "Luxo",
+      "rental": "Aluguéis"
+    },
+    "contact": {
+      "title": "Contato",
+      "note": "Perfil de amostra: os dados de contato são de exemplo. Fale conosco pela Real Estate in NEPA e ajudamos a conectar você.",
+      "phone": "Telefone",
+      "email": "E-mail",
+      "website": "Site",
+      "cta": "Contatar via Real Estate in NEPA"
+    },
+    "join": {
+      "title": "Você é um corretor que atende NEPA?",
+      "body": "Apareça no diretório. Opções de posição em destaque estão planejadas para o futuro.",
+      "cta": "Fale conosco"
+    },
+    "profileMeta": {
+      "title": "{name} — Corretor que atende NEPA (Amostra)",
+      "description": "{name} na {brokerage}, atendendo o nordeste da Pensilvânia. Perfil de amostra para demonstração."
+    }
   }
 }

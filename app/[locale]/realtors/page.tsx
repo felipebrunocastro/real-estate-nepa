@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildMetadata, resolveLocale } from "@/lib/seo";
+import { getRealtors, toRealtorCardData } from "@/data/realtors";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { ContentSection } from "@/components/content/ContentSection";
-import { FeatureGrid, type Feature } from "@/components/content/FeatureGrid";
-import { Callout } from "@/components/content/Callout";
-import { Disclaimer } from "@/components/content/Disclaimer";
 import { CtaBanner } from "@/components/content/CtaBanner";
+import { Disclaimer } from "@/components/content/Disclaimer";
+import { RealtorDirectory } from "@/components/realtors/RealtorDirectory";
+import { SampleBadge } from "@/components/ui/SampleBadge";
 
 export async function generateMetadata({
   params,
@@ -32,42 +33,37 @@ export default async function RealtorsPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "pages.realtors" });
-  const tn = await getTranslations({ locale, namespace: "nav" });
+  const tr = await getTranslations({ locale, namespace: "realtors" });
 
-  const features = t.raw("features.items") as Feature[];
+  const cards = toRealtorCardData(getRealtors());
 
   return (
     <>
       <PageHeader
-        breadcrumbs={[{ label: tn("links.realtors"), href: "/realtors" }]}
+        breadcrumbs={[{ label: t("title"), href: "/realtors" }]}
         eyebrow={t("eyebrow")}
         title={t("title")}
         intro={t("intro")}
       />
 
       <ContentSection>
-        <Callout
-          icon="map-pin"
-          badge={t("comingSoon.badge")}
-          title={t("comingSoon.title")}
-          body={t("comingSoon.body")}
-          ctaLabel={tn("links.contact")}
-          ctaHref="/contact"
-        />
-      </ContentSection>
+        <div className="mb-6 flex items-center gap-2 rounded-lg border border-amber-300 bg-amber-50 p-4 text-sm text-amber-900">
+          <SampleBadge>{tr("sampleBadge")}</SampleBadge>
+          {tr("sampleBanner")}
+        </div>
 
-      <ContentSection bordered title={t("features.title")} intro={t("features.intro")}>
-        <FeatureGrid items={features} columns={3} />
-        <div className="mt-6">
+        <RealtorDirectory realtors={cards} />
+
+        <div className="mt-8">
           <Disclaimer>{t("disclosure")}</Disclaimer>
         </div>
       </ContentSection>
 
       <CtaBanner
-        title={t("cta.title")}
-        body={t("cta.body")}
-        primary={{ label: tn("links.contact"), href: "/contact" }}
-        secondary={{ label: tn("links.propertySearch"), href: "/property-search" }}
+        title={tr("join.title")}
+        body={tr("join.body")}
+        primary={{ label: tr("join.cta"), href: "/contact" }}
+        secondary={{ label: t("title"), href: "/realtors" }}
       />
     </>
   );

@@ -1326,5 +1326,60 @@
         }
       }
     }
+  },
+  "realtors": {
+    "sampleBadge": "Perfil de Muestra",
+    "sampleBanner": "Estos son perfiles de demostración, no profesionales reales. Los datos de contacto mostrados son de ejemplo.",
+    "featured": "Destacado",
+    "verified": "Verificado",
+    "verificationPending": "Verificación pendiente",
+    "viewProfile": "Ver perfil",
+    "backToDirectory": "Volver al directorio",
+    "languagesLabel": "Idiomas",
+    "specialtiesLabel": "Especialidades",
+    "serviceAreasLabel": "Áreas de servicio",
+    "filterCity": "Ciudad",
+    "filterLanguage": "Idioma",
+    "filterSpecialty": "Especialidad",
+    "allCities": "Todas las ciudades",
+    "allLanguages": "Todos los idiomas",
+    "allSpecialties": "Todas las especialidades",
+    "resultCount": "{count, plural, =0 {Ningún profesional} one {# profesional} other {# profesionales}}",
+    "noResults": "Ningún profesional coincide con esos filtros.",
+    "clearFilters": "Limpiar filtros",
+    "aboutTitle": "Sobre {name}",
+    "disclosure": "Los perfiles profesionales no constituyen una recomendación ni un respaldo, salvo que se indique expresamente. Real Estate in NEPA es una plataforma de información independiente y no es una correduría con licencia. Estos son perfiles de muestra para demostración.",
+    "languages": {
+      "en": "Inglés",
+      "es": "Español",
+      "pt": "Portugués"
+    },
+    "specialties": {
+      "buyer-agent": "Agente del comprador",
+      "listing-agent": "Agente de listados",
+      "investment": "Inversión",
+      "commercial": "Comercial",
+      "relocation": "Mudanza",
+      "first-time": "Primera compra",
+      "luxury": "Lujo",
+      "rental": "Rentas"
+    },
+    "contact": {
+      "title": "Contacto",
+      "note": "Perfil de muestra: los datos de contacto son de ejemplo. Escríbenos a través de Real Estate in NEPA y con gusto te conectamos.",
+      "phone": "Teléfono",
+      "email": "Correo",
+      "website": "Sitio web",
+      "cta": "Contactar vía Real Estate in NEPA"
+    },
+    "join": {
+      "title": "¿Eres un agente que atiende NEPA?",
+      "body": "Aparece en el directorio. Las opciones de posición destacada están planeadas para el futuro.",
+      "cta": "Ponte en contacto"
+    },
+    "profileMeta": {
+      "title": "{name} — Agente que atiende NEPA (Muestra)",
+      "description": "{name} en {brokerage}, atendiendo el noreste de Pensilvania. Perfil de muestra para demostración."
+    }
   }
 }
