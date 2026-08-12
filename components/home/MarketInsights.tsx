@@ -1,12 +1,17 @@
-import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
-import { insightCards } from "@/data/home-content";
+import { useLocale, useTranslations } from "next-intl";
+import type { Locale } from "@/i18n/routing";
+import { getAllArticles, toCardData } from "@/lib/content";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
+import { ArticleCard } from "@/components/articles/ArticleCard";
 
 export function MarketInsights() {
   const t = useTranslations("home.insights");
+  const locale = useLocale() as Locale;
+
+  // Show the most recent articles from the publication system (Phase 4).
+  const latest = toCardData(getAllArticles().slice(0, 3), locale);
 
   return (
     <Section>
@@ -23,30 +28,8 @@ export function MarketInsights() {
       </div>
 
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {insightCards.map((card) => (
-          <Link
-            key={card.key}
-            href={card.href}
-            className="group flex flex-col rounded-xl border border-border bg-surface p-6 transition-shadow hover:shadow-md"
-          >
-            <span className="inline-flex items-center gap-2 self-start rounded-full bg-navy-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent-700">
-              <Icon name="document" className="h-4 w-4" />
-              {t(`categories.${card.category}`)}
-            </span>
-            <h3 className="mt-4 font-display text-lg font-semibold text-navy-900 group-hover:text-accent-700">
-              {t(`items.${card.key}.title`)}
-            </h3>
-            <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
-              {t(`items.${card.key}.excerpt`)}
-            </p>
-            <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-accent-600">
-              {t("readMore")}
-              <Icon
-                name="arrow-right"
-                className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
-              />
-            </span>
-          </Link>
+        {latest.map((article) => (
+          <ArticleCard key={article.slug} article={article} />
         ))}
       </div>
 
