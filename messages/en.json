@@ -171,7 +171,10 @@
         "daysOnMarket": "Median Days on Market",
         "saleToList": "Sale-to-List Ratio"
       },
-      "disclaimer": "Figures shown are sample data for demonstration only and do not represent live market statistics. Real market data integration is coming soon."
+      "disclaimer": "Figures shown are sample data for demonstration only and do not represent live market statistics. Real market data integration is coming soon.",
+      "sourceLabel": "Source: {source}",
+      "asOf": "as of {date}",
+      "regionalEstimate": "Regional estimate"
     },
     "properties": {
       "eyebrow": "Featured properties",

@@ -171,7 +171,10 @@
         "daysOnMarket": "Días promedio en el mercado",
         "saleToList": "Relación venta-precio de lista"
       },
-      "disclaimer": "Las cifras mostradas son datos de muestra solo para demostración y no representan estadísticas reales del mercado. La integración de datos reales llegará pronto."
+      "disclaimer": "Las cifras mostradas son datos de muestra solo para demostración y no representan estadísticas reales del mercado. La integración de datos reales llegará pronto.",
+      "sourceLabel": "Fuente: {source}",
+      "asOf": "actualizado a {date}",
+      "regionalEstimate": "Estimación regional"
     },
     "properties": {
       "eyebrow": "Propiedades destacadas",

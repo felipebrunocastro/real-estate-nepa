@@ -13,6 +13,7 @@ export function ArticleCard({ article }: { article: ArticleCardData }) {
     year: "numeric",
     month: "short",
     day: "numeric",
+    timeZone: "UTC",
   }).format(new Date(article.publishedAt));
 
   return (

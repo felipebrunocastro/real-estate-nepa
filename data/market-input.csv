@@ -1,0 +1,14 @@
+area,medianPrice,medianPrice_change,homesForSale,homesForSale_change,daysOnMarket,daysOnMarket_change,saleToList,saleToList_change,source,sourceUrl,asOf
+nepa,219000,+3.1%,1240,-2.4%,38,+5 days,98.6,+0.4%,Sample data,,2026-08-01
+wilkes-barre-pa,168000,,240,,41,,98.2,,Sample data,,2026-08-01
+scranton-pa,179000,,310,,36,,99.0,,Sample data,,2026-08-01
+pittston-pa,172000,,95,,39,,98.5,,Sample data,,2026-08-01
+kingston-pa,189000,,120,,34,,99.1,,Sample data,,2026-08-01
+dallas-pa,285000,,85,,45,,98.0,,Sample data,,2026-08-01
+hazleton-pa,149000,,175,,43,,97.8,,Sample data,,2026-08-01
+nanticoke-pa,142000,,70,,40,,98.1,,Sample data,,2026-08-01
+mountain-top-pa,265000,,60,,44,,98.3,,Sample data,,2026-08-01
+clarks-summit-pa,255000,,55,,38,,99.0,,Sample data,,2026-08-01
+plains-pa,175000,,80,,37,,98.7,,Sample data,,2026-08-01
+forty-fort-pa,182000,,45,,33,,99.3,,Sample data,,2026-08-01
+wyoming-pa,178000,,50,,35,,99.0,,Sample data,,2026-08-01

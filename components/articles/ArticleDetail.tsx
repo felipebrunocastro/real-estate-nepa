@@ -34,6 +34,7 @@ export function ArticleDetail({
       year: "numeric",
       month: "long",
       day: "numeric",
+      timeZone: "UTC",
     }).format(new Date(iso));
 
   const jsonLd = {

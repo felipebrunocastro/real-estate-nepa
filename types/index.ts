@@ -3,12 +3,37 @@ import type { Locale } from "@/i18n/routing";
 /** A localised string keyed by locale code. */
 export type Localized = Record<Locale, string>;
 
-/** Per-city SAMPLE market statistics (demo data — never live figures). */
-export interface CityStats {
-  medianPrice: string;
-  homesForSale: string;
-  daysOnMarket: string;
-  saleToList: string;
+/* ---------------------------------------------------------------------------
+   Market data
+   A single layer (lib/market.ts, backed by the generated data/market-data.ts)
+   feeds every market snapshot. Values are stored raw (numbers) and formatted
+   per-metric at display time. Each area records its source + as-of date +
+   `isSample`, so the UI shows a "Sample Data" badge until a real source is
+   provided, then real attribution.
+--------------------------------------------------------------------------- */
+
+export type MarketMetricKey =
+  | "medianPrice"
+  | "homesForSale"
+  | "daysOnMarket"
+  | "saleToList";
+
+export interface MarketMetric {
+  value: number;
+  /** Display-ready change label, e.g. "+3.1%" or "+5 days". Optional. */
+  change?: string;
+  trend?: "up" | "down" | "flat";
+}
+
+export interface MarketArea {
+  metrics: Partial<Record<MarketMetricKey, MarketMetric>>;
+  /** e.g. "Sample data", "Zillow Research", "Redfin". */
+  source: string;
+  sourceUrl?: string;
+  /** ISO date the figures are as of, e.g. "2026-08-01". */
+  asOf: string;
+  /** True until a real source replaces the demonstration values. */
+  isSample: boolean;
 }
 
 /** Northeastern Pennsylvania city / community. */
@@ -30,8 +55,6 @@ export interface City {
   highlights: string[];
   /** Slugs of nearby communities for internal linking. */
   nearby: string[];
-  /** SAMPLE market snapshot shown with a clear "Sample Data" label. */
-  stats: CityStats;
 }
 
 /** Sample property listing. NEVER represents a real MLS listing. */
@@ -54,14 +77,6 @@ export interface Journey {
   key: string;
   href: string;
   icon: "buy" | "sell" | "invest" | "move" | "first-time";
-}
-
-/** A single market-snapshot statistic (demo data). */
-export interface MarketStat {
-  key: string;
-  value: string;
-  changeLabel?: string;
-  trend?: "up" | "down" | "flat";
 }
 
 /* ---------------------------------------------------------------------------

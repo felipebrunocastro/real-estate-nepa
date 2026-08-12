@@ -129,6 +129,32 @@ Forms POST to `/api/leads` and `/api/newsletter`. Validation and delivery live i
 a first-class adapter (Supabase/HubSpot/Resend). No credentials in code — see
 `.env.example`.
 
+### Updating market data (replacing the sample figures)
+
+Every market snapshot (homepage, city pages) reads through `lib/market.ts`, backed
+by **`data/market-data.ts`**, which is **generated** from **`data/market-input.csv`**.
+To publish real numbers:
+
+1. Open `data/market-input.csv`. Each row is an area (`nepa` for the region, plus
+   each city slug). Fill in `medianPrice`, `homesForSale`, `daysOnMarket`,
+   `saleToList` (raw numbers — no `$` or `,`) from a public source such as
+   **[Zillow Research](https://www.zillow.com/research/data/)** or
+   **Redfin's Data Center**. Optional `*_change` columns take a display label like
+   `+3.1%` (the up/down arrow is derived from the sign).
+2. Set that row's `source` (e.g. `Zillow Research`), optional `sourceUrl`, and
+   `asOf` date. **The "Sample Data" badge automatically becomes real attribution
+   ("Source: … · as of …") for any row whose `source` is not "Sample data".**
+3. Run the importer and rebuild:
+
+   ```bash
+   node scripts/import-market.mjs
+   npm run build
+   ```
+
+Cities with no row fall back to the regional figures, labeled "Regional estimate".
+Public sources are reliable at metro/county/large-city level; small boroughs may
+stay on the regional estimate until county-records data is added.
+
 ## Roadmap (phased) — all phases complete
 
 - **Phase 1:** Foundation, design system, i18n, homepage, SEO base.

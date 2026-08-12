@@ -133,7 +133,7 @@ export default async function CityPage({
           <h3 className="mb-5 font-display text-xl font-semibold text-navy-900">
             {t("market.title", { city: city.name })}
           </h3>
-          <CityMarketSnapshot stats={city.stats} />
+          <CityMarketSnapshot area={city.slug} />
         </div>
       </ContentSection>
 

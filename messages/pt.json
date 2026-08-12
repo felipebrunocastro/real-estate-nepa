@@ -171,7 +171,10 @@
         "daysOnMarket": "Dias médios no mercado",
         "saleToList": "Relação venda/preço anunciado"
       },
-      "disclaimer": "Os números exibidos são dados de amostra apenas para demonstração e não representam estatísticas reais do mercado. A integração de dados reais chegará em breve."
+      "disclaimer": "Os números exibidos são dados de amostra apenas para demonstração e não representam estatísticas reais do mercado. A integração de dados reais chegará em breve.",
+      "sourceLabel": "Fonte: {source}",
+      "asOf": "atualizado em {date}",
+      "regionalEstimate": "Estimativa regional"
     },
     "properties": {
       "eyebrow": "Imóveis em destaque",
