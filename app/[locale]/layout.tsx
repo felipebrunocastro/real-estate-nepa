@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Source_Serif_4 } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
@@ -23,6 +23,12 @@ const serif = Source_Serif_4({
   variable: "--font-serif",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#faf9f6",
+};
 
 /** Pre-render every locale at build time for optimal performance. */
 export function generateStaticParams() {
