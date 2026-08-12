@@ -7,6 +7,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { SiteJsonLd } from "@/components/seo/SiteJsonLd";
+import { Analytics } from "@/components/analytics/Analytics";
 import { buildAlternates } from "@/lib/seo";
 import { site } from "@/lib/site";
 import "../globals.css";
@@ -94,6 +95,7 @@ export default async function LocaleLayout({
             {children}
           </main>
           <Footer />
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>
