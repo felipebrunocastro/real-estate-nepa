@@ -6,6 +6,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SiteJsonLd } from "@/components/seo/SiteJsonLd";
 import { buildAlternates } from "@/lib/seo";
 import { site } from "@/lib/site";
 import "../globals.css";
@@ -84,6 +85,7 @@ export default async function LocaleLayout({
     >
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider>
+          <SiteJsonLd locale={locale} />
           <a href="#main" className="skip-link rounded-md bg-navy-900 px-4 py-2 text-sm font-semibold text-white">
             {t("skipToContent")}
           </a>

@@ -1385,5 +1385,214 @@
       "title": "{name} — Agente que atiende NEPA (Muestra)",
       "description": "{name} en {brokerage}, atendiendo el noreste de Pensilvania. Perfil de muestra para demostración."
     }
+  },
+  "legal": {
+    "about": {
+      "metaTitle": "Acerca de Real Estate in NEPA",
+      "metaDescription": "Acerca de Real Estate in NEPA: una plataforma independiente de información inmobiliaria regional para el noreste de Pensilvania.",
+      "eyebrow": "Acerca de",
+      "title": "Acerca de Real Estate in NEPA",
+      "intro": "Real Estate in NEPA es una plataforma independiente de información inmobiliaria regional para el noreste de Pensilvania.",
+      "updated": "Última actualización: agosto de 2026.",
+      "sections": [
+        {
+          "heading": "Nuestra misión",
+          "body": [
+            "Ayudamos a las personas a explorar casas, comunidades, análisis del mercado y recursos inmobiliarios en todo el noreste de Pensilvania, en inglés, español y portugués.",
+            "Nuestro objetivo es ser un recurso local realmente útil y confiable para compradores, vendedores, inversionistas y cualquiera que considere mudarse a la región."
+          ]
+        },
+        {
+          "heading": "Qué somos y qué no somos",
+          "body": [
+            "Real Estate in NEPA es una plataforma de información. No es una correduría con licencia, ni prestamista hipotecario, ni bufete de abogados, ni asesor financiero. No vendemos casas, ni originamos préstamos, ni brindamos asesoría legal o financiera.",
+            "Cuando veas propiedades de muestra, cifras del mercado, artículos o perfiles profesionales marcados como muestra, son solo demostrativos y no representan datos reales."
+          ]
+        },
+        {
+          "heading": "Política editorial",
+          "body": [
+            "Buscamos contenido preciso, neutral y con fuentes claras. Los datos del mercado y las afirmaciones factuales están pensados para llevar atribución de fuentes.",
+            "El contenido educativo es de carácter general y debe verificarse de forma independiente con profesionales calificados."
+          ]
+        },
+        {
+          "heading": "Divulgación de publicidad y patrocinio",
+          "body": [
+            "En el futuro, algunas ubicaciones —como perfiles profesionales destacados o contenido patrocinado— podrían ser pagadas.",
+            "Toda ubicación pagada o patrocinada se identificará claramente y se mantendrá separada del contenido editorial."
+          ]
+        },
+        {
+          "heading": "Correcciones",
+          "body": [
+            "Corregimos los errores con prontitud. Si detectas algo inexacto, contáctanos y lo revisaremos."
+          ]
+        },
+        {
+          "heading": "Fuentes",
+          "body": [
+            "Los artículos de mercado factuales están diseñados para citar fuentes verificadas, como registros públicos y datos del MLS, una vez que se conecten esas integraciones. Hasta entonces, las cifras se identifican claramente como muestra."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "metaTitle": "Política de Privacidad",
+      "metaDescription": "Cómo maneja Real Estate in NEPA la información limitada que decides proporcionar.",
+      "eyebrow": "Legal",
+      "title": "Política de Privacidad",
+      "intro": "Esta política explica qué información recopilamos y cómo la usamos. Es una plantilla general y debe ser revisada por un profesional calificado antes de su lanzamiento.",
+      "updated": "Última actualización: agosto de 2026.",
+      "sections": [
+        {
+          "heading": "Información que recopilamos",
+          "body": [
+            "Solo recopilamos lo que decides proporcionar a través de nuestros formularios, como tu nombre, correo, teléfono, idioma preferido, área de interés y mensaje.",
+            "No solicitamos información sensible como números de cuentas financieras o identificaciones gubernamentales."
+          ]
+        },
+        {
+          "heading": "Cómo usamos tu información",
+          "body": [
+            "Usamos tus datos para responder a tu consulta y, si te suscribes, para enviarte las actualizaciones que solicitaste. No vendemos tu información personal."
+          ]
+        },
+        {
+          "heading": "Compartir",
+          "body": [
+            "Podemos compartir la información que envías con el recurso más adecuado para ayudarte, por ejemplo, dirigiendo una solicitud a un profesional. Cualquier intercambio se limita a cumplir tu solicitud."
+          ]
+        },
+        {
+          "heading": "Cookies y analítica",
+          "body": [
+            "Procuramos mantener al mínimo los scripts de terceros. Si se agrega analítica, se configurará para respetar tu privacidad, y las cookies no esenciales serán opcionales donde se requiera."
+          ]
+        },
+        {
+          "heading": "Tus opciones",
+          "body": [
+            "Puedes cancelar tu suscripción a los correos en cualquier momento, y puedes contactarnos para preguntar sobre la información que has proporcionado."
+          ]
+        },
+        {
+          "heading": "Contacto",
+          "body": [
+            "¿Preguntas sobre esta política? Escríbenos a través de nuestra página de contacto."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "metaTitle": "Términos de Uso",
+      "metaDescription": "Los términos que aplican al uso del sitio de Real Estate in NEPA.",
+      "eyebrow": "Legal",
+      "title": "Términos de Uso",
+      "intro": "Estos términos rigen tu uso de este sitio web. Es una plantilla general y debe ser revisada por un profesional calificado antes de su lanzamiento.",
+      "updated": "Última actualización: agosto de 2026.",
+      "sections": [
+        {
+          "heading": "Aceptación",
+          "body": [
+            "Al usar este sitio, aceptas estos términos. Si no estás de acuerdo, por favor no uses el sitio."
+          ]
+        },
+        {
+          "heading": "Solo uso informativo",
+          "body": [
+            "El contenido se ofrece con fines informativos y educativos generales. No es asesoría legal, financiera, fiscal ni inmobiliaria, y debe verificarse de forma independiente.",
+            "Las propiedades de muestra, las cifras del mercado y los perfiles están claramente identificados y no representan datos reales."
+          ]
+        },
+        {
+          "heading": "Sin relación profesional",
+          "body": [
+            "El uso de este sitio no crea una relación de correduría, préstamo, legal o de asesoría. Real Estate in NEPA es una plataforma de información independiente."
+          ]
+        },
+        {
+          "heading": "Enlaces y contenido de terceros",
+          "body": [
+            "Podemos enlazar a sitios de terceros y, en el futuro, listar profesionales externos. No somos responsables del contenido de terceros, y un listado no constituye un respaldo salvo que se indique expresamente."
+          ]
+        },
+        {
+          "heading": "Limitación de responsabilidad",
+          "body": [
+            "El sitio se ofrece \"tal cual\", sin garantías. En la medida en que lo permita la ley, no somos responsables de las decisiones tomadas con base en la información aquí encontrada."
+          ]
+        },
+        {
+          "heading": "Cambios",
+          "body": [
+            "Podemos actualizar estos términos. El uso continuado tras los cambios significa que aceptas los términos actualizados."
+          ]
+        }
+      ]
+    },
+    "fairHousing": {
+      "metaTitle": "Vivienda Justa",
+      "metaDescription": "El compromiso de Real Estate in NEPA con la vivienda justa y la igualdad de oportunidades.",
+      "eyebrow": "Compromiso",
+      "title": "Vivienda Justa",
+      "intro": "Real Estate in NEPA está comprometido con los principios de la vivienda justa y la igualdad de oportunidades.",
+      "updated": "Última actualización: agosto de 2026.",
+      "sections": [
+        {
+          "heading": "Igualdad de Oportunidad de Vivienda",
+          "body": [
+            "Respaldamos la Ley de Vivienda Justa y la Ley de Igualdad de Oportunidades. No discriminamos por raza, color, religión, sexo, discapacidad, situación familiar, origen nacional ni ninguna otra clase protegida."
+          ]
+        },
+        {
+          "heading": "Información comunitaria neutral",
+          "body": [
+            "Nuestro contenido sobre comunidades y ciudades se redacta de forma neutral y objetiva. No dirigimos a los usuarios hacia o en contra de comunidades según características protegidas, y no clasificamos vecindarios ni hacemos afirmaciones subjetivas sobre para quién es \"mejor\" una comunidad."
+          ]
+        },
+        {
+          "heading": "Escuelas y datos locales",
+          "body": [
+            "Para información sobre escuelas y servicios locales, remitimos a fuentes oficiales como el Departamento de Educación de Pensilvania y los distritos locales, y evitamos clasificaciones subjetivas."
+          ]
+        },
+        {
+          "heading": "Reportar una inquietud",
+          "body": [
+            "Si crees que algún contenido entra en conflicto con estos principios, contáctanos para que podamos revisarlo."
+          ]
+        }
+      ]
+    },
+    "accessibility": {
+      "metaTitle": "Accesibilidad",
+      "metaDescription": "El compromiso de Real Estate in NEPA con una experiencia accesible para todos.",
+      "eyebrow": "Compromiso",
+      "title": "Accesibilidad",
+      "intro": "Queremos que Real Estate in NEPA sea utilizable por todos, sin importar su capacidad.",
+      "updated": "Última actualización: agosto de 2026.",
+      "sections": [
+        {
+          "heading": "Nuestro enfoque",
+          "body": [
+            "Procuramos seguir buenas prácticas de accesibilidad reconocidas, apuntando a las pautas WCAG 2.2 AA a medida que construimos.",
+            "Esto incluye HTML semántico, navegación por teclado, estados de foco visibles, contraste de color suficiente, alternativas de texto descriptivas y soporte para preferencias de movimiento reducido."
+          ]
+        },
+        {
+          "heading": "Trabajo continuo",
+          "body": [
+            "La accesibilidad es un esfuerzo continuo. A medida que la plataforma crece, seguimos probando y mejorando la experiencia en distintos dispositivos y tecnologías de asistencia."
+          ]
+        },
+        {
+          "heading": "Comentarios",
+          "body": [
+            "Si encuentras una barrera de accesibilidad, avísanos a través de nuestra página de contacto y trabajaremos para resolverla."
+          ]
+        }
+      ]
+    }
   }
 }

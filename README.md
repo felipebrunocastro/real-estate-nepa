@@ -105,21 +105,56 @@ Fair-Housing compliant** — no references to protected classes, "safety",
 them shows a visible **"Sample Listing"** badge. The `SampleProperty` shape mirrors
 the future IDX/MLS feed so real data drops in without UI changes.
 
-## Roadmap (phased)
+### Adding an article (Market Reports / NEPA News)
 
-- **Phase 1 (done):** Foundation, design system, i18n, homepage, SEO base.
+Append to `data/articles.ts` (section, category, localized title/excerpt, portable
+content `body` blocks, tags, sources, `isSample`). Every page reads through
+`lib/content.ts`, so that file is the single swap point for a future MDX / database
+/ headless CMS. Article routes and the sitemap update automatically. Never present
+figures as real — charts and stats stay labeled samples.
+
+### Adding a Realtor
+
+Append to `data/realtors.ts`. Sample profiles must stay clearly labeled with
+reserved fictional contact info (555-01xx phones, `example.com`) and no invented
+license numbers. `tier: "featured"` sorts first (monetization architecture — no
+payments). `RealEstateAgent` structured data is emitted only for real
+(non-sample) profiles.
+
+### Leads & newsletter
+
+Forms POST to `/api/leads` and `/api/newsletter`. Validation and delivery live in
+`lib/leads.ts` / `lib/newsletter.ts`; set `LEAD_WEBHOOK_URL` /
+`NEWSLETTER_WEBHOOK_URL` to route submissions to a CRM/automation endpoint, or add
+a first-class adapter (Supabase/HubSpot/Resend). No credentials in code — see
+`.env.example`.
+
+## Roadmap (phased) — all phases complete
+
+- **Phase 1:** Foundation, design system, i18n, homepage, SEO base.
 - **Phase 2:** Core pages (`/buy`, `/sell`, `/invest`, `/property-search`, ...).
-- **Phase 3:** Cities / local-SEO engine.
+- **Phase 3:** Cities / local-SEO engine (`/cities/[slug]`).
 - **Phase 4:** Market Reports + NEPA News publication system.
-- **Phase 5:** Calculators & tools.
+- **Phase 5:** Calculators & tools (Mortgage Calculator + tools architecture).
 - **Phase 6:** First-Time Buyers + Relocation hubs.
-- **Phase 7:** Realtors directory.
-- **Phase 8:** Contact, leads & CRM integration.
+- **Phase 7:** Realtors directory (`/realtors`, `/realtors/[slug]`).
+- **Phase 8:** Contact, leads & newsletter API with CRM-adapter architecture.
+- **Trust & SEO:** About, Privacy, Terms, Fair Housing, Accessibility pages;
+  site-wide Organization + WebSite structured data.
 
-Future integrations (not built yet): IDX/MLS, Supabase, Resend, Mapbox/Google Maps,
-analytics. Configure via environment variables — see `.env.example`.
+Future integrations (architected for, not built): IDX/MLS, Supabase, Resend,
+Mapbox/Google Maps, analytics, user accounts. Configure via environment variables —
+see `.env.example`.
+
+## SEO & structured data
+
+Per-page canonical + hreflang alternates, `robots.txt`, a locale-aware
+`sitemap.xml`, and JSON-LD: `Organization` + `WebSite` site-wide, plus
+`BreadcrumbList`, `Article`/`NewsArticle`, `FAQPage`, `Place`, and `RealEstateAgent`
+(real profiles only) where appropriate.
 
 ## Deployment
 
 Target: **Vercel** → custom domain `realestateinnepa.com` (redirect `www` → apex).
-No environment variables are required for the current build.
+The app runs with **no environment variables**; add them only to connect the future
+integrations above.

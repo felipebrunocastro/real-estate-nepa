@@ -1385,5 +1385,214 @@
       "title": "{name} — Realtor serving NEPA (Sample)",
       "description": "{name} at {brokerage}, serving Northeastern Pennsylvania. Sample profile for demonstration."
     }
+  },
+  "legal": {
+    "about": {
+      "metaTitle": "About Real Estate in NEPA",
+      "metaDescription": "About Real Estate in NEPA — an independent regional real estate information platform for Northeastern Pennsylvania.",
+      "eyebrow": "About",
+      "title": "About Real Estate in NEPA",
+      "intro": "Real Estate in NEPA is an independent regional real estate information platform for Northeastern Pennsylvania.",
+      "updated": "Last updated August 2026.",
+      "sections": [
+        {
+          "heading": "Our mission",
+          "body": [
+            "We help people explore homes, communities, market insights and real estate resources across Northeastern Pennsylvania — in English, Spanish and Portuguese.",
+            "Our goal is to be a genuinely useful, trustworthy local resource for buyers, sellers, investors and anyone considering a move to the region."
+          ]
+        },
+        {
+          "heading": "What we are — and what we're not",
+          "body": [
+            "Real Estate in NEPA is an information platform. It is not a licensed brokerage, mortgage lender, law firm, or financial advisor. We do not sell homes, originate loans, or provide legal or financial advice.",
+            "Where you see sample listings, market figures, articles or professional profiles marked as samples, they are for demonstration only and do not represent real data."
+          ]
+        },
+        {
+          "heading": "Editorial policy",
+          "body": [
+            "We aim for content that is accurate, neutral and clearly sourced. Market data and factual claims are intended to carry source attribution.",
+            "Educational content is general in nature and should be independently verified with qualified professionals."
+          ]
+        },
+        {
+          "heading": "Advertising & sponsorship disclosure",
+          "body": [
+            "In the future, some placements — such as featured professional profiles or sponsored content — may be paid.",
+            "Any paid or sponsored placement will be clearly labeled and kept distinct from editorial content."
+          ]
+        },
+        {
+          "heading": "Corrections",
+          "body": [
+            "We correct errors promptly. If you spot something inaccurate, please contact us and we'll review it."
+          ]
+        },
+        {
+          "heading": "Sources",
+          "body": [
+            "Factual market articles are designed to reference verified sources such as public records and MLS data once those integrations are connected. Until then, figures are clearly labeled as samples."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "metaTitle": "Privacy Policy",
+      "metaDescription": "How Real Estate in NEPA handles the limited information you choose to provide.",
+      "eyebrow": "Legal",
+      "title": "Privacy Policy",
+      "intro": "This policy explains what information we collect and how we use it. It is a general template and should be reviewed by a qualified professional before launch.",
+      "updated": "Last updated August 2026.",
+      "sections": [
+        {
+          "heading": "Information we collect",
+          "body": [
+            "We collect only what you choose to provide through our forms — such as your name, email, phone number, preferred language, area of interest and message.",
+            "We do not ask for sensitive information such as financial account numbers or government identification."
+          ]
+        },
+        {
+          "heading": "How we use your information",
+          "body": [
+            "We use your details to respond to your inquiry and, if you subscribe, to send you the updates you requested. We do not sell your personal information."
+          ]
+        },
+        {
+          "heading": "Sharing",
+          "body": [
+            "We may share the information you submit with the resource best suited to help you — for example, routing a request to a professional. Any such sharing is limited to fulfilling your request."
+          ]
+        },
+        {
+          "heading": "Cookies & analytics",
+          "body": [
+            "We aim to keep third-party scripts minimal. If analytics are added, they will be configured to respect your privacy, and non-essential cookies will be opt-in where required."
+          ]
+        },
+        {
+          "heading": "Your choices",
+          "body": [
+            "You can unsubscribe from emails at any time, and you can contact us to ask about the information you've provided."
+          ]
+        },
+        {
+          "heading": "Contact",
+          "body": [
+            "Questions about this policy? Reach us through our contact page."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "metaTitle": "Terms of Use",
+      "metaDescription": "The terms that apply to using the Real Estate in NEPA website.",
+      "eyebrow": "Legal",
+      "title": "Terms of Use",
+      "intro": "These terms govern your use of this website. This is a general template and should be reviewed by a qualified professional before launch.",
+      "updated": "Last updated August 2026.",
+      "sections": [
+        {
+          "heading": "Acceptance",
+          "body": [
+            "By using this site, you agree to these terms. If you do not agree, please do not use the site."
+          ]
+        },
+        {
+          "heading": "Informational use only",
+          "body": [
+            "Content is provided for general informational and educational purposes. It is not legal, financial, tax or real estate advice, and should be independently verified.",
+            "Sample listings, market figures and profiles are clearly labeled and do not represent real data."
+          ]
+        },
+        {
+          "heading": "No professional relationship",
+          "body": [
+            "Using this site does not create a brokerage, lending, legal or advisory relationship. Real Estate in NEPA is an independent information platform."
+          ]
+        },
+        {
+          "heading": "Third-party links & content",
+          "body": [
+            "We may link to third-party sites and, in the future, list third-party professionals. We are not responsible for third-party content, and a listing is not an endorsement unless explicitly stated."
+          ]
+        },
+        {
+          "heading": "Limitation of liability",
+          "body": [
+            "The site is provided \"as is\" without warranties. To the extent permitted by law, we are not liable for decisions made based on information found here."
+          ]
+        },
+        {
+          "heading": "Changes",
+          "body": [
+            "We may update these terms. Continued use after changes means you accept the updated terms."
+          ]
+        }
+      ]
+    },
+    "fairHousing": {
+      "metaTitle": "Fair Housing",
+      "metaDescription": "Real Estate in NEPA's commitment to fair housing and equal opportunity.",
+      "eyebrow": "Commitment",
+      "title": "Fair Housing",
+      "intro": "Real Estate in NEPA is committed to the principles of fair housing and equal opportunity.",
+      "updated": "Last updated August 2026.",
+      "sections": [
+        {
+          "heading": "Equal Housing Opportunity",
+          "body": [
+            "We support the Fair Housing Act and the Equal Opportunity Act. We do not discriminate based on race, color, religion, sex, disability, familial status, national origin, or any other protected class."
+          ]
+        },
+        {
+          "heading": "Neutral community information",
+          "body": [
+            "Our community and city content is written to be neutral and factual. We do not steer users toward or away from communities based on protected characteristics, and we do not rank neighborhoods or make subjective claims about who a community is \"best\" for."
+          ]
+        },
+        {
+          "heading": "Schools & local data",
+          "body": [
+            "For information about schools and local services, we point to official sources such as the Pennsylvania Department of Education and local districts, and we avoid subjective rankings."
+          ]
+        },
+        {
+          "heading": "Report a concern",
+          "body": [
+            "If you believe any content conflicts with these principles, please contact us so we can review it."
+          ]
+        }
+      ]
+    },
+    "accessibility": {
+      "metaTitle": "Accessibility",
+      "metaDescription": "Real Estate in NEPA's commitment to an accessible experience for everyone.",
+      "eyebrow": "Commitment",
+      "title": "Accessibility",
+      "intro": "We want Real Estate in NEPA to be usable by everyone, regardless of ability.",
+      "updated": "Last updated August 2026.",
+      "sections": [
+        {
+          "heading": "Our approach",
+          "body": [
+            "We aim to follow recognized accessibility best practices, targeting WCAG 2.2 AA guidance as we build.",
+            "This includes semantic HTML, keyboard navigation, visible focus states, sufficient color contrast, descriptive text alternatives, and support for reduced-motion preferences."
+          ]
+        },
+        {
+          "heading": "Ongoing work",
+          "body": [
+            "Accessibility is an ongoing effort. As the platform grows, we continue to test and improve the experience across devices and assistive technologies."
+          ]
+        },
+        {
+          "heading": "Feedback",
+          "body": [
+            "If you encounter an accessibility barrier, please let us know through our contact page and we'll work to address it."
+          ]
+        }
+      ]
+    }
   }
 }
