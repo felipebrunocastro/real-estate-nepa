@@ -1,27 +1,4 @@
 {
-  "comingSoon": {
-    "home": "Home",
-    "eyebrow": "In development",
-    "body": "We're building this part of Real Estate in NEPA. It arrives in an upcoming phase. In the meantime, explore the rest of the site.",
-    "cta": "Back to home"
-  },
-  "propertySearch": {
-    "metaTitle": "Property Search",
-    "metaDescription": "Search homes across Northeastern Pennsylvania. Live MLS/IDX property search is coming soon to Real Estate in NEPA.",
-    "home": "Home",
-    "breadcrumb": "Property Search",
-    "placeholderBadge": "Placeholder",
-    "title": "Property search is coming soon",
-    "body": "Live property search will connect to a licensed IDX/MLS data provider in an upcoming phase. This is a placeholder — no listings shown anywhere on the site are real.",
-    "yourSearch": "Your search",
-    "location": "Location",
-    "minPrice": "Min price",
-    "maxPrice": "Max price",
-    "beds": "Beds",
-    "type": "Type",
-    "note": "Property search integration is coming soon. No live MLS listings are available yet — but your search criteria above show how filtering will work.",
-    "exploreCities": "Explore cities instead"
-  },
   "meta": {
     "defaultTitle": "Real Estate in NEPA — Your Guide to Northeastern Pennsylvania",
     "defaultDescription": "Explore homes, communities, market insights and real estate resources across Northeastern Pennsylvania — Scranton, Wilkes-Barre, Pittston and more.",
@@ -237,42 +214,7 @@
       "title": "Reports, guides & NEPA news",
       "intro": "Understand the market with reports, buyer and seller guides, and local real estate news.",
       "viewAll": "View market insights",
-      "readMore": "Read more",
-      "editorialNotice": "Sample editorial content shown for demonstration. Full articles arrive with the publication system.",
-      "categories": {
-        "market-report": "Market Report",
-        "housing-news": "Housing News",
-        "mortgage": "Mortgage",
-        "buyer-guide": "Buyer Guide",
-        "seller-guide": "Seller Guide",
-        "investor": "Investor"
-      },
-      "items": {
-        "marketReport": {
-          "title": "NEPA Market Reports",
-          "excerpt": "Track median prices, inventory and days on market across the region."
-        },
-        "housingNews": {
-          "title": "Pennsylvania Housing News",
-          "excerpt": "Developments, policy and local projects shaping NEPA housing."
-        },
-        "mortgage": {
-          "title": "Mortgage Rate Updates",
-          "excerpt": "How changing rates affect buyers and sellers in NEPA."
-        },
-        "buyerGuide": {
-          "title": "Buyer Guides",
-          "excerpt": "Step-by-step guidance for navigating a home purchase."
-        },
-        "sellerGuide": {
-          "title": "Seller Guides",
-          "excerpt": "Pricing, preparing and marketing your NEPA home."
-        },
-        "investor": {
-          "title": "Investor Insights",
-          "excerpt": "Research and considerations for real estate investors."
-        }
-      }
+      "editorialNotice": "Sample editorial content shown for demonstration. Full articles arrive with the publication system."
     },
     "relocation": {
       "eyebrow": "Relocation",

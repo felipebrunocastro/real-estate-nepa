@@ -1,27 +1,4 @@
 {
-  "comingSoon": {
-    "home": "Inicio",
-    "eyebrow": "En desarrollo",
-    "body": "Estamos construyendo esta parte de Real Estate in NEPA. Estará disponible en una próxima fase. Mientras tanto, explora el resto del sitio.",
-    "cta": "Volver al inicio"
-  },
-  "propertySearch": {
-    "metaTitle": "Buscar Propiedades",
-    "metaDescription": "Busca casas en todo el noreste de Pensilvania. La búsqueda de propiedades con MLS/IDX llegará pronto a Real Estate in NEPA.",
-    "home": "Inicio",
-    "breadcrumb": "Buscar Propiedades",
-    "placeholderBadge": "Marcador de posición",
-    "title": "La búsqueda de propiedades llegará pronto",
-    "body": "La búsqueda de propiedades en vivo se conectará a un proveedor de datos IDX/MLS con licencia en una próxima fase. Esto es un marcador de posición: ninguna propiedad mostrada en el sitio es real.",
-    "yourSearch": "Tu búsqueda",
-    "location": "Ubicación",
-    "minPrice": "Precio mín.",
-    "maxPrice": "Precio máx.",
-    "beds": "Recámaras",
-    "type": "Tipo",
-    "note": "La integración de búsqueda de propiedades llegará pronto. Aún no hay propiedades reales del MLS disponibles, pero los criterios de búsqueda de arriba muestran cómo funcionarán los filtros.",
-    "exploreCities": "Explorar ciudades"
-  },
   "meta": {
     "defaultTitle": "Bienes Raíces en NEPA — Tu Guía del Noreste de Pensilvania",
     "defaultDescription": "Explora casas, comunidades, análisis del mercado y recursos inmobiliarios en el noreste de Pensilvania: Scranton, Wilkes-Barre, Pittston y más.",
@@ -237,42 +214,7 @@
       "title": "Informes, guías y noticias de NEPA",
       "intro": "Comprende el mercado con informes, guías para compradores y vendedores, y noticias inmobiliarias locales.",
       "viewAll": "Ver análisis del mercado",
-      "readMore": "Leer más",
-      "editorialNotice": "Contenido editorial de muestra mostrado como demostración. Los artículos completos llegarán con el sistema de publicaciones.",
-      "categories": {
-        "market-report": "Informe del Mercado",
-        "housing-news": "Noticias de Vivienda",
-        "mortgage": "Hipotecas",
-        "buyer-guide": "Guía del Comprador",
-        "seller-guide": "Guía del Vendedor",
-        "investor": "Inversionista"
-      },
-      "items": {
-        "marketReport": {
-          "title": "Informes del mercado de NEPA",
-          "excerpt": "Sigue los precios medios, el inventario y los días en el mercado en toda la región."
-        },
-        "housingNews": {
-          "title": "Noticias de vivienda de Pensilvania",
-          "excerpt": "Desarrollos, políticas y proyectos locales que dan forma a la vivienda en NEPA."
-        },
-        "mortgage": {
-          "title": "Actualizaciones de tasas hipotecarias",
-          "excerpt": "Cómo afectan a compradores y vendedores los cambios en las tasas en NEPA."
-        },
-        "buyerGuide": {
-          "title": "Guías para compradores",
-          "excerpt": "Orientación paso a paso para llevar a cabo la compra de una casa."
-        },
-        "sellerGuide": {
-          "title": "Guías para vendedores",
-          "excerpt": "Cómo fijar el precio, preparar y promocionar tu casa en NEPA."
-        },
-        "investor": {
-          "title": "Análisis para inversionistas",
-          "excerpt": "Investigación y consideraciones para inversionistas inmobiliarios."
-        }
-      }
+      "editorialNotice": "Contenido editorial de muestra mostrado como demostración. Los artículos completos llegarán con el sistema de publicaciones."
     },
     "relocation": {
       "eyebrow": "Mudanza",

@@ -64,19 +64,6 @@ export interface MarketStat {
   trend?: "up" | "down" | "flat";
 }
 
-/** Editorial / market-insight article card (demo content). */
-export interface InsightCard {
-  key: string;
-  category:
-    | "market-report"
-    | "housing-news"
-    | "mortgage"
-    | "buyer-guide"
-    | "seller-guide"
-    | "investor";
-  href: string;
-}
-
 /* ---------------------------------------------------------------------------
    Publication system (Phase 4)
    Article content lives in the content layer (data/articles.ts today; a future

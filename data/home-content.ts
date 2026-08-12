@@ -1,4 +1,4 @@
-import type { Journey, MarketStat, InsightCard } from "@/types";
+import type { Journey, MarketStat } from "@/types";
 
 /** Homepage journey cards. Copy is translated via `home.journeys.<key>`. */
 export const journeys: Journey[] = [
@@ -19,14 +19,4 @@ export const marketStats: MarketStat[] = [
   { key: "homesForSale", value: "1,240", changeLabel: "-2.4%", trend: "down" },
   { key: "daysOnMarket", value: "38", changeLabel: "+5", trend: "up" },
   { key: "saleToList", value: "98.6%", changeLabel: "+0.4%", trend: "up" },
-];
-
-/** Market-insight article cards. Titles/excerpts via `home.insights.items`. */
-export const insightCards: InsightCard[] = [
-  { key: "marketReport", category: "market-report", href: "/market-reports" },
-  { key: "housingNews", category: "housing-news", href: "/nepa-news" },
-  { key: "mortgage", category: "mortgage", href: "/nepa-news" },
-  { key: "buyerGuide", category: "buyer-guide", href: "/buy" },
-  { key: "sellerGuide", category: "seller-guide", href: "/sell" },
-  { key: "investor", category: "investor", href: "/invest" },
 ];
