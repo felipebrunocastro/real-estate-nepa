@@ -1536,5 +1536,11 @@
         }
       ]
     }
+  },
+  "error": {
+    "title": "Algo salió mal",
+    "description": "Ocurrió un error inesperado. Inténtalo de nuevo.",
+    "retry": "Intentar de nuevo",
+    "home": "Volver al inicio"
   }
 }
