@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { validateLead, deliverLead, type LeadInput } from "@/lib/leads";
+import { isPlainObject } from "@/lib/forms-shared";
 
 /**
  * Lead intake endpoint. Same-origin JSON POST from the contact form.
@@ -7,12 +8,16 @@ import { validateLead, deliverLead, type LeadInput } from "@/lib/leads";
  * destination via `deliverLead`. No credentials live here — see lib/leads.ts.
  */
 export async function POST(request: Request) {
-  let body: LeadInput;
+  let raw: unknown;
   try {
-    body = (await request.json()) as LeadInput;
+    raw = await request.json();
   } catch {
     return NextResponse.json({ ok: false, error: "invalid_json" }, { status: 400 });
   }
+  if (!isPlainObject(raw)) {
+    return NextResponse.json({ ok: false, error: "invalid_body" }, { status: 400 });
+  }
+  const body = raw as LeadInput;
 
   // Honeypot: real users never fill the hidden `company` field. Silently accept
   // so bots don't learn they were filtered.

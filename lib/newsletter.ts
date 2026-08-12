@@ -10,9 +10,7 @@
  * `deliverSubscription` that reads its own env vars.
  */
 
-const LANGUAGES = ["en", "es", "pt"] as const;
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const str = (v: unknown): string => (typeof v === "string" ? v.trim() : "");
+import { LANGUAGES, EMAIL_RE, str, postWebhook } from "./forms-shared";
 
 export interface SubscriptionInput {
   email?: unknown;
@@ -68,13 +66,12 @@ export async function deliverSubscription(sub: Subscription): Promise<void> {
     process.env.NEWSLETTER_WEBHOOK_URL || process.env.LEAD_WEBHOOK_URL;
 
   if (webhook) {
-    const res = await fetch(webhook, {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ type: "newsletter", ...sub }),
-    });
-    if (!res.ok) {
-      throw new Error(`Newsletter webhook responded ${res.status}`);
+    try {
+      await postWebhook(webhook, { type: "newsletter", ...sub }, "Newsletter");
+    } catch (err) {
+      console.error(`[newsletter] delivery FAILED for ${sub.id}`, err);
+      console.info(`[newsletter] UNDELIVERED ${JSON.stringify(sub)}`);
+      throw err;
     }
     return;
   }

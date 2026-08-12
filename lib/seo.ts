@@ -15,7 +15,9 @@ export function resolveLocale(locale: string): Locale {
  * English (default) has no prefix; other locales are prefixed (/es, /pt).
  */
 export function localizedUrl(locale: Locale, path = "/"): string {
-  const clean = path === "/" ? "" : path.replace(/^\/+/, "/");
+  // Normalize to exactly one leading slash (or empty for the root), so a caller
+  // that passes "buy" can't produce ".../esbuy".
+  const clean = path === "/" ? "" : `/${path.replace(/^\/+/, "")}`;
   const prefix = locale === routing.defaultLocale ? "" : `/${locale}`;
   return `${site.url}${prefix}${clean}`;
 }

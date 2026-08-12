@@ -4,6 +4,7 @@ import {
   deliverSubscription,
   type SubscriptionInput,
 } from "@/lib/newsletter";
+import { isPlainObject } from "@/lib/forms-shared";
 
 /**
  * Newsletter subscription endpoint. Same-origin JSON POST. Validates, drops
@@ -11,12 +12,16 @@ import {
  * credentials here — see lib/newsletter.ts.
  */
 export async function POST(request: Request) {
-  let body: SubscriptionInput;
+  let raw: unknown;
   try {
-    body = (await request.json()) as SubscriptionInput;
+    raw = await request.json();
   } catch {
     return NextResponse.json({ ok: false, error: "invalid_json" }, { status: 400 });
   }
+  if (!isPlainObject(raw)) {
+    return NextResponse.json({ ok: false, error: "invalid_body" }, { status: 400 });
+  }
+  const body = raw as SubscriptionInput;
 
   if (typeof body.company === "string" && body.company.trim() !== "") {
     return NextResponse.json({ ok: true });

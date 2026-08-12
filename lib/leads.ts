@@ -24,10 +24,10 @@ export const LEAD_CATEGORIES = [
 ] as const;
 export type LeadCategory = (typeof LEAD_CATEGORIES)[number];
 
+import { LANGUAGES, EMAIL_RE, str, postWebhook } from "./forms-shared";
+
 export const CONTACT_PREFERENCES = ["email", "phone"] as const;
 export type ContactPreference = (typeof CONTACT_PREFERENCES)[number];
-
-const LANGUAGES = ["en", "es", "pt"] as const;
 
 /** Raw, untrusted input as received from the client. */
 export interface LeadInput {
@@ -66,9 +66,6 @@ export interface LeadValidation {
   errors: string[];
   lead?: Lead;
 }
-
-const str = (v: unknown): string => (typeof v === "string" ? v.trim() : "");
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 /** Server-side validation. Deliberately requests no sensitive information. */
 export function validateLead(input: LeadInput): LeadValidation {
@@ -135,13 +132,14 @@ export async function deliverLead(lead: Lead): Promise<void> {
   const webhook = process.env.LEAD_WEBHOOK_URL;
 
   if (webhook) {
-    const res = await fetch(webhook, {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(lead),
-    });
-    if (!res.ok) {
-      throw new Error(`Lead webhook responded ${res.status}`);
+    try {
+      await postWebhook(webhook, lead, "Lead");
+    } catch (err) {
+      // Never lose a lead on a delivery failure: record the full payload
+      // server-side (recoverable from logs) before surfacing the error.
+      console.error(`[leads] delivery FAILED for ${lead.id}`, err);
+      console.info(`[leads] UNDELIVERED ${JSON.stringify(lead)}`);
+      throw err;
     }
     return;
   }
