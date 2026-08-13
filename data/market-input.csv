@@ -1,11 +1,11 @@
 area,medianPrice,medianPrice_change,homesForSale,homesForSale_change,daysOnMarket,daysOnMarket_change,saleToList,saleToList_change,source,sourceUrl,asOf
-nepa,219000,+3.1%,1240,-2.4%,38,+5 days,98.6,+0.4%,Sample data,,2026-08-01
-wilkes-barre-pa,168000,,240,,41,,98.2,,Sample data,,2026-08-01
-scranton-pa,179000,,310,,36,,99.0,,Sample data,,2026-08-01
+nepa,220000,+2.3%,1437,+6.1%,11,-2 days,99.4,+0.5%,Zillow Research,https://www.zillow.com/research/data/,2026-06-30
+wilkes-barre-pa,200000,+14.3%,146,+1.4%,8,-1 days,99.1,+1.7%,Zillow Research,https://www.zillow.com/research/data/,2026-06-30
+scranton-pa,186500,-6.8%,195,-1.5%,15,-3 days,99.2,-0.9%,Zillow Research,https://www.zillow.com/research/data/,2026-06-30
 pittston-pa,172000,,95,,39,,98.5,,Sample data,,2026-08-01
 kingston-pa,189000,,120,,34,,99.1,,Sample data,,2026-08-01
 dallas-pa,285000,,85,,45,,98.0,,Sample data,,2026-08-01
-hazleton-pa,149000,,175,,43,,97.8,,Sample data,,2026-08-01
+hazleton-pa,245000,-10.1%,122,+1.7%,25,+15 days,,,Zillow Research,https://www.zillow.com/research/data/,2026-06-30
 nanticoke-pa,142000,,70,,40,,98.1,,Sample data,,2026-08-01
 mountain-top-pa,265000,,60,,44,,98.3,,Sample data,,2026-08-01
 clarks-summit-pa,255000,,55,,38,,99.0,,Sample data,,2026-08-01

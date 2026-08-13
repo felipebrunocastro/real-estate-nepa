@@ -162,7 +162,7 @@
     "market": {
       "eyebrow": "Market intelligence",
       "title": "NEPA market snapshot",
-      "intro": "A quick look at the Northeastern Pennsylvania housing market. Live market data integration is coming soon.",
+      "intro": "A quick look at the Northeastern Pennsylvania housing market.",
       "sampleLabel": "Sample Data",
       "vsPrior": "vs. prior period",
       "stats": {

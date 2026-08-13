@@ -162,7 +162,7 @@
     "market": {
       "eyebrow": "Inteligencia de mercado",
       "title": "Panorama del mercado de NEPA",
-      "intro": "Un vistazo rápido al mercado de vivienda del noreste de Pensilvania. La integración de datos reales llegará pronto.",
+      "intro": "Un vistazo rápido al mercado de vivienda del noreste de Pensilvania.",
       "sampleLabel": "Datos de Muestra",
       "vsPrior": "vs. período anterior",
       "stats": {
