@@ -12,6 +12,7 @@ import { CityMarketSnapshot } from "@/components/cities/CityMarketSnapshot";
 import { CityOverview } from "@/components/cities/CityOverview";
 import { CityMarketAnalysis } from "@/components/cities/CityMarketAnalysis";
 import { CityCharts } from "@/components/cities/CityCharts";
+import { getMarketHistory } from "@/lib/market";
 import { CityHomesForSale } from "@/components/cities/CityHomesForSale";
 import { CityPropertyTypes } from "@/components/cities/CityPropertyTypes";
 import { CityNeighborhoods } from "@/components/cities/CityNeighborhoods";
@@ -64,6 +65,7 @@ export default async function CityPage({
   const tg = await getTranslations({ locale, namespace: "cityGuide" });
   const tn = await getTranslations({ locale, namespace: "nav" });
   const nearby = getNearbyCities(city);
+  const marketHistory = getMarketHistory(city.slug);
 
   const cityFaqs: Faq[] = (city.faq ?? []).map((f) => ({
     q: f.q[active],
@@ -148,7 +150,14 @@ export default async function CityPage({
           <h3 className="mb-5 font-display text-xl font-semibold text-navy-900">
             {tg("chartsTitle", { city: city.name })}
           </h3>
-          <CityCharts cityName={city.name} accent={city.accent} />
+          <CityCharts
+            cityName={city.name}
+            accent={city.accent}
+            history={marketHistory.history}
+            regionalMetrics={marketHistory.regionalMetrics}
+            source={marketHistory.source}
+            asOf={marketHistory.asOf}
+          />
         </div>
       </ContentSection>
 

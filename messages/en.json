@@ -1619,7 +1619,11 @@
         "5y": "5 yr"
       },
       "comingSoonShort": "Chart data coming soon",
-      "comingSoon": "Interactive historical charts arrive when the market-data feed is connected. The controls above preview how you'll explore 12-month, 3-year and 5-year trends."
+      "comingSoon": "Interactive historical charts arrive when the market-data feed is connected. The controls above preview how you'll explore 12-month, 3-year and 5-year trends.",
+      "source": "Source: {source}",
+      "through": "through {date}",
+      "regional": "Metro-area data",
+      "sinceStart": "since {date}"
     },
     "homes": {
       "sampleBadge": "Sample Listings",

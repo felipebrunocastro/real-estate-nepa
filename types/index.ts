@@ -36,6 +36,18 @@ export interface MarketArea {
   isSample: boolean;
 }
 
+/** Metrics with monthly history behind the city market charts. */
+export type ChartMetricKey = "medianPrice" | "homesSold" | "daysOnMarket" | "inventory";
+
+/** A single monthly point: d = "YYYY-MM", v = value. */
+export interface MarketHistoryPoint {
+  d: string;
+  v: number;
+}
+
+/** Monthly time series per chart metric for an area (from data/market-history.ts). */
+export type MarketHistory = Partial<Record<ChartMetricKey, MarketHistoryPoint[]>>;
+
 /** Northeastern Pennsylvania city / community. */
 export interface City {
   /** SEO slug, e.g. "scranton-pa" (used at /cities/scranton-pa). */

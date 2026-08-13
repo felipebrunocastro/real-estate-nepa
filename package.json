@@ -9,6 +9,7 @@
     "lint": "eslint",
     "market": "node scripts/import-market.mjs",
     "market:fetch": "node scripts/fetch-market.mjs",
+    "market:history": "node scripts/fetch-history.mjs",
     "market:county": "node scripts/import-county.mjs"
   },
   "dependencies": {

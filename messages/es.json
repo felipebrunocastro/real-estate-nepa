@@ -1619,7 +1619,11 @@
         "5y": "5 a"
       },
       "comingSoonShort": "Datos del gráfico próximamente",
-      "comingSoon": "Los gráficos históricos interactivos llegarán cuando se conecte la fuente de datos. Los controles de arriba muestran cómo podrás explorar tendencias de 12 meses, 3 y 5 años."
+      "comingSoon": "Los gráficos históricos interactivos llegarán cuando se conecte la fuente de datos. Los controles de arriba muestran cómo podrás explorar tendencias de 12 meses, 3 y 5 años.",
+      "source": "Fuente: {source}",
+      "through": "hasta {date}",
+      "regional": "Datos del área metropolitana",
+      "sinceStart": "desde {date}"
     },
     "homes": {
       "sampleBadge": "Propiedades de Muestra",
