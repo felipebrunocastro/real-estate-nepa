@@ -1545,5 +1545,121 @@
     "description": "Ocorreu um erro inesperado. Tente novamente.",
     "retry": "Tentar novamente",
     "home": "Voltar ao início"
+  },
+  "cityGuide": {
+    "home": "Início",
+    "hero": {
+      "subhead": "Imóveis, Casas à Venda e Guia da Comunidade",
+      "viewHomes": "Ver Casas à Venda",
+      "exploreMarket": "Explorar o Mercado"
+    },
+    "overviewTitle": "{city} em Resumo",
+    "livingTitle": "Morar em {city}",
+    "analysisTitle": "O Que o Mercado de {city} Significa",
+    "chartsTitle": "Tendências do Mercado de {city}",
+    "homesTitle": "Casas à Venda em {city}, PA",
+    "typesTitle": "Explore Imóveis em {city}",
+    "neighborhoodsTitle": "Bairros e Áreas de {city}",
+    "neighborhoodsIntro": "Áreas reconhecidas localmente em {city} e arredores.",
+    "amenitiesTitle": "Ao Redor de {city}",
+    "commuteTitle": "Como se Locomover",
+    "commuteIntro": "Distâncias aproximadas de carro a partir de {city}.",
+    "newsTitle": "Últimas Notícias Imobiliárias e da Comunidade de {city}",
+    "overview": {
+      "county": "Condado",
+      "population": "População",
+      "populationNote": "Censo {year}",
+      "medianPrice": "Preço Médio dos Imóveis",
+      "medianRent": "Aluguel Médio",
+      "housingTypes": "Tipos de Moradia",
+      "commute": "Cidades Próximas",
+      "comingSoon": "Em breve",
+      "sample": "Amostra",
+      "miles": "{miles} mi",
+      "housing": {
+        "single-family": "Unifamiliar",
+        "multi-family": "Multifamiliar",
+        "condo": "Condomínio",
+        "townhouse": "Geminada",
+        "land": "Terreno"
+      }
+    },
+    "market": {
+      "balance": {
+        "buyers": "Mercado de Compradores",
+        "balanced": "Mercado Equilibrado",
+        "sellers": "Mercado de Vendedores"
+      },
+      "buyers": {
+        "title": "Para Compradores",
+        "body": "Observe o preço médio, os dias no mercado e o estoque ativo para medir a concorrência. Poucos dias no mercado e casas vendidas perto do preço anunciado geralmente significam agir rápido com o financiamento pronto; mais estoque pode dar margem para negociar."
+      },
+      "sellers": {
+        "title": "Para Vendedores",
+        "body": "Os preços de vendas recentes e a rapidez das vendas ajudam a precificar de forma realista. Relações venda/preço anunciado altas e poucos dias no mercado indicam demanda firme; mais estoque faz a apresentação e o preço importarem mais."
+      },
+      "investors": {
+        "title": "Perspectiva do Investidor",
+        "body": "Considere a mistura de estoque unifamiliar e multifamiliar, as faixas de preço típicas e a demanda por aluguel de empregadores e faculdades locais. Analise sempre os números de cada imóvel individualmente."
+      },
+      "analysisDisclaimer": "Apenas informação educativa geral — não é consultoria financeira, de investimento ou imobiliária. Os números de mercado correspondem às datas indicadas e devem ser verificados de forma independente."
+    },
+    "charts": {
+      "metricLabel": "Métrica",
+      "metric": {
+        "medianPrice": "Preço Médio",
+        "homesSold": "Casas Vendidas",
+        "daysOnMarket": "Dias no Mercado",
+        "inventory": "Estoque",
+        "pricePerSqft": "Preço / Pé²"
+      },
+      "range": {
+        "12m": "12 m",
+        "3y": "3 a",
+        "5y": "5 a"
+      },
+      "comingSoonShort": "Dados do gráfico em breve",
+      "comingSoon": "Os gráficos históricos interativos chegarão quando a fonte de dados for conectada. Os controles acima mostram como você vai explorar tendências de 12 meses, 3 e 5 anos."
+    },
+    "homes": {
+      "sampleBadge": "Imóveis de Amostra",
+      "idxNote": "Casas de exemplo. Os imóveis reais de {city} serão conectados via IDX/MLS em breve.",
+      "noneYet": "Os imóveis reais de {city} aparecerão aqui quando o IDX/MLS for conectado. Enquanto isso, use a busca regional.",
+      "viewAll": "Ver todas as casas em {city}"
+    },
+    "types": {
+      "single-family": "Casas Unifamiliares",
+      "multi-family": "Casas Multifamiliares",
+      "condo": "Condomínios",
+      "townhouse": "Casas Geminadas",
+      "land": "Terrenos",
+      "investment": "Imóveis de Investimento",
+      "new-listings": "Novos Anúncios",
+      "browse": "Explorar"
+    },
+    "amenities": {
+      "category": {
+        "parks": "Parques e Lazer",
+        "shopping": "Compras",
+        "dining": "Restaurantes",
+        "healthcare": "Saúde",
+        "education": "Faculdades e Universidades",
+        "transportation": "Transporte"
+      }
+    },
+    "commute": {
+      "miles": "{miles} mi"
+    },
+    "news": {
+      "none": "As notícias específicas de {city} estão a caminho — vamos exibi-las aqui automaticamente. Enquanto isso, explore a cobertura regional.",
+      "allNews": "Todas as Notícias de NEPA"
+    },
+    "lead": {
+      "title": "Pensando em Comprar ou Vender em {city}?",
+      "body": "Busque casas, solicite uma avaliação ou fale com um profissional imobiliário local que atende {city}.",
+      "search": "Buscar Casas",
+      "valuation": "Solicitar uma Avaliação",
+      "talk": "Falar com um Profissional"
+    }
   }
 }

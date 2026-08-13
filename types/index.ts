@@ -55,6 +55,53 @@ export interface City {
   highlights: string[];
   /** Slugs of nearby communities for internal linking. */
   nearby: string[];
+
+  /* --- City-guide fields (all optional; render only when present) --------- */
+
+  /** Longer, original, Fair-Housing-safe "Living in [City]" narrative. */
+  living?: Localized;
+  /** Verified population + census year (omit if not confidently known). */
+  population?: number;
+  populationYear?: number;
+  /** Neutral, one-line property-tax context (per language). */
+  taxContext?: Localized;
+  /** Housing types actually found here (drives the Property Types section). */
+  housingTypes?: SampleProperty["type"][];
+  /** Verified driving distances to relevant destinations. */
+  distances?: CityDistance[];
+  /** Locally-recognized neighborhoods/areas (verified proper nouns only). */
+  neighborhoods?: CityNeighborhood[];
+  /** Verified local amenities grouped by category (proper nouns only). */
+  amenities?: CityAmenityGroup[];
+  /** Verified major employers / employment centers (proper nouns). */
+  employers?: string[];
+  /** City-specific FAQ entries (in addition to the shared templated ones). */
+  faq?: { q: Localized; a: Localized }[];
+}
+
+export interface CityDistance {
+  /** Destination label (proper noun, language-neutral). */
+  to: string;
+  miles: number;
+}
+
+export interface CityNeighborhood {
+  name: string;
+  note?: Localized;
+}
+
+export type AmenityCategory =
+  | "parks"
+  | "shopping"
+  | "dining"
+  | "healthcare"
+  | "education"
+  | "transportation";
+
+export interface CityAmenityGroup {
+  category: AmenityCategory;
+  /** Verified place/institution names (proper nouns). */
+  items: string[];
 }
 
 /** Sample property listing. NEVER represents a real MLS listing. */

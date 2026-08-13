@@ -5,19 +5,26 @@ import { buildMetadata, resolveLocale, localizedUrl } from "@/lib/seo";
 import { cities, getCityBySlug, getNearbyCities } from "@/data/cities";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { ContentSection } from "@/components/content/ContentSection";
-import { CtaBanner } from "@/components/content/CtaBanner";
-import { FaqList, type Faq } from "@/components/content/FaqList";
 import { Disclaimer } from "@/components/content/Disclaimer";
+import { FaqList, type Faq } from "@/components/content/FaqList";
 import { CityCard } from "@/components/cities/CityCard";
 import { CityMarketSnapshot } from "@/components/cities/CityMarketSnapshot";
+import { CityOverview } from "@/components/cities/CityOverview";
+import { CityMarketAnalysis } from "@/components/cities/CityMarketAnalysis";
+import { CityCharts } from "@/components/cities/CityCharts";
+import { CityHomesForSale } from "@/components/cities/CityHomesForSale";
+import { CityPropertyTypes } from "@/components/cities/CityPropertyTypes";
+import { CityNeighborhoods } from "@/components/cities/CityNeighborhoods";
+import { CityAmenities } from "@/components/cities/CityAmenities";
+import { CityCommute } from "@/components/cities/CityCommute";
+import { CityLocalNews } from "@/components/cities/CityLocalNews";
+import { CityLeadCta } from "@/components/cities/CityLeadCta";
 import { Button } from "@/components/ui/Button";
-import { Icon, type IconName } from "@/components/ui/Icon";
+import { Icon } from "@/components/ui/Icon";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 
-/** Pre-render a page for every city (× every locale). */
 export function generateStaticParams() {
   return cities.map((city) => ({ slug: city.slug }));
 }
@@ -40,17 +47,6 @@ export async function generateMetadata({
   });
 }
 
-const OPTION_KEYS = ["buying", "selling", "investing", "relocation"] as const;
-const OPTION_META: Record<
-  (typeof OPTION_KEYS)[number],
-  { href: string; icon: IconName }
-> = {
-  buying: { href: "/buy", icon: "buy" },
-  selling: { href: "/sell", icon: "sell" },
-  investing: { href: "/invest", icon: "invest" },
-  relocation: { href: "/relocation", icon: "move" },
-};
-
 const FAQ_KEYS = ["listings", "market", "buying", "schools"] as const;
 
 export default async function CityPage({
@@ -65,13 +61,19 @@ export default async function CityPage({
 
   const active = locale as Locale;
   const t = await getTranslations({ locale, namespace: "cityPage" });
+  const tg = await getTranslations({ locale, namespace: "cityGuide" });
   const tn = await getTranslations({ locale, namespace: "nav" });
   const nearby = getNearbyCities(city);
 
-  const faqs: Faq[] = FAQ_KEYS.map((key) => ({
+  const cityFaqs: Faq[] = (city.faq ?? []).map((f) => ({
+    q: f.q[active],
+    a: f.a[active],
+  }));
+  const templatedFaqs: Faq[] = FAQ_KEYS.map((key) => ({
     q: t(`faq.items.${key}.q`, { city: city.name }),
     a: t(`faq.items.${key}.a`, { city: city.name }),
   }));
+  const faqs = [...cityFaqs, ...templatedFaqs];
 
   const placeJsonLd = {
     "@context": "https://schema.org",
@@ -90,25 +92,26 @@ export default async function CityPage({
     <>
       <JsonLd data={placeJsonLd} />
 
+      {/* Hero */}
       <PageHeader
         breadcrumbs={[
+          { label: tg("home"), href: "/" },
           { label: tn("links.cities"), href: "/cities" },
           { label: `${city.name}, PA`, href: `/cities/${slug}` },
         ]}
         eyebrow={city.county}
         title={t("metaTitle", { city: city.name })}
-        intro={t("tagline", { city: city.name })}
+        intro={tg("hero.subhead")}
       >
         <Button href={`/property-search?location=${slug}`} variant="secondary">
-          {t("searchCta", { city: city.name })}
+          {tg("hero.viewHomes")}
           <Icon name="arrow-right" className="h-5 w-5" />
         </Button>
-        <Button href="/contact" variant="outline">
-          {tn("links.contact")}
+        <Button href="#market" variant="outline">
+          {tg("hero.exploreMarket")}
         </Button>
       </PageHeader>
 
-      {/* Hero image (structured placeholder until real photography exists) */}
       <PlaceholderImage
         label={t("heroLabel", { city: city.name })}
         sublabel={city.county}
@@ -116,83 +119,90 @@ export default async function CityPage({
         aspect="aspect-[16/6]"
       />
 
-      {/* About + housing + market snapshot */}
-      <ContentSection title={t("about.title", { city: city.name })}>
-        <p className="max-w-3xl text-lg leading-relaxed text-muted">
-          {city.description[active]}
-        </p>
-        <div className="mt-8 max-w-3xl">
-          <h3 className="font-display text-xl font-semibold text-navy-900">
-            {t("housing.title", { city: city.name })}
-          </h3>
-          <p className="mt-3 leading-relaxed text-muted">
-            {t("housing.body", { city: city.name, county: city.county })}
+      {/* Quick overview */}
+      <ContentSection title={tg("overviewTitle", { city: city.name })}>
+        <CityOverview city={city} />
+      </ContentSection>
+
+      {/* Living in [city] */}
+      {city.living && (
+        <ContentSection bordered title={tg("livingTitle", { city: city.name })}>
+          <p className="max-w-3xl text-lg leading-relaxed text-navy-800">
+            {city.living[active]}
           </p>
-        </div>
-        <div className="mt-10">
-          <h3 className="mb-5 font-display text-xl font-semibold text-navy-900">
-            {t("market.title", { city: city.name })}
-          </h3>
-          <CityMarketSnapshot area={city.slug} />
-        </div>
-      </ContentSection>
-
-      {/* Options: buying / selling / investing / relocation */}
-      <ContentSection bordered title={t("options.title", { city: city.name })}>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          {OPTION_KEYS.map((key) => {
-            const meta = OPTION_META[key];
-            return (
-              <div
-                key={key}
-                className="flex flex-col rounded-xl border border-border bg-surface p-6"
-              >
-                <span className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-navy-50 text-accent-600">
-                  <Icon name={meta.icon} className="h-5 w-5" />
-                </span>
-                <h3 className="font-display text-lg font-semibold text-navy-900">
-                  {t(`options.${key}.title`, { city: city.name })}
-                </h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
-                  {t(`options.${key}.body`, { city: city.name })}
-                </p>
-                <Link
-                  href={meta.href}
-                  className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-accent-600 hover:text-accent-700"
-                >
-                  {t(`options.${key}.cta`)}
-                  <Icon name="arrow-right" className="h-4 w-4" />
-                </Link>
-              </div>
-            );
-          })}
-        </div>
-      </ContentSection>
-
-      {/* Local highlights + Map */}
-      <ContentSection bordered title={t("highlights.title")} intro={t("highlights.intro", { city: city.name })}>
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <ul className="flex flex-wrap gap-2 self-start">
+          <div className="mt-6 flex flex-wrap gap-2">
             {city.highlights.map((h) => (
-              <li
-                key={h}
-                className="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1.5 text-sm text-navy-800"
-              >
+              <span key={h} className="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1.5 text-sm text-navy-800">
                 <Icon name="map-pin" className="h-4 w-4 text-accent-600" />
                 {h}
-              </li>
+              </span>
             ))}
-          </ul>
-          <div className="overflow-hidden rounded-xl border border-border">
-            <PlaceholderImage
-              label={t("map.label", { city: city.name })}
-              sublabel={t("map.soon")}
-              accent={city.accent}
-              aspect="aspect-[16/9]"
-            />
           </div>
+        </ContentSection>
+      )}
+
+      {/* Real estate market */}
+      <ContentSection id="market" bordered title={t("market.title", { city: city.name })}>
+        <CityMarketSnapshot area={city.slug} />
+        <div className="mt-10">
+          <h3 className="mb-5 font-display text-xl font-semibold text-navy-900">
+            {tg("chartsTitle", { city: city.name })}
+          </h3>
+          <CityCharts cityName={city.name} accent={city.accent} />
         </div>
       </ContentSection>
+
+      {/* Market analysis */}
+      <ContentSection bordered title={tg("analysisTitle", { city: city.name })}>
+        <CityMarketAnalysis city={city.slug} />
+      </ContentSection>
+
+      {/* Homes for sale */}
+      <ContentSection bordered title={tg("homesTitle", { city: city.name })}>
+        <CityHomesForSale slug={city.slug} cityName={city.name} />
+      </ContentSection>
+
+      {/* Property types */}
+      <ContentSection bordered title={tg("typesTitle", { city: city.name })}>
+        <CityPropertyTypes city={city} />
+      </ContentSection>
+
+      {/* Neighborhoods (only when data exists) */}
+      {city.neighborhoods && city.neighborhoods.length > 0 && (
+        <ContentSection bordered title={tg("neighborhoodsTitle", { city: city.name })} intro={tg("neighborhoodsIntro", { city: city.name })}>
+          <CityNeighborhoods city={city} />
+        </ContentSection>
+      )}
+
+      {/* Map + amenities */}
+      <ContentSection bordered title={t("map.label", { city: city.name })}>
+        <div className="overflow-hidden rounded-xl border border-border">
+          <PlaceholderImage
+            label={t("map.label", { city: city.name })}
+            sublabel={t("map.soon")}
+            accent={city.accent}
+            aspect="aspect-[16/8]"
+          />
+        </div>
+      </ContentSection>
+
+      {city.amenities && city.amenities.length > 0 && (
+        <ContentSection bordered title={tg("amenitiesTitle", { city: city.name })}>
+          <CityAmenities city={city} />
+        </ContentSection>
+      )}
+
+      {/* Schools */}
+      <ContentSection bordered title={t("schools.title")}>
+        <Disclaimer>{t("schools.body", { city: city.name })}</Disclaimer>
+      </ContentSection>
+
+      {/* Commute */}
+      {city.distances && city.distances.length > 0 && (
+        <ContentSection bordered title={tg("commuteTitle")} intro={tg("commuteIntro", { city: city.name })}>
+          <CityCommute city={city} />
+        </ContentSection>
+      )}
 
       {/* Nearby communities */}
       {nearby.length > 0 && (
@@ -205,25 +215,9 @@ export default async function CityPage({
         </ContentSection>
       )}
 
-      {/* Market reports & news + schools note */}
-      <ContentSection bordered title={t("articles.title", { city: city.name })}>
-        <p className="max-w-3xl text-muted">{t("articles.body", { city: city.name })}</p>
-        <div className="mt-6 flex flex-wrap gap-3">
-          <Button href="/market-reports" variant="outline">
-            {tn("links.marketReports")}
-          </Button>
-          <Button href="/nepa-news" variant="outline">
-            {tn("links.nepaNews")}
-          </Button>
-        </div>
-        <div className="mt-8 max-w-3xl">
-          <h3 className="font-display text-lg font-semibold text-navy-900">
-            {t("schools.title")}
-          </h3>
-          <div className="mt-3">
-            <Disclaimer>{t("schools.body", { city: city.name })}</Disclaimer>
-          </div>
-        </div>
+      {/* Local news */}
+      <ContentSection bordered title={tg("newsTitle", { city: city.name })}>
+        <CityLocalNews slug={city.slug} cityName={city.name} />
       </ContentSection>
 
       {/* FAQ */}
@@ -231,15 +225,8 @@ export default async function CityPage({
         <FaqList items={faqs} />
       </ContentSection>
 
-      <CtaBanner
-        title={t("cta.title", { city: city.name })}
-        body={t("cta.body", { city: city.name })}
-        primary={{
-          label: t("searchCta", { city: city.name }),
-          href: `/property-search?location=${slug}`,
-        }}
-        secondary={{ label: tn("links.contact"), href: "/contact" }}
-      />
+      {/* Lead generation */}
+      <CityLeadCta slug={city.slug} cityName={city.name} />
     </>
   );
 }

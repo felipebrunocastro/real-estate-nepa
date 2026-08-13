@@ -1545,5 +1545,121 @@
     "description": "An unexpected error occurred. Please try again.",
     "retry": "Try again",
     "home": "Back to home"
+  },
+  "cityGuide": {
+    "home": "Home",
+    "hero": {
+      "subhead": "Real Estate, Homes for Sale & Community Guide",
+      "viewHomes": "View Homes for Sale",
+      "exploreMarket": "Explore the Market"
+    },
+    "overviewTitle": "{city} at a Glance",
+    "livingTitle": "Living in {city}",
+    "analysisTitle": "What the {city} Market Means",
+    "chartsTitle": "{city} Market Trends",
+    "homesTitle": "Homes for Sale in {city}, PA",
+    "typesTitle": "Explore Real Estate in {city}",
+    "neighborhoodsTitle": "Neighborhoods & Areas in {city}",
+    "neighborhoodsIntro": "Locally-recognized areas in and around {city}.",
+    "amenitiesTitle": "Around {city}",
+    "commuteTitle": "Getting Around",
+    "commuteIntro": "Approximate driving distances from {city}.",
+    "newsTitle": "Latest {city} Real Estate & Community News",
+    "overview": {
+      "county": "County",
+      "population": "Population",
+      "populationNote": "{year} Census",
+      "medianPrice": "Median Home Price",
+      "medianRent": "Median Rent",
+      "housingTypes": "Housing Types",
+      "commute": "Nearest Cities",
+      "comingSoon": "Coming soon",
+      "sample": "Sample",
+      "miles": "{miles} mi",
+      "housing": {
+        "single-family": "Single-Family",
+        "multi-family": "Multi-Family",
+        "condo": "Condo",
+        "townhouse": "Townhome",
+        "land": "Land"
+      }
+    },
+    "market": {
+      "balance": {
+        "buyers": "Buyer's Market",
+        "balanced": "Balanced Market",
+        "sellers": "Seller's Market"
+      },
+      "buyers": {
+        "title": "For Buyers",
+        "body": "Look at the median price, days on market and active inventory to gauge competition. Low days on market and homes selling near asking usually mean moving quickly with financing ready; more inventory can give you room to negotiate."
+      },
+      "sellers": {
+        "title": "For Sellers",
+        "body": "Recent sale prices and how fast homes are going help you price realistically. Strong sale-to-list ratios and low days on market point to firm demand; more inventory makes presentation and pricing matter more."
+      },
+      "investors": {
+        "title": "Investor Perspective",
+        "body": "Consider the mix of single-family and multifamily stock, typical price points, and rental demand from local employers and colleges. Always run each property's numbers individually."
+      },
+      "analysisDisclaimer": "General educational information only — not financial, investment or real estate advice. Market figures are as of the dates shown and should be independently verified."
+    },
+    "charts": {
+      "metricLabel": "Metric",
+      "metric": {
+        "medianPrice": "Median Price",
+        "homesSold": "Homes Sold",
+        "daysOnMarket": "Days on Market",
+        "inventory": "Inventory",
+        "pricePerSqft": "Price / Sq Ft"
+      },
+      "range": {
+        "12m": "12 mo",
+        "3y": "3 yr",
+        "5y": "5 yr"
+      },
+      "comingSoonShort": "Chart data coming soon",
+      "comingSoon": "Interactive historical charts arrive when the market-data feed is connected. The controls above preview how you'll explore 12-month, 3-year and 5-year trends."
+    },
+    "homes": {
+      "sampleBadge": "Sample Listings",
+      "idxNote": "Example homes shown. Live {city} listings connect via IDX/MLS soon.",
+      "noneYet": "Live {city} listings will appear here once IDX/MLS is connected. Browse the regional search in the meantime.",
+      "viewAll": "View all homes in {city}"
+    },
+    "types": {
+      "single-family": "Single-Family Homes",
+      "multi-family": "Multi-Family Homes",
+      "condo": "Condos",
+      "townhouse": "Townhomes",
+      "land": "Land",
+      "investment": "Investment Properties",
+      "new-listings": "New Listings",
+      "browse": "Browse"
+    },
+    "amenities": {
+      "category": {
+        "parks": "Parks & Recreation",
+        "shopping": "Shopping",
+        "dining": "Dining",
+        "healthcare": "Healthcare",
+        "education": "Colleges & Universities",
+        "transportation": "Transportation"
+      }
+    },
+    "commute": {
+      "miles": "{miles} mi"
+    },
+    "news": {
+      "none": "City-specific news for {city} is on the way — we'll surface it here automatically. Explore regional coverage meanwhile.",
+      "allNews": "All NEPA News"
+    },
+    "lead": {
+      "title": "Thinking About Buying or Selling in {city}?",
+      "body": "Search homes, request a home valuation, or connect with a local real estate professional serving {city}.",
+      "search": "Search Homes",
+      "valuation": "Request a Home Valuation",
+      "talk": "Talk to a Professional"
+    }
   }
 }
