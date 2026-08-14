@@ -1623,7 +1623,8 @@
       "source": "Fonte: {source}",
       "through": "até {date}",
       "regional": "Dados da área metropolitana",
-      "sinceStart": "desde {date}"
+      "sinceStart": "desde {date}",
+      "current": "Atual · {date}"
     },
     "homes": {
       "sampleBadge": "Imóveis de Amostra",

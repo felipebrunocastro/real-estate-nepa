@@ -1623,7 +1623,8 @@
       "source": "Source: {source}",
       "through": "through {date}",
       "regional": "Metro-area data",
-      "sinceStart": "since {date}"
+      "sinceStart": "since {date}",
+      "current": "Current · {date}"
     },
     "homes": {
       "sampleBadge": "Sample Listings",

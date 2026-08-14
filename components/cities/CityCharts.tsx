@@ -116,29 +116,36 @@ export function CityCharts({
       </div>
 
       <div className="mt-4 rounded-xl border border-border bg-surface p-5">
-        <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <div className="flex flex-wrap items-start justify-between gap-3">
           <div>
             <p className="font-display text-3xl font-bold text-navy-900">
               {last ? fmt(metric, last.v) : "—"}
             </p>
+            {last && <p className="mt-0.5 text-xs text-muted">{t("current", { date: monthLabel(last.d) })}</p>}
+          </div>
+          <div className="text-right">
             {last && first && (
-              <p
-                className={cn(
-                  "text-sm font-semibold",
-                  delta > 0 ? "text-emerald-600" : delta < 0 ? "text-rose-600" : "text-muted",
-                )}
-              >
-                {delta > 0 ? "+" : ""}
-                {metric === "medianPrice" ? `${deltaPct.toFixed(1)}%` : delta.toLocaleString("en-US")}{" "}
-                <span className="font-normal text-muted">{t("sinceStart", { date: monthLabel(first.d) })}</span>
-              </p>
+              <>
+                <p
+                  className={cn(
+                    "font-display text-2xl font-bold",
+                    delta > 0 ? "text-emerald-600" : delta < 0 ? "text-rose-600" : "text-muted",
+                  )}
+                >
+                  {delta > 0 ? "+" : ""}
+                  {metric === "medianPrice" ? `${deltaPct.toFixed(1)}%` : delta.toLocaleString("en-US")}
+                </p>
+                <p className="mt-0.5 text-xs text-muted">
+                  {t("sinceStart", { date: monthLabel(first.d) })} · {fmt(metric, first.v)}
+                </p>
+              </>
+            )}
+            {isRegional && (
+              <span className="mt-1.5 inline-block rounded-full bg-navy-50 px-2.5 py-0.5 text-xs font-medium text-navy-700">
+                {t("regional")}
+              </span>
             )}
           </div>
-          {isRegional && (
-            <span className="rounded-full bg-navy-50 px-2.5 py-0.5 text-xs font-medium text-navy-700">
-              {t("regional")}
-            </span>
-          )}
         </div>
 
         <svg

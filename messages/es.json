@@ -1623,7 +1623,8 @@
       "source": "Fuente: {source}",
       "through": "hasta {date}",
       "regional": "Datos del área metropolitana",
-      "sinceStart": "desde {date}"
+      "sinceStart": "desde {date}",
+      "current": "Actual · {date}"
     },
     "homes": {
       "sampleBadge": "Propiedades de Muestra",
